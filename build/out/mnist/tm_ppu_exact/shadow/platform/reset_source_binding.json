@@ -1,0 +1,331 @@
+{
+  "scope": "Common activeRTL + established singleclock synchronousinternalreset physicalprofile; externalasynccapture preserved; not same as 1MiBimageRAM",
+  "rows": [
+    {
+      "path": "src/rtl/axi_crossbar/arbiter.v",
+      "source_sha256": "a001507c82843e36e133dea75491fc044f56660fac0aff0127cf3afec7f927e0",
+      "generated_sha256": "a001507c82843e36e133dea75491fc044f56660fac0aff0127cf3afec7f927e0",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_register_wr.v",
+      "source_sha256": "02dd26f56ee04ad834a28e02ef2726852ab527fb23c3a88b377f3ce55a719c4b",
+      "generated_sha256": "02dd26f56ee04ad834a28e02ef2726852ab527fb23c3a88b377f3ce55a719c4b",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_register_rd.v",
+      "source_sha256": "63f1bd6f9d72ae28643fd7af3a5d5bcb05d45cbfb290c59c120c327ba49aa575",
+      "generated_sha256": "63f1bd6f9d72ae28643fd7af3a5d5bcb05d45cbfb290c59c120c327ba49aa575",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_crossbar_addr.v",
+      "source_sha256": "40be0d521ab25db9cf99db7d6a33de3e2312c38623ae66eaf25d6e1d27744260",
+      "generated_sha256": "40be0d521ab25db9cf99db7d6a33de3e2312c38623ae66eaf25d6e1d27744260",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_crossbar_rd.v",
+      "source_sha256": "d6540274718badb149edd702a8dc12b54dc051118bafbe3bd8a2478133f883ac",
+      "generated_sha256": "d6540274718badb149edd702a8dc12b54dc051118bafbe3bd8a2478133f883ac",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_crossbar_wr.v",
+      "source_sha256": "ebb54e4531dd47424d876cf297232e2f7e90999558eea2361a20bda246cf060e",
+      "generated_sha256": "ebb54e4531dd47424d876cf297232e2f7e90999558eea2361a20bda246cf060e",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/priority_encoder.v",
+      "source_sha256": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5",
+      "generated_sha256": "df28220d95b47df349a72803a9751aad331eb8e1435416e8686d00572a974dd5",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_crossbar.v",
+      "source_sha256": "f2e5177a8c8bbe4ed844554eece7abd207365a8a7a20796e0654e08362b51b3d",
+      "generated_sha256": "f2e5177a8c8bbe4ed844554eece7abd207365a8a7a20796e0654e08362b51b3d",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_crossbar/axi_crossbar_wrap_4x2.v",
+      "source_sha256": "2c593dc2995c3bd4cd4009254a86a34e73a3fb1a0f257c86bb7afbca037af42e",
+      "generated_sha256": "2c593dc2995c3bd4cd4009254a86a34e73a3fb1a0f257c86bb7afbca037af42e",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_dma/axi_dma_rd.v",
+      "source_sha256": "d5d622be9389c25c1fb389d09ea19ecd0a3985627ff418df22c9358a8b331129",
+      "generated_sha256": "d5d622be9389c25c1fb389d09ea19ecd0a3985627ff418df22c9358a8b331129",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_dma/axis_1to8.v",
+      "source_sha256": "711925b9a8ce5d103fd612dbeb158c139119059c6b60aba79943a88064cbbc4e",
+      "generated_sha256": "711925b9a8ce5d103fd612dbeb158c139119059c6b60aba79943a88064cbbc4e",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/ram/simple_dp_ram.v",
+      "source_sha256": "615d60e139e5498e33bcd47c85a376a827ee5eeaa6846cbd42761f322d831968",
+      "generated_sha256": "615d60e139e5498e33bcd47c85a376a827ee5eeaa6846cbd42761f322d831968",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/stack/stack.v",
+      "source_sha256": "6e2ca54b62782753259c39efd564241cd736666d45064495c83f7cab2cd53fe7",
+      "generated_sha256": "b7467a4d5f725fe05be40cc2920e62de018cca4ad83b5af1085808d9e31f1784",
+      "internal_reset_event_changes": 1
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_pe.v",
+      "source_sha256": "5b91013e6e97a9a7b21fd3cb43d52fadbc6418205768356368cec768396f0849",
+      "generated_sha256": "4b039d5b74f9ecc6e499bf37648dbc9a319738a465f9921e0b2e30bac1071626",
+      "internal_reset_event_changes": 4
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_array.v",
+      "source_sha256": "887bc6a599cc7af67b735051c85e12c511091113f019d06e6119211cb592eb66",
+      "generated_sha256": "887bc6a599cc7af67b735051c85e12c511091113f019d06e6119211cb592eb66",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_fifo.v",
+      "source_sha256": "8ebb805bae78fe2bde3418e78490132b42878b348fb9e5c63260d5e8ac682108",
+      "generated_sha256": "1ec8753ed515fe4243e5ab295917bebe516b6878d79ebe45ea41bb754de6cae8",
+      "internal_reset_event_changes": 2
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_buffer.v",
+      "source_sha256": "3f43a4162edb6eb46381155fbe5bda5980771a1ff4b59c6fffe48926d77d6f29",
+      "generated_sha256": "68d23deb2ed092b1d287bf0c567a73dd2fa9a7b7c31996fd407675b35f38d63d",
+      "internal_reset_event_changes": 6
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_reorder.v",
+      "source_sha256": "6dc420ae2c53321aaf5a7515fdff57e77bb5665a396f6cb29fb418e617cab440",
+      "generated_sha256": "ffe06fefc2e54a70394844aca8f2244226b307c6afe3047d2ec3bb03a64571f6",
+      "internal_reset_event_changes": 3
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_unit.v",
+      "source_sha256": "993421b0b325a697fe6e304d21327c76ac2fc7a3bc89d8c6ffe83b770fcd66df",
+      "generated_sha256": "993421b0b325a697fe6e304d21327c76ac2fc7a3bc89d8c6ffe83b770fcd66df",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/fifo/gnrl_dfflr.v",
+      "source_sha256": "ffa6d5b10803c994f65af7fa0f3053b31ecf5dcd4bffe8b6ed138d7a0ce08a5f",
+      "generated_sha256": "0deaa6f5b9edefb49c198386bcdcbb5624faee8e08a36c0545b32ca36798d133",
+      "internal_reset_event_changes": 1
+    },
+    {
+      "path": "src/rtl/common_cells/fifo/syncfifo.v",
+      "source_sha256": "163ab26382c27e97dd558cbe45134e7789e43cfd10b6d2e080daa87a710b8baf",
+      "generated_sha256": "163ab26382c27e97dd558cbe45134e7789e43cfd10b6d2e080daa87a710b8baf",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/timing/bwdfwdpipe.v",
+      "source_sha256": "b8e22d1027a517ce8940b6f0ab3cb72064c475d9c20ffbee6c6c34a805787e9d",
+      "generated_sha256": "b8e22d1027a517ce8940b6f0ab3cb72064c475d9c20ffbee6c6c34a805787e9d",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/timing/bwdpipe.v",
+      "source_sha256": "05bbc93e8ca28431ae35a21a592a373484dc15225722a286314b6c39a5004f3f",
+      "generated_sha256": "bd96bd4a982c9ecb3e66061103bd11058ec3818d4f657dc879eec529fcaf5443",
+      "internal_reset_event_changes": 3
+    },
+    {
+      "path": "src/rtl/common_cells/timing/fwdpipe.v",
+      "source_sha256": "f80ff8572e4726c697ef352b119d4270e30fac8fdaa30dc014361694e62119f3",
+      "generated_sha256": "6675487554a81710a7d6c9e3e1a4e577bb673d2965baff68b2c2759b9471a292",
+      "internal_reset_event_changes": 2
+    },
+    {
+      "path": "src/rtl/systolic_unit/systolic_control.v",
+      "source_sha256": "35e2be8b210d478aa5ff34f65e9dc7d0bebd43f8c2ef1aefa213eb8d441956d9",
+      "generated_sha256": "b492da1cce303996a8fef45f20ec377bab59346e61722cbf33d5382249176e4c",
+      "internal_reset_event_changes": 6
+    },
+    {
+      "path": "src/rtl/systolic_unit/top_systolic_unit.v",
+      "source_sha256": "3800e7822d4660e8cea30c6f3d08e04171a402d6169905a46d48f10054b1ff94",
+      "generated_sha256": "3800e7822d4660e8cea30c6f3d08e04171a402d6169905a46d48f10054b1ff94",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/arbiter/round_robin_arbiter.v",
+      "source_sha256": "289b5bdeeccfa4855c2aa2a16fe72bc10c6b4417c347261b6b06036ddfd0a794",
+      "generated_sha256": "e3f22604f5dd84153d38f55852942888682e6de253c566e329639601aba2e0fb",
+      "internal_reset_event_changes": 2
+    },
+    {
+      "path": "src/rtl/axi_dma/axi_dma_wr.v",
+      "source_sha256": "7439c80bced2c760802aba1ed9bb95cf24c200b588d89af1544181485b874cc1",
+      "generated_sha256": "9e0b8b2df13c54784ed55817ba5900c99011fef8fa5533914c07581cf36aa91a",
+      "internal_reset_event_changes": 1
+    },
+    {
+      "path": "src/rtl/axi_dma/axis_4to1.v",
+      "source_sha256": "bc236cf5b7c53c5fdfab4769bf41061698eff15b795a374c31877412cef2be21",
+      "generated_sha256": "bc236cf5b7c53c5fdfab4769bf41061698eff15b795a374c31877412cef2be21",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/post_processing_unit/ppu.v",
+      "source_sha256": "907db7a4e2bc5ec90ac5244b8cc80d48147b100191a65946f4558bf07adb052b",
+      "generated_sha256": "d2f520e9fb06ba2a902a96dacbabed9a29a424f1b6e52dc40d33de7f2d28055a",
+      "internal_reset_event_changes": 15
+    },
+    {
+      "path": "src/rtl/post_processing_unit/ppu_control.v",
+      "source_sha256": "dbaf81a65a722a78c1cdf492a15e1f6f36d9bc44c908db8c7f13fd8a514f0f2b",
+      "generated_sha256": "655e2b8de1b409e7baa8377c86ccacd33310841ddc77a81320160c845245a008",
+      "internal_reset_event_changes": 7
+    },
+    {
+      "path": "src/rtl/post_processing_unit/top_ppu.v",
+      "source_sha256": "81a99a321a17eb094e06935416aefc8f39ab4fcca46bfca06b0819026a6f0c1f",
+      "generated_sha256": "81a99a321a17eb094e06935416aefc8f39ab4fcca46bfca06b0819026a6f0c1f",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/fifo/syncfifo_diffw.v",
+      "source_sha256": "c5e8ee3622b529a822b6bd86a87838d47b0eb583364cc26fa1e02bfb048b5cce",
+      "generated_sha256": "254c337290caaf1a22e64fd8e2897a3d0761e89d6cabc11a25cda4578242eb51",
+      "internal_reset_event_changes": 4
+    },
+    {
+      "path": "src/rtl/common_cells/fifo/axil_fifo.v",
+      "source_sha256": "d740135935f02ed69b9a8509077541e0182c8bb63e440d1bb8c5785674a1d04f",
+      "generated_sha256": "831d9e84da1dae8f532f217592cd06f9fc66b984ec924fc69b6d78c64222cd1c",
+      "internal_reset_event_changes": 1
+    },
+    {
+      "path": "src/rtl/common_cells/ram/axi_ram.v",
+      "source_sha256": "f8641e6927fec84d442c86929b9e036d8f988a8337e9aeb626c07ae89f6e34f1",
+      "generated_sha256": "f8641e6927fec84d442c86929b9e036d8f988a8337e9aeb626c07ae89f6e34f1",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/intr/intr_pulse.v",
+      "source_sha256": "2f147886facc221e3c0d9ca78cf550a596b8d1f34010b4c92f7145190868cfd1",
+      "generated_sha256": "7e5203c53fc061fe79b4f00e89d2a2cf3dce2dacac5b54bcedc5afe5547eb240",
+      "internal_reset_event_changes": 2
+    },
+    {
+      "path": "src/rtl/axi_cdma/axi_cdma.v",
+      "source_sha256": "4767974c34c9e213e411933301cb23115de6074124ff0bdf9310b0dd989da744",
+      "generated_sha256": "4767974c34c9e213e411933301cb23115de6074124ff0bdf9310b0dd989da744",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/axi_cdma/control_axi_cdma.v",
+      "source_sha256": "09ad946e6241d6fca2e5c318388873a7b6421971c3290470438e6f8ba3a90fd6",
+      "generated_sha256": "72bae6011274207f04b1dd5e7ed2e0d75924169f89bc237ff9ddabe0f85c4ae1",
+      "internal_reset_event_changes": 4
+    },
+    {
+      "path": "src/rtl/axi_cdma/top_axi_cdma.v",
+      "source_sha256": "07cd1b3fc6de7d478cba218f30d53b551b886f9b2d41b2b47079849cb9dd2730",
+      "generated_sha256": "07cd1b3fc6de7d478cba218f30d53b551b886f9b2d41b2b47079849cb9dd2730",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/tiny_npu/control_tiny_npu.v",
+      "source_sha256": "f448202c507d60e33ec031f2c5bb391c0bab8c94e0407b032f04961a48d77d3e",
+      "generated_sha256": "add3134fb0020fb5577fed3d7fcd60f2bbe2c936d1c6304fe58125941685854f",
+      "internal_reset_event_changes": 1
+    },
+    {
+      "path": "src/rtl/tiny_npu/axil_register.v",
+      "source_sha256": "f228f4cd3ced28a133b9ed4da8a288d491e2834855bc2cc7f377a0a8932fbc5d",
+      "generated_sha256": "ce93737880362e012503f2ee9e78e08c50d2741c492e24c2326c8252fb10c4db",
+      "internal_reset_event_changes": 1
+    },
+    {
+      "path": "src/rtl/tiny_npu/register_tiny_npu.v",
+      "source_sha256": "a4d69d621896d6916aa0e60ce90d26615610cce41cdd2b3e192864b5d57c4a82",
+      "generated_sha256": "c7c88812b2900d9fd937c06fbe6aff4bfbbbb9a8085f3e97f4120070bc71668f",
+      "internal_reset_event_changes": 5
+    },
+    {
+      "path": "src/rtl/tiny_npu/top_tiny_npu.v",
+      "source_sha256": "805d9ef8abe1b503ca6436b7b96493a809f96b928a379ca4dc85001b04231e4b",
+      "generated_sha256": "805d9ef8abe1b503ca6436b7b96493a809f96b928a379ca4dc85001b04231e4b",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/cdc/axi_cdc.v",
+      "source_sha256": "0cbad378e6714a4cf9ab82d5ac646c358e926b2211953598c78546a4a9c406e2",
+      "generated_sha256": "69fd41995f1802c4947601c37f10d551f2667afd73d40ab6b0cc842ea2033027",
+      "internal_reset_event_changes": 21
+    },
+    {
+      "path": "src/rtl/common_cells/cdc/axil_cdc.v",
+      "source_sha256": "1c30df0d61d1b1a907023bff91e8b6dad6f50250aefb8c81bc0346da2d674c89",
+      "generated_sha256": "a1d6a24ebf2763a2055288afb42f261ec274d65d7981bbc4ca06917bdf9699bb",
+      "internal_reset_event_changes": 18
+    },
+    {
+      "path": "src/rtl/tiny_npu/top_tiny_npu_wrapper.v",
+      "source_sha256": "caefd44bcc84e08daf3a6732e13cdf18c827170873e35d41483f2853efed7a85",
+      "generated_sha256": "caefd44bcc84e08daf3a6732e13cdf18c827170873e35d41483f2853efed7a85",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/im2col/edge_im2col_axi.sv",
+      "source_sha256": "7db522cbcfdb17f372462591b6c124a8223b1dff639b3725dd9aa0f82577ca3f",
+      "generated_sha256": "7db522cbcfdb17f372462591b6c124a8223b1dff639b3725dd9aa0f82577ca3f",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/im2col/edge_im2col_soc.sv",
+      "source_sha256": "7b4dff130d1181d8f29812b90cfe5eb176b2420707ad7d945bb4cb3361b3069d",
+      "generated_sha256": "7b4dff130d1181d8f29812b90cfe5eb176b2420707ad7d945bb4cb3361b3069d",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/extensions/riscv_rtl/riscv_cpu.v",
+      "source_sha256": "7e02c6507f7bc7b7591b9148030be7e30ca09003458ec724e382aca7136b9744",
+      "generated_sha256": "812d2777ddae9b34c0fc75ecacbc146035c6dcac9f9db42ea104934843ca0fcc",
+      "internal_reset_event_changes": 22
+    },
+    {
+      "path": "src/rtl/common_cells/ram/axi_ram_rd_if.v",
+      "source_sha256": "a7e81cb85d1c922b29c01ac9c3570f8cebc16e676fd0f9df3cbb37443a394a3d",
+      "generated_sha256": "a7e81cb85d1c922b29c01ac9c3570f8cebc16e676fd0f9df3cbb37443a394a3d",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/ram/axi_ram_wr_if.v",
+      "source_sha256": "cec0682f902f11d61c852812426ffa61417d281b82df10625cbfafd621209743",
+      "generated_sha256": "cec0682f902f11d61c852812426ffa61417d281b82df10625cbfafd621209743",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/ram/axi_ram_wr_rd_if.v",
+      "source_sha256": "36997f5e6de6accab4211704b25c97a5a53319004d2046fe93b1b7d44edb68a2",
+      "generated_sha256": "36997f5e6de6accab4211704b25c97a5a53319004d2046fe93b1b7d44edb68a2",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/common_cells/ram/axi_dp_ram.v",
+      "source_sha256": "d492dc111c1455b47f7545dcfd65b9cc7dfeb111744db82e1ba3ed4e2dda59fa",
+      "generated_sha256": "d492dc111c1455b47f7545dcfd65b9cc7dfeb111744db82e1ba3ed4e2dda59fa",
+      "internal_reset_event_changes": 0
+    },
+    {
+      "path": "src/rtl/tiny_npu/top_tiny_npu.vh",
+      "source_sha256": "2e31db9dddb867de1cf7abdbc649e151de3605bf6c827bbbd1a7015974e17b2d",
+      "generated_sha256": "2e31db9dddb867de1cf7abdbc649e151de3605bf6c827bbbd1a7015974e17b2d",
+      "internal_reset_event_changes": 0
+    }
+  ],
+  "reset_event_changes": 132,
+  "vendor_libraries_edited": false
+}

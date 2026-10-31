@@ -1,0 +1,4103 @@
+{
+  "scope": "REAL_BOARD_LIVE_INPUT_INTEGRATION",
+  "results": [
+    {
+      "task": "mnist",
+      "seq": 2,
+      "input_sha256": "676642f7d6e22b66a99ef3c513ae5253e4e4abea335203c0b837550e11b5ee06",
+      "input_crc32": "4785bd86",
+      "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+      "clock_hz": 50000000,
+      "cpu_ms": 22.99226,
+      "cpu_cycles": 1149613,
+      "modes": {
+        "first": {
+          "cycles": 261972,
+          "ms": 5.23944,
+          "speedup": 4.388304857007619
+        },
+        "cold": {
+          "cycles": 117160,
+          "ms": 2.3432,
+          "speedup": 9.812333560942301
+        },
+        "hot": {
+          "cycles": 99735,
+          "ms": 1.9947,
+          "speedup": 11.526675690580037
+        }
+      },
+      "scores": [
+        0.94140625,
+        0.00390625,
+        0.0,
+        0.0,
+        0.00390625,
+        0.00390625,
+        0.01171875,
+        0.00390625,
+        0.046875,
+        0.00390625
+      ],
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "prediction": "0",
+      "confidence": 0.94140625,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 1149613,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 1149613,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 1149613,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 1149613,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 1149613,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 1149613,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 261972,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 4,
+          "weight_hits": 0,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 117160,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 117160,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 117160,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 117160,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 117160,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 99735,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 99735,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 99735,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 99735,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 99735,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1064370176,
+            998244352,
+            0,
+            0,
+            998244352,
+            998244352,
+            1010827264,
+            998244352,
+            1027604480,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          432575799,
+          432575799
+        ],
+        [
+          1,
+          2381209550,
+          2381209550
+        ],
+        [
+          2,
+          3918746668,
+          3918746668
+        ],
+        [
+          3,
+          1513860253,
+          1513860253
+        ],
+        [
+          4,
+          4018535475,
+          4018535475
+        ],
+        [
+          5,
+          1824269054,
+          1824269054
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "abe8cf8146bf424cad3e6c82cb3504f3",
+      "host_elapsed_ms": 688.0000000819564,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150826_674157_mnist",
+      "input_source": {
+        "kind": "image",
+        "name": "synthetic hand stroke 0",
+        "task": "mnist",
+        "input_sha256": "676642f7d6e22b66a99ef3c513ae5253e4e4abea335203c0b837550e11b5ee06",
+        "created_at": "2026-10-30T15:08:26.655284"
+      }
+    },
+    {
+      "task": "mnist",
+      "seq": 3,
+      "input_sha256": "57b4174840abbb9e4b44f312d72ed6a837983da7ea010f67fc1aed4fbd8b15d6",
+      "input_crc32": "c17507b9",
+      "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+      "clock_hz": 50000000,
+      "cpu_ms": 22.95264,
+      "cpu_cycles": 1147632,
+      "modes": {
+        "first": {
+          "cycles": 261938,
+          "ms": 5.23876,
+          "speedup": 4.381311608090464
+        },
+        "cold": {
+          "cycles": 117126,
+          "ms": 2.34252,
+          "speedup": 9.79826853132524
+        },
+        "hot": {
+          "cycles": 99701,
+          "ms": 1.99402,
+          "speedup": 11.510737103940784
+        }
+      },
+      "scores": [
+        0.0,
+        0.98046875,
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.015625,
+        0.00390625,
+        0.00390625
+      ],
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "prediction": "1",
+      "confidence": 0.98046875,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 1147632,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 1147632,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 1147632,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 1147632,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 1147632,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 1147632,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 261938,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 4,
+          "weight_hits": 0,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 117126,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 117126,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 117126,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 117126,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 117126,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 99701,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 99701,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 99701,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 99701,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 99701,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            0,
+            1065025536,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1015021568,
+            998244352,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          3325963712,
+          3325963712
+        ],
+        [
+          1,
+          263817598,
+          263817598
+        ],
+        [
+          2,
+          3121978473,
+          3121978473
+        ],
+        [
+          3,
+          1495919607,
+          1495919607
+        ],
+        [
+          4,
+          1116530664,
+          1116530664
+        ],
+        [
+          5,
+          1384585007,
+          1384585007
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "d377d074d49443d1aed6137d4002f2f3",
+      "host_elapsed_ms": 687.0000001508743,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150827_474287_mnist",
+      "input_source": {
+        "kind": "image",
+        "name": "synthetic hand stroke 1",
+        "task": "mnist",
+        "input_sha256": "57b4174840abbb9e4b44f312d72ed6a837983da7ea010f67fc1aed4fbd8b15d6",
+        "created_at": "2026-10-30T15:08:27.450447"
+      }
+    },
+    {
+      "task": "mnist",
+      "seq": 4,
+      "input_sha256": "3b4b4191863ad4d763fc6d7bfd35bc86b1d259790aa39276c7087a88dd29947a",
+      "input_crc32": "ca57fb70",
+      "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+      "clock_hz": 50000000,
+      "cpu_ms": 22.99956,
+      "cpu_cycles": 1149978,
+      "modes": {
+        "first": {
+          "cycles": 263193,
+          "ms": 5.26386,
+          "speedup": 4.369333530906977
+        },
+        "cold": {
+          "cycles": 118381,
+          "ms": 2.36762,
+          "speedup": 9.714210895329487
+        },
+        "hot": {
+          "cycles": 100956,
+          "ms": 2.01912,
+          "speedup": 11.3908831570189
+        }
+      },
+      "scores": [
+        0.10546875,
+        0.00390625,
+        0.00390625,
+        0.0,
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.890625,
+        0.00390625
+      ],
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "prediction": "8",
+      "confidence": 0.890625,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 1149978,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 1149978,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 1149978,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 1149978,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 1149978,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 1149978,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 263193,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 4,
+          "weight_hits": 0,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 118381,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 118381,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 118381,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 118381,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 118381,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 100956,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 100956,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 100956,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 100956,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 100956,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            1037565952,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            1063518208,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          1505651955,
+          1505651955
+        ],
+        [
+          1,
+          1716645414,
+          1716645414
+        ],
+        [
+          2,
+          3955237588,
+          3955237588
+        ],
+        [
+          3,
+          2580674605,
+          2580674605
+        ],
+        [
+          4,
+          3973372572,
+          3973372572
+        ],
+        [
+          5,
+          3482496299,
+          3482496299
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "be4faa804bbe439485de9ca3489e95b5",
+      "host_elapsed_ms": 672.0000000204891,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150828_290807_mnist",
+      "input_source": {
+        "kind": "image",
+        "name": "synthetic hand stroke 8",
+        "task": "mnist",
+        "input_sha256": "3b4b4191863ad4d763fc6d7bfd35bc86b1d259790aa39276c7087a88dd29947a",
+        "created_at": "2026-10-30T15:08:28.275907"
+      }
+    },
+    {
+      "task": "kws",
+      "seq": 5,
+      "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+      "input_crc32": "a4b31c61",
+      "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+      "clock_hz": 50000000,
+      "cpu_ms": 275.87612,
+      "cpu_cycles": 13793806,
+      "modes": {
+        "first": {
+          "cycles": 1932126,
+          "ms": 38.64252,
+          "speedup": 7.1391855396594215
+        },
+        "cold": {
+          "cycles": 1589530,
+          "ms": 31.7906,
+          "speedup": 8.677914855334596
+        },
+        "hot": {
+          "cycles": 1403264,
+          "ms": 28.06528,
+          "speedup": 9.829801092310499
+        }
+      },
+      "scores": [
+        0.98828125,
+        0.0078125,
+        0.00390625
+      ],
+      "labels": [
+        "Hi xiaowen",
+        "Nihao wenwen",
+        "Background"
+      ],
+      "prediction": "Hi xiaowen",
+      "confidence": 0.98828125,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 1932126,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          1975615549,
+          1975615549
+        ],
+        [
+          1,
+          3324460526,
+          3324460526
+        ],
+        [
+          2,
+          2236323765,
+          2236323765
+        ],
+        [
+          3,
+          4031693917,
+          4031693917
+        ],
+        [
+          4,
+          1305229704,
+          1305229704
+        ],
+        [
+          5,
+          919061832,
+          919061832
+        ],
+        [
+          6,
+          1820732690,
+          1820732690
+        ],
+        [
+          7,
+          4188171371,
+          4188171371
+        ],
+        [
+          8,
+          3436428933,
+          3436428933
+        ],
+        [
+          9,
+          2893576165,
+          2893576165
+        ],
+        [
+          10,
+          1193865764,
+          1193865764
+        ],
+        [
+          11,
+          645353468,
+          645353468
+        ],
+        [
+          12,
+          3837945933,
+          3837945933
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "ae48372c28554367b029ecd3d8e1f249",
+      "host_elapsed_ms": 3000.0,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150844_350025_kws",
+      "input_source": {
+        "kind": "example",
+        "name": "固定样例（复核基准）",
+        "task": "kws",
+        "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+        "created_at": "2026-10-30T15:08:44.348036"
+      }
+    },
+    {
+      "task": "kws",
+      "seq": 6,
+      "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+      "input_crc32": "a4b31c61",
+      "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+      "clock_hz": 50000000,
+      "cpu_ms": 275.87612,
+      "cpu_cycles": 13793806,
+      "modes": {
+        "first": {
+          "cycles": 1932126,
+          "ms": 38.64252,
+          "speedup": 7.1391855396594215
+        },
+        "cold": {
+          "cycles": 1589530,
+          "ms": 31.7906,
+          "speedup": 8.677914855334596
+        },
+        "hot": {
+          "cycles": 1403264,
+          "ms": 28.06528,
+          "speedup": 9.829801092310499
+        }
+      },
+      "scores": [
+        0.98828125,
+        0.0078125,
+        0.00390625
+      ],
+      "labels": [
+        "Hi xiaowen",
+        "Nihao wenwen",
+        "Background"
+      ],
+      "prediction": "Hi xiaowen",
+      "confidence": 0.98828125,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 13793806,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 1932126,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 1589530,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 1403264,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1065156608,
+            1006632960,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          1975615549,
+          1975615549
+        ],
+        [
+          1,
+          3324460526,
+          3324460526
+        ],
+        [
+          2,
+          2236323765,
+          2236323765
+        ],
+        [
+          3,
+          4031693917,
+          4031693917
+        ],
+        [
+          4,
+          1305229704,
+          1305229704
+        ],
+        [
+          5,
+          919061832,
+          919061832
+        ],
+        [
+          6,
+          1820732690,
+          1820732690
+        ],
+        [
+          7,
+          4188171371,
+          4188171371
+        ],
+        [
+          8,
+          3436428933,
+          3436428933
+        ],
+        [
+          9,
+          2893576165,
+          2893576165
+        ],
+        [
+          10,
+          1193865764,
+          1193865764
+        ],
+        [
+          11,
+          645353468,
+          645353468
+        ],
+        [
+          12,
+          3837945933,
+          3837945933
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "8498595e0d17400396713954b98b81a6",
+      "host_elapsed_ms": 2984.0000001713634,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150847_421907_kws",
+      "input_source": {
+        "kind": "audio",
+        "name": "0a.wav",
+        "sample_rate": 16000,
+        "samples": 31931,
+        "duration": 1.9956875,
+        "task": "kws",
+        "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+        "created_at": "2026-10-30T15:08:47.419920"
+      }
+    },
+    {
+      "task": "kws",
+      "seq": 7,
+      "input_sha256": "c69c67f5c97e24bfc3f7b3ff824fa80c10eeb2a6f1bb9f9179fa954463c8226b",
+      "input_crc32": "fbab400c",
+      "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+      "clock_hz": 50000000,
+      "cpu_ms": 275.88582,
+      "cpu_cycles": 13794291,
+      "modes": {
+        "first": {
+          "cycles": 1933059,
+          "ms": 38.66118,
+          "speedup": 7.1359906759183245
+        },
+        "cold": {
+          "cycles": 1590463,
+          "ms": 31.80926,
+          "speedup": 8.673129145412373
+        },
+        "hot": {
+          "cycles": 1404197,
+          "ms": 28.08394,
+          "speedup": 9.823615204989043
+        }
+      },
+      "scores": [
+        0.015625,
+        0.98046875,
+        0.00390625
+      ],
+      "labels": [
+        "Hi xiaowen",
+        "Nihao wenwen",
+        "Background"
+      ],
+      "prediction": "Nihao wenwen",
+      "confidence": 0.98046875,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 13794291,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 13794291,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 13794291,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 13794291,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 13794291,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 13794291,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 1933059,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 1590463,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 1590463,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 1590463,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 1590463,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 1590463,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 1404197,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 1404197,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 1404197,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 1404197,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 1404197,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1015021568,
+            1065025536,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          2374154937,
+          2374154937
+        ],
+        [
+          1,
+          2323185732,
+          2323185732
+        ],
+        [
+          2,
+          42234634,
+          42234634
+        ],
+        [
+          3,
+          385972307,
+          385972307
+        ],
+        [
+          4,
+          1318640770,
+          1318640770
+        ],
+        [
+          5,
+          359789256,
+          359789256
+        ],
+        [
+          6,
+          3989386989,
+          3989386989
+        ],
+        [
+          7,
+          2583773234,
+          2583773234
+        ],
+        [
+          8,
+          294025492,
+          294025492
+        ],
+        [
+          9,
+          2869351807,
+          2869351807
+        ],
+        [
+          10,
+          892785532,
+          892785532
+        ],
+        [
+          11,
+          4272622536,
+          4272622536
+        ],
+        [
+          12,
+          4199624059,
+          4199624059
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "3d71bc5394a54ba8bafa51fc182b652c",
+      "host_elapsed_ms": 3000.0,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150850_460014_kws",
+      "input_source": {
+        "kind": "audio",
+        "name": "1a.wav",
+        "sample_rate": 16000,
+        "samples": 31931,
+        "duration": 1.9956875,
+        "task": "kws",
+        "input_sha256": "c69c67f5c97e24bfc3f7b3ff824fa80c10eeb2a6f1bb9f9179fa954463c8226b",
+        "created_at": "2026-10-30T15:08:50.459021"
+      }
+    },
+    {
+      "task": "kws",
+      "seq": 8,
+      "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+      "input_crc32": "f371164a",
+      "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+      "clock_hz": 50000000,
+      "cpu_ms": 275.8805,
+      "cpu_cycles": 13794025,
+      "modes": {
+        "first": {
+          "cycles": 1935522,
+          "ms": 38.71044,
+          "speedup": 7.126772519248037
+        },
+        "cold": {
+          "cycles": 1592926,
+          "ms": 31.85852,
+          "speedup": 8.65955166781131
+        },
+        "hot": {
+          "cycles": 1406660,
+          "ms": 28.1332,
+          "speedup": 9.80622538495443
+        }
+      },
+      "scores": [
+        0.33984375,
+        0.36328125,
+        0.30078125
+      ],
+      "labels": [
+        "Hi xiaowen",
+        "Nihao wenwen",
+        "Background"
+      ],
+      "prediction": "Nihao wenwen",
+      "confidence": 0.36328125,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 1935522,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          2812357061,
+          2812357061
+        ],
+        [
+          1,
+          4211140669,
+          4211140669
+        ],
+        [
+          2,
+          344286263,
+          344286263
+        ],
+        [
+          3,
+          276190676,
+          276190676
+        ],
+        [
+          4,
+          57290815,
+          57290815
+        ],
+        [
+          5,
+          471102414,
+          471102414
+        ],
+        [
+          6,
+          16401709,
+          16401709
+        ],
+        [
+          7,
+          475953122,
+          475953122
+        ],
+        [
+          8,
+          700407512,
+          700407512
+        ],
+        [
+          9,
+          1632813295,
+          1632813295
+        ],
+        [
+          10,
+          2301595021,
+          2301595021
+        ],
+        [
+          11,
+          3493766040,
+          3493766040
+        ],
+        [
+          12,
+          2028197140,
+          2028197140
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "b176c772cf2743089026268211b9c241",
+      "host_elapsed_ms": 3000.0,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150853_598949_kws",
+      "input_source": {
+        "kind": "audio",
+        "name": "silence 16000",
+        "sample_rate": 16000,
+        "samples": 32000,
+        "duration": 2.0,
+        "task": "kws",
+        "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+        "created_at": "2026-10-30T15:08:53.596463"
+      }
+    },
+    {
+      "task": "kws",
+      "seq": 9,
+      "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+      "input_crc32": "f371164a",
+      "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+      "clock_hz": 50000000,
+      "cpu_ms": 275.8805,
+      "cpu_cycles": 13794025,
+      "modes": {
+        "first": {
+          "cycles": 1935522,
+          "ms": 38.71044,
+          "speedup": 7.126772519248037
+        },
+        "cold": {
+          "cycles": 1592926,
+          "ms": 31.85852,
+          "speedup": 8.65955166781131
+        },
+        "hot": {
+          "cycles": 1406660,
+          "ms": 28.1332,
+          "speedup": 9.80622538495443
+        }
+      },
+      "scores": [
+        0.33984375,
+        0.36328125,
+        0.30078125
+      ],
+      "labels": [
+        "Hi xiaowen",
+        "Nihao wenwen",
+        "Background"
+      ],
+      "prediction": "Nihao wenwen",
+      "confidence": 0.36328125,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 13794025,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 1935522,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 1592926,
+          "hits": 0,
+          "misses": 11,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 1406660,
+          "hits": 11,
+          "misses": 0,
+          "submissions": 11,
+          "windows": 4,
+          "quants": 8,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            1051590656,
+            1052377088,
+            1050279936
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          2812357061,
+          2812357061
+        ],
+        [
+          1,
+          4211140669,
+          4211140669
+        ],
+        [
+          2,
+          344286263,
+          344286263
+        ],
+        [
+          3,
+          276190676,
+          276190676
+        ],
+        [
+          4,
+          57290815,
+          57290815
+        ],
+        [
+          5,
+          471102414,
+          471102414
+        ],
+        [
+          6,
+          16401709,
+          16401709
+        ],
+        [
+          7,
+          475953122,
+          475953122
+        ],
+        [
+          8,
+          700407512,
+          700407512
+        ],
+        [
+          9,
+          1632813295,
+          1632813295
+        ],
+        [
+          10,
+          2301595021,
+          2301595021
+        ],
+        [
+          11,
+          3493766040,
+          3493766040
+        ],
+        [
+          12,
+          2028197140,
+          2028197140
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "1d534e14dfa24e8788496d6290c5611a",
+      "host_elapsed_ms": 2983.9999999385327,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150856_637058_kws",
+      "input_source": {
+        "kind": "audio",
+        "name": "silence 48000",
+        "sample_rate": 48000,
+        "samples": 96000,
+        "duration": 2.0,
+        "task": "kws",
+        "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+        "created_at": "2026-10-30T15:08:56.635071"
+      }
+    },
+    {
+      "task": "mnist",
+      "seq": 10,
+      "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+      "input_crc32": "7eb3cd06",
+      "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+      "clock_hz": 50000000,
+      "cpu_ms": 22.96778,
+      "cpu_cycles": 1148389,
+      "modes": {
+        "first": {
+          "cycles": 259754,
+          "ms": 5.19508,
+          "speedup": 4.421063775726264
+        },
+        "cold": {
+          "cycles": 114942,
+          "ms": 2.29884,
+          "speedup": 9.99103025873919
+        },
+        "hot": {
+          "cycles": 97517,
+          "ms": 1.95034,
+          "speedup": 11.776295415158383
+        }
+      },
+      "scores": [
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.00390625,
+        0.0,
+        0.00390625,
+        0.0,
+        0.99609375,
+        0.0,
+        0.00390625
+      ],
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "prediction": "7",
+      "confidence": 0.99609375,
+      "rows": [
+        {
+          "mode": 0,
+          "rep": 0,
+          "cycles": 1148389,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 1,
+          "cycles": 1148389,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 2,
+          "cycles": 1148389,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 3,
+          "cycles": 1148389,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 4,
+          "cycles": 1148389,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 0,
+          "rep": 5,
+          "cycles": 1148389,
+          "hits": 0,
+          "misses": 0,
+          "submissions": 0,
+          "windows": 0,
+          "quants": 0,
+          "weight_loads": 0,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 1,
+          "rep": 0,
+          "cycles": 259754,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 4,
+          "weight_hits": 0,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 0,
+          "cycles": 114942,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 1,
+          "cycles": 114942,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 2,
+          "cycles": 114942,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 3,
+          "cycles": 114942,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 2,
+          "rep": 4,
+          "cycles": 114942,
+          "hits": 0,
+          "misses": 4,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 0,
+          "cycles": 97517,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 1,
+          "cycles": 97517,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 2,
+          "cycles": 97517,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 3,
+          "cycles": 97517,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        },
+        {
+          "mode": 3,
+          "rep": 4,
+          "cycles": 97517,
+          "hits": 4,
+          "misses": 0,
+          "submissions": 4,
+          "windows": 3,
+          "quants": 3,
+          "weight_loads": 0,
+          "weight_hits": 4,
+          "score_bits": [
+            998244352,
+            998244352,
+            998244352,
+            998244352,
+            0,
+            998244352,
+            0,
+            1065287680,
+            0,
+            998244352
+          ]
+        }
+      ],
+      "layers": [
+        [
+          0,
+          3652105496,
+          3652105496
+        ],
+        [
+          1,
+          843508372,
+          843508372
+        ],
+        [
+          2,
+          269246491,
+          269246491
+        ],
+        [
+          3,
+          1719426612,
+          1719426612
+        ],
+        [
+          4,
+          2512441700,
+          2512441700
+        ],
+        [
+          5,
+          3559069748,
+          3559069748
+        ]
+      ],
+      "verified": true,
+      "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+      "token": "a927ecb9be9942138a69395b55d1864b",
+      "host_elapsed_ms": 686.9999999180436,
+      "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150919_866646_mnist",
+      "input_source": {
+        "kind": "example",
+        "name": "固定样例（复核基准）",
+        "task": "mnist",
+        "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+        "created_at": "2026-10-30T15:09:19.865160"
+      }
+    }
+  ],
+  "audio_checks": [
+    {
+      "file": "D:\\final_prj\\数据集\\Dataset\\KWS\\0a.wav",
+      "feature_sha": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+      "fixed_input_match": true
+    },
+    {
+      "file": "D:\\final_prj\\数据集\\Dataset\\KWS\\1a.wav",
+      "feature_sha": "c69c67f5c97e24bfc3f7b3ff824fa80c10eeb2a6f1bb9f9179fa954463c8226b",
+      "fixed_input_match": false
+    }
+  ],
+  "damaged_records_rejected": 6
+}

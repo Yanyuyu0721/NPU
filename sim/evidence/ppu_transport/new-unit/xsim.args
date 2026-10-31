@@ -1,0 +1,6 @@
+--tclbatch "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_new_unit_root_v1/run.tcl"
+--onerror quit
+--onfinish quit
+--testplusarg test=0
+--testplusarg max_cycles=20000
+--log xsim.log

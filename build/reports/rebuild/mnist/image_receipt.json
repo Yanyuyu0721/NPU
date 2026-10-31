@@ -1,0 +1,28 @@
+{
+  "scope": "SAME_ROUTED_HARDWARE_ITCM_INIT_UPDATE",
+  "source_checkpoint": "D:\\vexriscv_tinymaix_final_20261030\\build\\out\\mnist\\tm_perf_v2\\image_final\\routed_50mhz.dcp",
+  "source_checkpoint_sha256": "857e75c880ecaa07d668f99e7344a9f8ab5753b80626525c4e4838766147767b",
+  "old_words_verified": 24576,
+  "changed_init_properties": 2688,
+  "firmware_itcm_sha256": "241ebcf16c80acbe56fef0fa37b2d7b3c7ccee18201c9852244238d091b4ba34",
+  "timing_50mhz_met": true,
+  "sta": {
+    "50": {
+      "setup_ns": 1.914,
+      "hold_ns": 0.018
+    },
+    "100": {
+      "setup_ns": -8.086,
+      "hold_ns": 0.018
+    },
+    "150": {
+      "setup_ns": -11.419,
+      "hold_ns": 0.018
+    }
+  },
+  "pid": 72576,
+  "new_words_verified": 24576,
+  "verdict": "ITCM_UPDATED_NOT_BOARD_TESTED",
+  "bit_sha256": "7009f4f6b5c018a6d3949fb6d066eb658dff2c9e7ca40b41fbe1f18250c0bc86",
+  "bit_file": "D:\\tinymaix_validation_20261030\\rebuild_mnist\\image\\board_top.bit"
+}

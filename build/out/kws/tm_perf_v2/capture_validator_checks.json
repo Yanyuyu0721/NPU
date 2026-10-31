@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "valid_capture": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088\\program\\uart.txt",
+  "rejected_cases": [
+    {
+      "name": "legacy_protocol",
+      "rejected": true
+    },
+    {
+      "name": "wrong_model",
+      "rejected": true
+    },
+    {
+      "name": "wrong_input",
+      "rejected": true
+    },
+    {
+      "name": "wrong_clock",
+      "rejected": true
+    },
+    {
+      "name": "wrong_weight_state",
+      "rejected": true
+    },
+    {
+      "name": "failed_firmware",
+      "rejected": true
+    },
+    {
+      "name": "fake_demo_ratio",
+      "rejected": true
+    },
+    {
+      "name": "missing_copy_checks",
+      "rejected": true
+    },
+    {
+      "name": "missing_math_checks",
+      "rejected": true
+    },
+    {
+      "name": "missing_ppu_counts",
+      "rejected": true
+    },
+    {
+      "name": "ppu_not_executed",
+      "rejected": true
+    },
+    {
+      "name": "wrong_ppu_channels",
+      "rejected": true
+    },
+    {
+      "name": "both_backends_final_changed",
+      "rejected": true
+    },
+    {
+      "name": "both_backends_layer_changed",
+      "rejected": true
+    },
+    {
+      "name": "both_backends_probe_changed",
+      "rejected": true
+    },
+    {
+      "name": "timed_diagnostics",
+      "rejected": true
+    },
+    {
+      "name": "multiple_boots",
+      "rejected": true
+    },
+    {
+      "name": "zero_cycle_count",
+      "rejected": true
+    }
+  ]
+}

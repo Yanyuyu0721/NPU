@@ -1,0 +1,8 @@
+{
+  "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+  "table_bytes": 3364,
+  "gap_values": 256,
+  "fc_boundary_cases": 3825,
+  "fc_random_cases": 3072,
+  "scope": "MODEL_PARAMETER_FUNCTIONS_NO_INPUT_PREDICTION_CACHE"
+}

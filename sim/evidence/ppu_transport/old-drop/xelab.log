@@ -1,0 +1,21 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/vivado2026/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe work.tb_ppu_descriptor --snapshot ppu_transport --timescale 1ns/1ps --debug off --mt 2 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.gnrl_dfflr(DW=6)
+Compiling module work.gnrl_dfflr(DW=94)
+Compiling module work.syncfifo(DATA_WIDTH=94,ADDR_WIDT...
+Compiling module work.gnrl_dfflr(DW=5)
+Compiling module work.gnrl_dfflr(DW=45)
+Compiling module work.syncfifo(DATA_WIDTH=45)
+Compiling module work.round_robin_arbiter(N=4)
+Compiling module work.ppu_control_default
+Compiling module work.tb_ppu_descriptor
+Built simulation snapshot ppu_transport

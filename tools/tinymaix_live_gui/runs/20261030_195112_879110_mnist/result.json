@@ -1,0 +1,507 @@
+{
+  "task": "mnist",
+  "seq": 41,
+  "input_sha256": "a420c576d54d5344462ea153baea5d82c8dcd23690c7c2044e1a3a631e505c05",
+  "input_crc32": "27f6a3ba",
+  "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+  "clock_hz": 50000000,
+  "cpu_ms": 22.99308,
+  "cpu_cycles": 1149654,
+  "modes": {
+    "first": {
+      "cycles": 261704,
+      "ms": 5.23408,
+      "speedup": 4.392955399993887
+    },
+    "cold": {
+      "cycles": 116892,
+      "ms": 2.33784,
+      "speedup": 9.835181192896007
+    },
+    "hot": {
+      "cycles": 99467,
+      "ms": 1.98934,
+      "speedup": 11.558144912383002
+    }
+  },
+  "scores": [
+    0.00390625,
+    0.27734375,
+    0.00390625,
+    0.0,
+    0.72265625,
+    0.00390625,
+    0.00390625,
+    0.00390625,
+    0.00390625,
+    0.00390625
+  ],
+  "labels": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "prediction": "4",
+  "confidence": 0.72265625,
+  "rows": [
+    {
+      "mode": 0,
+      "rep": 0,
+      "cycles": 1149654,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 1,
+      "cycles": 1149654,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 2,
+      "cycles": 1149654,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 3,
+      "cycles": 1149654,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 4,
+      "cycles": 1149654,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 5,
+      "cycles": 1149654,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 1,
+      "rep": 0,
+      "cycles": 261704,
+      "hits": 0,
+      "misses": 4,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 4,
+      "weight_hits": 0,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 0,
+      "cycles": 116892,
+      "hits": 0,
+      "misses": 4,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 1,
+      "cycles": 116892,
+      "hits": 0,
+      "misses": 4,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 2,
+      "cycles": 116892,
+      "hits": 0,
+      "misses": 4,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 3,
+      "cycles": 116892,
+      "hits": 0,
+      "misses": 4,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 4,
+      "cycles": 116892,
+      "hits": 0,
+      "misses": 4,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 0,
+      "cycles": 99467,
+      "hits": 4,
+      "misses": 0,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 1,
+      "cycles": 99467,
+      "hits": 4,
+      "misses": 0,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 2,
+      "cycles": 99467,
+      "hits": 4,
+      "misses": 0,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 3,
+      "cycles": 99467,
+      "hits": 4,
+      "misses": 0,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 4,
+      "cycles": 99467,
+      "hits": 4,
+      "misses": 0,
+      "submissions": 4,
+      "windows": 3,
+      "quants": 3,
+      "weight_loads": 0,
+      "weight_hits": 4,
+      "score_bits": [
+        998244352,
+        1049493504,
+        998244352,
+        0,
+        1060700160,
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        998244352
+      ]
+    }
+  ],
+  "layers": [
+    [
+      0,
+      4212633476,
+      4212633476
+    ],
+    [
+      1,
+      1279301060,
+      1279301060
+    ],
+    [
+      2,
+      4116541067,
+      4116541067
+    ],
+    [
+      3,
+      331281968,
+      331281968
+    ],
+    [
+      4,
+      212327837,
+      212327837
+    ],
+    [
+      5,
+      2988987962,
+      2988987962
+    ]
+  ],
+  "verified": true,
+  "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+  "token": "ec22e008568748c394be678e1b5a14dd",
+  "host_elapsed_ms": 688.0000000819564,
+  "run_dir": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_195112_879110_mnist",
+  "input_source": {
+    "kind": "image",
+    "name": "手写画板",
+    "task": "mnist",
+    "input_sha256": "a420c576d54d5344462ea153baea5d82c8dcd23690c7c2044e1a3a631e505c05",
+    "created_at": "2026-10-30T19:51:11.799888"
+  }
+}

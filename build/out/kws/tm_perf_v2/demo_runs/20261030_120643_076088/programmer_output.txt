@@ -1,0 +1,584 @@
+{
+  "passed": true,
+  "board_measurement": true,
+  "bit_sha256": "58af111d85c35cf1bb2b2fbb84af407dceeb6d12db7ad10f77c9cae69f588175",
+  "port": "COM3",
+  "started": "2026-10-30T12:06:43.304555+08:00",
+  "command": [
+    "D:\\AMDDesignTools\\2026.1\\Vivado\\bin\\vivado.bat",
+    "-mode",
+    "batch",
+    "-source",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\board\\program_2018_2.tcl",
+    "-log",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088\\program\\program.log",
+    "-journal",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088\\program\\program.jou",
+    "-tclargs",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\image_final\\board_top.bit",
+    "127.0.0.1:3122",
+    "",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088\\program\\capture_arm.txt",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088\\program\\capture_ack.txt"
+  ],
+  "validation": {
+    "passed": true,
+    "ppu_layers_per_inference": 8,
+    "ppu_channels_per_inference": 116,
+    "software_quant_channels_per_inference": 4,
+    "packed_copy_test_cases": 432,
+    "original_baseline_outputs_preserved": true,
+    "simulation": false,
+    "stress_inputs": [
+      [
+        "00000000",
+        " 3E6C0000 3E680000 3F0B0000",
+        " 3E6C0000 3E680000 3F0B0000",
+        "00000001"
+      ],
+      [
+        "00000001",
+        " 3DB80000 3D000000 3F620000",
+        " 3DB80000 3D000000 3F620000",
+        "00000001"
+      ],
+      [
+        "00000002",
+        " 3EF40000 3F000000 3D000000",
+        " 3EF40000 3F000000 3D000000",
+        "00000001"
+      ],
+      [
+        "00000003",
+        " 3EDC0000 3F0E0000 3CA00000",
+        " 3EDC0000 3F0E0000 3CA00000",
+        "00000001"
+      ],
+      [
+        "00000004",
+        " 3EAE0000 3EBA0000 3E9A0000",
+        " 3EAE0000 3EBA0000 3E9A0000",
+        "00000001"
+      ],
+      [
+        "00000005",
+        " 3EBC0000 3EB60000 3E920000",
+        " 3EBC0000 3EB60000 3E920000",
+        "00000001"
+      ]
+    ],
+    "records": [
+      {
+        "mode": 0,
+        "repeat": 0,
+        "cycles": 13793853,
+        "ms": 275.87706,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 1,
+        "cycles": 13793853,
+        "ms": 275.87706,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 2,
+        "cycles": 13793853,
+        "ms": 275.87706,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 3,
+        "cycles": 13793853,
+        "ms": 275.87706,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 4,
+        "cycles": 13793853,
+        "ms": 275.87706,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 5,
+        "cycles": 13793853,
+        "ms": 275.87706,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 1,
+        "repeat": 0,
+        "cycles": 1932175,
+        "ms": 38.6435,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 0,
+        "cycles": 1589579,
+        "ms": 31.79158,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 1,
+        "cycles": 1589579,
+        "ms": 31.79158,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 2,
+        "cycles": 1589579,
+        "ms": 31.79158,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 3,
+        "cycles": 1589579,
+        "ms": 31.79158,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 4,
+        "cycles": 1589579,
+        "ms": 31.79158,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 0,
+        "cycles": 1403313,
+        "ms": 28.06626,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 1,
+        "cycles": 1403313,
+        "ms": 28.06626,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 2,
+        "cycles": 1403313,
+        "ms": 28.06626,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 3,
+        "cycles": 1403313,
+        "ms": 28.06626,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 4,
+        "cycles": 1403313,
+        "ms": 28.06626,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "hardware_windows": 4,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      }
+    ],
+    "layer_count": 13,
+    "layer_hashes": [
+      [
+        "00000000",
+        "75C1803D",
+        "75C1803D"
+      ],
+      [
+        "00000001",
+        "C6273DEE",
+        "C6273DEE"
+      ],
+      [
+        "00000002",
+        "854B97B5",
+        "854B97B5"
+      ],
+      [
+        "00000003",
+        "F04EC45D",
+        "F04EC45D"
+      ],
+      [
+        "00000004",
+        "4DCC3988",
+        "4DCC3988"
+      ],
+      [
+        "00000005",
+        "36C7C548",
+        "36C7C548"
+      ],
+      [
+        "00000006",
+        "6C862D12",
+        "6C862D12"
+      ],
+      [
+        "00000007",
+        "F9A26C6B",
+        "F9A26C6B"
+      ],
+      [
+        "00000008",
+        "CCD3BE85",
+        "CCD3BE85"
+      ],
+      [
+        "00000009",
+        "AC7877E5",
+        "AC7877E5"
+      ],
+      [
+        "0000000A",
+        "4728F224",
+        "4728F224"
+      ],
+      [
+        "0000000B",
+        "26774FFC",
+        "26774FFC"
+      ],
+      [
+        "0000000C",
+        "E4C2684D",
+        "E4C2684D"
+      ]
+    ],
+    "layer_profiles": [
+      {
+        "backend": 0,
+        "layer": 0,
+        "cycles": 1544000,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 1,
+        "cycles": 4050395,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 2,
+        "cycles": 1747270,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 3,
+        "cycles": 2209805,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 4,
+        "cycles": 1405297,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 5,
+        "cycles": 658419,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 6,
+        "cycles": 1558184,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 7,
+        "cycles": 436573,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 8,
+        "cycles": 64721,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 9,
+        "cycles": 55800,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 10,
+        "cycles": 25905,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 11,
+        "cycles": 10442,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 12,
+        "cycles": 24781,
+        "external_cycles": 0
+      },
+      {
+        "backend": 1,
+        "layer": 0,
+        "cycles": 78680,
+        "external_cycles": 46355
+      },
+      {
+        "backend": 1,
+        "layer": 1,
+        "cycles": 462828,
+        "external_cycles": 424483
+      },
+      {
+        "backend": 1,
+        "layer": 2,
+        "cycles": 67908,
+        "external_cycles": 35832
+      },
+      {
+        "backend": 1,
+        "layer": 3,
+        "cycles": 264648,
+        "external_cycles": 241742
+      },
+      {
+        "backend": 1,
+        "layer": 4,
+        "cycles": 65203,
+        "external_cycles": 42094
+      },
+      {
+        "backend": 1,
+        "layer": 5,
+        "cycles": 121119,
+        "external_cycles": 105593
+      },
+      {
+        "backend": 1,
+        "layer": 6,
+        "cycles": 94803,
+        "external_cycles": 78362
+      },
+      {
+        "backend": 1,
+        "layer": 7,
+        "cycles": 118830,
+        "external_cycles": 104799
+      },
+      {
+        "backend": 1,
+        "layer": 8,
+        "cycles": 13803,
+        "external_cycles": 0
+      },
+      {
+        "backend": 1,
+        "layer": 9,
+        "cycles": 39002,
+        "external_cycles": 24963
+      },
+      {
+        "backend": 1,
+        "layer": 10,
+        "cycles": 26976,
+        "external_cycles": 16917
+      },
+      {
+        "backend": 1,
+        "layer": 11,
+        "cycles": 20050,
+        "external_cycles": 12921
+      },
+      {
+        "backend": 1,
+        "layer": 12,
+        "cycles": 27194,
+        "external_cycles": 0
+      }
+    ],
+    "expected_submissions": 11,
+    "score_bits": [
+      1065156608,
+      1006632960,
+      998244352
+    ],
+    "probabilities": [
+      0.98828125,
+      0.0078125,
+      0.00390625
+    ],
+    "median_cycles": {
+      "0": 13793853,
+      "1": 1932175,
+      "2": 1589579,
+      "3": 1403313
+    },
+    "median_ms": {
+      "0": 275.87706,
+      "1": 38.6435,
+      "2": 31.79158,
+      "3": 28.06626
+    },
+    "speedup": {
+      "1": 7.13902881467776,
+      "2": 8.67767691948623,
+      "3": 9.829491353675195
+    }
+  },
+  "transcript_sha256": "e74ddc520c9324f331d9f362a282707481b3692f13c88a03705da670f1dffc3f",
+  "finished": "2026-10-30T12:07:03.860092+08:00"
+}

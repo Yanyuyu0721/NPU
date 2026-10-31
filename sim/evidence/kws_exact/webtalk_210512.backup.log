@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 30 11:54:39 2026
+# Process ID: 210512
+# Current directory: D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact
+# Command line: wbtcv.exe -mode batch -source D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact/xsim.dir/exact_sim/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact/webtalk.log
+# Journal file: D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact\webtalk.jou
+#-----------------------------------------------------------
+source D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact/xsim.dir/exact_sim/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 30 11:54:40 2026...

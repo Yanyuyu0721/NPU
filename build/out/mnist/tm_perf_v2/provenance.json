@@ -1,0 +1,236 @@
+{
+  "framework": "TinyMaix tm_load/tm_preprocess/tm_run",
+  "task": "MNIST_CNN",
+  "model_source": "D:\\final_prj\\vitis\\mnist\\src\\include\\mnist_valid_q.h",
+  "model_header_sha256": "d673c632399e863722148c3283a8e1490ad5299229fcae97fd1a70346e0067aa",
+  "model_binary_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+  "model_bytes": 2408,
+  "model_buffer_bytes": 1464,
+  "input_source": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\board\\reference\\mnist\\input.bin",
+  "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+  "input_shape": [
+    28,
+    28,
+    1
+  ],
+  "input_layout_conversion": "none; same uint8 image as old MNIST fixture",
+  "expected_label": 7,
+  "layers": [
+    {
+      "index": 0,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 152,
+      "input": [
+        3,
+        28,
+        28,
+        1
+      ],
+      "output": [
+        3,
+        13,
+        13,
+        4
+      ],
+      "input_offset": 0,
+      "output_offset": 784,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "activation": 1,
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "index": 1,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 432,
+      "input": [
+        3,
+        13,
+        13,
+        4
+      ],
+      "output": [
+        3,
+        6,
+        6,
+        8
+      ],
+      "input_offset": 784,
+      "output_offset": 0,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "activation": 1,
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "index": 2,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 1360,
+      "input": [
+        3,
+        6,
+        6,
+        8
+      ],
+      "output": [
+        3,
+        2,
+        2,
+        16
+      ],
+      "input_offset": 0,
+      "output_offset": 1400,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "activation": 1,
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "index": 3,
+      "type": 1,
+      "is_output": 0,
+      "bytes": 48,
+      "input": [
+        3,
+        2,
+        2,
+        16
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        16
+      ],
+      "input_offset": 1400,
+      "output_offset": 0
+    },
+    {
+      "index": 4,
+      "type": 2,
+      "is_output": 0,
+      "bytes": 304,
+      "input": [
+        1,
+        1,
+        1,
+        16
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        10
+      ],
+      "input_offset": 0,
+      "output_offset": 1448
+    },
+    {
+      "index": 5,
+      "type": 3,
+      "is_output": 1,
+      "bytes": 48,
+      "input": [
+        1,
+        1,
+        1,
+        10
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        10
+      ],
+      "input_offset": 1448,
+      "output_offset": 0
+    }
+  ],
+  "macs": 21220,
+  "clock_hz": 50000000,
+  "quantization": "TM_NPU_CPU_COMPAT=1; exact TinyMaix quantization with immutable-model parameter cache",
+  "hardware_windows": 3,
+  "npu_submissions": 4,
+  "hardware_im2col": true,
+  "persistent_weight_residency": true,
+  "port_source": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_optimized",
+  "port_source_hashes": {
+    "arch_cpu.h": "5311fbe192148705e8cec0b6fed237858489628a1b0596608625a61b218e0272",
+    "dw_batch.inc": "b42fa4608b790e1fa9b8a62467f8193fc44aa09edb60e555c6a56a2e5986d7d3",
+    "fixture.h": "100086eb6e2c60b7415d8bbc1d4e7ecfb20af5df47fbc12780eab09bdcde5611",
+    "identity.h": "570eac3e6f5e749562bc99fa421ae7c3821430c70dd9993cb13683de00e58f68",
+    "libc.c": "1a57264a57bfeedd0efcf55bec80879c17e1c5a50bc02fcc51b87c486e86e595",
+    "linker.ld": "3d3dc79bc278e7f414614e180fce544b20ad9d5edfb18b23e8ed840b657edf66",
+    "main.c": "0f22fa4a2cf105ef1f88da4d90888d69d47a5878ed7b4295aefbc21e6e79ee98",
+    "main_sim.c": "65376822d73084145d9bfb5d58bb961e4c0fee206df7a61f8b8da2cc7aa4561c",
+    "model_blob.h": "4cb93030552120e5b046ef151ddd6e30aae57caf81400fad91d157517942ba58",
+    "model_registry.h": "d56ece86a0f4cfb7b15dc37d70d446cde0dc432f15bb57e0241bcedb84266e39",
+    "npu_api.h": "eaded9edaf175a4fb4f296d7f0c2cc71dd26958f04370288f77fc6fa5ad60fac",
+    "npu_board_impl.c": "be46460e2ae751bea2a3272f89d5b98f356e024d9077f08c2c9d9e87c5eb64df",
+    "npu_mac_adapter.inc": "c573f5c067acd0db9d9862e3c81093342d5c035dad4d2bd73111a679a15b7f40",
+    "npu_runtime.c": "7fea552c350df5e755b45b2e93a811aa6b539e0011ee961e59e2d504ad831640",
+    "npu_runtime.h": "e616d3fcb6252c00f38627ad52d607c04adb100dead5898ee5c36422952cfd68",
+    "npu_views.c": "adf04c8487eaa8ba30ff544174d27ec41b6a8e6d85990cec7ae79fae145815a3",
+    "npu_views.h": "a3fb25b7ffa2f56786fbb3bfb9e5aababa10523bb36572504860e500995ebc1e",
+    "npu_zynq.c": "3fc348f8c93586c6802b0738869804c6bee23eb35a898392e9333bd19cd343dc",
+    "quant_plan.inc": "777b6434f84bc1899f96821897c3e66ebf714c036c37657b25ab165653fa51cf",
+    "serial_identity.inc": "618d86f5ebcf45d349c5f10510a320cb3c1c5a8c83f64cc66b30b043def89983",
+    "start.s": "240f1f2e144ea2db353ad8477e16783544470d438453d8503abab5836fa148d7",
+    "tinymaix.h": "af04a08a1d78013625dd5671788ca54d37123c22c7c3a3ae24bbb49c4b542a5d",
+    "tinymaix_api.h": "ea13e4c39761580f2b71ffd8baa5632586861e79142586e56e642d1c6b7d5dfc",
+    "tinymaix_arch_cpu.h": "ef99b9930c63680429483cc84bd6e773918a754507df27cc6f367a3842427651",
+    "tinymaix_layers_impl.inc": "b85d47ca7fc406ee10549380407cf94a2f8f516d630cda07c87330be0dbb8dc1",
+    "tinymaix_model_impl.inc": "4cff153dbc71d933d7fd0ebd9f35647a4dc44f20752f2e6988255c924f333711",
+    "tinymaix_stat_impl.inc": "c46932bb2ae1e2ae263ea29597744e5eba115cfae365751b9fffcc56b162965b",
+    "tiny_npu.c": "df6e6f8918d80463ef564975789540d9fa64f820c39b7591ad660340ed21bb85",
+    "tiny_npu.h": "ee15b7dabafb6adb814cc6736e8c09e1d6e92b57eee0a33cf13be2927c4fc0d0",
+    "tm_layers.c": "cce6f1f58a2862a5dd5ad3326be7d1eb0f8fabdfffc08ba88ee31ffb9d02cab9",
+    "tm_model.c": "bb8aad9a7d1b0408be918b9410603aaa65a916f16be14f100f6765fd2eed94e8",
+    "tm_port.h": "d1d345f6ee8d15362fc54f35416f6d03d72607595f63ab7ef9e732c5b59b3f71",
+    "tm_stat.c": "3eb952bb706aa4d97c4705399035f15db115adf8f040df3f3d60a6c118c56e64",
+    "vex_hal.c": "89ce1a5c1e6aa14fd1aed35a3fac4eca101095b78198e01b7d72307def0545d0",
+    "vex_platform.h": "2f990e2897a4c85fc4757746ba02986d8ddf75a0fc07a2c4c89e5e150a4652a3",
+    "xil_io.h": "32d2c2ef4daa6f9dfafdd5f7d21a2cbcf48ec2cd06b66c17f7f2d74b41267231"
+  },
+  "kws_restore_bit": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_optimized\\image_demo1\\board_top.bit",
+  "kws_restore_sha256": "615ce60103ebe13914c6c6c0c9c51205b127a14c91a34c11203c0ca576320d3c",
+  "historical_paper_model_identity_confirmed": false,
+  "execution_version": "VEX_MNIST_PQ6",
+  "execution_config_cache": true
+}

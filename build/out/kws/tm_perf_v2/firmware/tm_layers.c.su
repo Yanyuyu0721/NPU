@@ -1,0 +1,16 @@
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\vex_platform.h:12:24:vex_cycles	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\ppu_copy.inc:4:13:kws_ppu_copy_planes	112	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\quant_plan.inc:13:16:npu_quant_prepare	64	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\quant_plan.inc:12:6:npu_quant_reset	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\ppu_copy_selftest.inc:3:5:kws_ppu_copy_selftest	1408	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:178:18:tml_conv2d_dwconv2d	176	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:326:10:tml_conv2d_npu	192	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:553:10:tml_dwconv2d_npu	512	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:727:18:tml_gap	48	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\kws_math_fast.inc:12:10:tml_gap_fast	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\kws_math_fast.inc:17:5:kws_math_selftest	80	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:752:18:tml_fc	80	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:779:18:tml_fc_npu	160	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:889:18:tml_softmax	96	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:920:18:tml_reshape	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\source\tm_layers.c:927:18:tml_add	80	static

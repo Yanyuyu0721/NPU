@@ -1,0 +1,29 @@
+VERIFIED_ALL_24576_OLD_WORDS_MATCH_ROUTED_BRAM_INIT
+{
+  "scope": "SAME_ROUTED_HARDWARE_ITCM_INIT_UPDATE",
+  "source_checkpoint": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\image_final\\routed_50mhz.dcp",
+  "source_checkpoint_sha256": "efe49d3d696ef709343148b8b98ea19d82595b72d93be7e416e24946654685c4",
+  "old_words_verified": 24576,
+  "changed_init_properties": 2350,
+  "firmware_itcm_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",
+  "timing_50mhz_met": true,
+  "sta": {
+    "50": {
+      "setup_ns": 1.914,
+      "hold_ns": 0.018
+    },
+    "100": {
+      "setup_ns": -8.086,
+      "hold_ns": 0.018
+    },
+    "150": {
+      "setup_ns": -11.419,
+      "hold_ns": 0.018
+    }
+  },
+  "pid": 267136,
+  "new_words_verified": 24576,
+  "verdict": "ITCM_UPDATED_NOT_BOARD_TESTED",
+  "bit_sha256": "2fa0afb97b4bf0b7426aa9c5b5dc3c56a6a17dfb5d826ff4578cb64eee768fa0",
+  "bit_file": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\image\\board_top.bit"
+}

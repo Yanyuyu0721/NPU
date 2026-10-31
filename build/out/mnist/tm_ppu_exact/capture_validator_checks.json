@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "valid_captures": 1,
+  "rejected_captures": 26,
+  "cases": [
+    {
+      "case": "old_protocol",
+      "rejected": true,
+      "reason": "fresh TinyMaix boot missing"
+    },
+    {
+      "case": "wrong_clock",
+      "rejected": true,
+      "reason": "clock/boundary"
+    },
+    {
+      "case": "wrong_model",
+      "rejected": true,
+      "reason": "model identity"
+    },
+    {
+      "case": "wrong_input",
+      "rejected": true,
+      "reason": "input identity"
+    },
+    {
+      "case": "missing_row",
+      "rejected": true,
+      "reason": "row count"
+    },
+    {
+      "case": "missing_layer",
+      "rejected": true,
+      "reason": "layer validation missing"
+    },
+    {
+      "case": "wrong_layer_hash",
+      "rejected": true,
+      "reason": "layer output hash mismatch"
+    },
+    {
+      "case": "missing_profile",
+      "rejected": true,
+      "reason": "layer profiling missing"
+    },
+    {
+      "case": "missing_stress",
+      "rejected": true,
+      "reason": "stress input validation missing"
+    },
+    {
+      "case": "stress_fail",
+      "rejected": true,
+      "reason": "stress input mismatch"
+    },
+    {
+      "case": "wrong_submissions",
+      "rejected": true,
+      "reason": "cache/submission counts"
+    },
+    {
+      "case": "wrong_windows",
+      "rejected": true,
+      "reason": "hardware window call count"
+    },
+    {
+      "case": "wrong_end",
+      "rejected": true,
+      "reason": "firmware did not pass"
+    },
+    {
+      "case": "missing_end",
+      "rejected": true,
+      "reason": "firmware did not pass"
+    },
+    {
+      "case": "duplicate_boot",
+      "rejected": true,
+      "reason": "multiple or mixed-protocol boots"
+    },
+    {
+      "case": "diagnostic_timing",
+      "rejected": true,
+      "reason": "diagnostic UART invalidates timing"
+    },
+    {
+      "case": "fabricated_speedup",
+      "rejected": true,
+      "reason": "printed demo value differs from measured cycles: SPEEDUP_HOT"
+    },
+    {
+      "case": "wrong_printed_time",
+      "rejected": true,
+      "reason": "printed demo value differs from measured cycles: CPU_MEDIAN_MS"
+    },
+    {
+      "case": "three_class_output",
+      "rejected": true,
+      "reason": "row count"
+    },
+    {
+      "case": "both_backends_wrong_scores",
+      "rejected": true,
+      "reason": "original CPU reference scores differ"
+    },
+    {
+      "case": "both_backends_wrong_layer",
+      "rejected": true,
+      "reason": "original CPU reference layer hashes differ"
+    },
+    {
+      "case": "both_backends_wrong_stress",
+      "rejected": true,
+      "reason": "original CPU stress scores differ"
+    },
+    {
+      "case": "missing_ppu_calls",
+      "rejected": true,
+      "reason": "exact PPU layer call count"
+    },
+    {
+      "case": "ppu_disabled",
+      "rejected": true,
+      "reason": "clock/boundary"
+    },
+    {
+      "case": "math_path_disabled",
+      "rejected": true,
+      "reason": "clock/boundary"
+    },
+    {
+      "case": "missing_math_selftest",
+      "rejected": true,
+      "reason": "math domain validation missing"
+    }
+  ]
+}

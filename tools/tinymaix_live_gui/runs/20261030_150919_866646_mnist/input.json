@@ -1,0 +1,7 @@
+{
+  "kind": "example",
+  "name": "固定样例（复核基准）",
+  "task": "mnist",
+  "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+  "created_at": "2026-10-30T15:09:19.865160"
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "tasks": 1290,
+  "samples": 56666,
+  "commands": [
+    {
+      "command": [
+        "D:\\Xlinx\\Vivado\\2018.2\\bin\\xvlog.bat",
+        "--sv",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\rtl_override\\src\\rtl\\post_processing_unit\\ppu.v",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\unit_exact\\tb_exact.sv"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "D:\\Xlinx\\Vivado\\2018.2\\bin\\xelab.bat",
+        "tb_exact",
+        "-s",
+        "exact_sim",
+        "--timescale",
+        "1ns/1ps"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "D:\\Xlinx\\Vivado\\2018.2\\bin\\xsim.bat",
+        "exact_sim",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "exit": 0
+    }
+  ]
+}

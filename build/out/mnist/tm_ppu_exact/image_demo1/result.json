@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "scope": "EXACT_TINYMAIX_PPU_NEW_ROUTED_HARDWARE_NOT_BOARD_TESTED",
+  "started": "2026-10-29T16:27:05.991146+08:00",
+  "command": [
+    "D:\\Xlinx\\Vivado\\2018.2\\bin\\vivado.bat",
+    "-mode",
+    "batch",
+    "-source",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\shadow\\build_ppu.tcl",
+    "-log",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\image_demo1\\build.log",
+    "-journal",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\image_demo1\\build.jou",
+    "-tclargs",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\image_demo1",
+    "xc7a100tfgg484-2",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\rtl_override"
+  ],
+  "firmware_itcm_sha256": "5cf55d81e780f0c796c93ff877dcb9b92b1059dbf7bde4ef523cde6e2582e353",
+  "rtl_override_sha256": {
+    "README.md": "3cd3f197c69ef6eee655c782523d8167451aeec5cb8746a1bece5c8daf98cb95",
+    "src\\rtl\\post_processing_unit\\ppu.v": "35caa9c0d2b484cc5de33ae12edda501102dcaff642e12db05e4222fb767d654",
+    "src\\rtl\\post_processing_unit\\ppu_control.v": "177cb98c36cf9e3bc6db933f4a42d4351693c0b7cc3092a63bcca7e99be72ae7",
+    "src\\rtl\\post_processing_unit\\top_ppu.v": "4bdb53588887e627b8055822a380c11fd4e3bd832cf971b6d5182ceae7d3a46a",
+    "src\\rtl\\tiny_npu\\register_tiny_npu.v": "e04d4ab6628f3c13fe6ac63d5def70244c3dd071c3a5bf202b5d782d53396d0e",
+    "src\\rtl\\common_cells\\ram\\edge_bram_banked.sv": "8063651de2beb5c9eff9a982d300ff2b4127c385d8fde3bb3f268432e372f931"
+  },
+  "pid": 187188,
+  "exit": 0,
+  "seconds": 1299.063000000082,
+  "finished": "2026-10-29T16:48:45.069346+08:00",
+  "sta": {
+    "50": {
+      "setup_ns": 1.914,
+      "hold_ns": 0.018
+    },
+    "100": {
+      "setup_ns": -8.086,
+      "hold_ns": 0.018
+    },
+    "150": {
+      "setup_ns": -11.419,
+      "hold_ns": 0.018
+    }
+  },
+  "timing_50mhz_met": true,
+  "bit_sha256": "f61275433af87c43e2607e12086fef138c950693d930f045ce27a68ccb158247",
+  "new_words_verified": 24576,
+  "routed_checkpoint_sha256": "50ba1ee4e9a633e39b002fe10f86f2ee80ab6e7a28ea99c4005ab23a28dd192d"
+}

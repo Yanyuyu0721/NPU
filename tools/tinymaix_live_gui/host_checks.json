@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "original_wav_exact_feature_hash",
+    "pcm_wav_8",
+    "pcm_wav_16",
+    "pcm_wav_24",
+    "pcm_wav_32",
+    "invalid_pcm_rejected",
+    "silence_warning",
+    "launcher_reuses_existing_service"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "case": "old-sync",
+  "verdict": "EXPECTED_NEGATIVE_CONFIRMED",
+  "scope": "SIMULATION_ONLY",
+  "commands": [
+    {
+      "command": [
+        "E:\\vivado2026\\2026.1\\Vivado\\bin\\xvlog.bat",
+        "--version"
+      ],
+      "exit": 0,
+      "seconds": 0.7030000000013388
+    },
+    {
+      "command": [
+        "E:\\vivado2026\\2026.1\\Vivado\\bin\\xelab.bat",
+        "--version"
+      ],
+      "exit": 0,
+      "seconds": 0.6879999999946449
+    },
+    {
+      "command": [
+        "E:\\vivado2026\\2026.1\\Vivado\\bin\\xsim.bat",
+        "--version"
+      ],
+      "exit": 0,
+      "seconds": 0.6870000000053551
+    },
+    {
+      "command": [
+        "E:\\vivado2026\\2026.1\\Vivado\\bin\\xvlog.bat",
+        "--file",
+        "E:\\xys\\codex_projects\\fpga2026lite\\work\\image_arch_opt_7020_20261026\\ppu_descriptor_fix\\evidence\\native_old_sync_root_v1\\xvlog.args"
+      ],
+      "exit": 0,
+      "seconds": 0.7819999999992433
+    },
+    {
+      "command": [
+        "E:\\vivado2026\\2026.1\\Vivado\\bin\\xelab.bat",
+        "work.tb_ppu_descriptor",
+        "--snapshot",
+        "ppu_transport",
+        "--timescale",
+        "1ns/1ps",
+        "--debug",
+        "off",
+        "--mt",
+        "2"
+      ],
+      "exit": 0,
+      "seconds": 1.8430000000007567
+    },
+    {
+      "command": [
+        "E:\\vivado2026\\2026.1\\Vivado\\bin\\xsim.bat",
+        "ppu_transport",
+        "--file",
+        "E:\\xys\\codex_projects\\fpga2026lite\\work\\image_arch_opt_7020_20261026\\ppu_descriptor_fix\\evidence\\native_old_sync_root_v1\\xsim.args"
+      ],
+      "exit": 0,
+      "seconds": 2.5939999999973224
+    }
+  ],
+  "source_hashes": {
+    "tb_ppu_descriptor.sv": "e020c4ffe0754aea24ecc3deef84399062d0f7b9eecb524e9ce950196f65861a",
+    "src/rtl/post_processing_unit/ppu_control.v": "ddcfb330453233d75ba9eafed0676df9411e0d7d3295db9cdd2e7c6dfe8e1dee",
+    "src/rtl/common_cells/arbiter/round_robin_arbiter.v": "289b5bdeeccfa4855c2aa2a16fe72bc10c6b4417c347261b6b06036ddfd0a794",
+    "src/rtl/common_cells/fifo/gnrl_dfflr.v": "ffa6d5b10803c994f65af7fa0f3053b31ecf5dcd4bffe8b6ed138d7a0ce08a5f",
+    "src/rtl/common_cells/fifo/syncfifo.v": "163ab26382c27e97dd558cbe45134e7789e43cfd10b6d2e080daa87a710b8baf"
+  },
+  "asset_hashes": {
+    "binding_snapshot.py": "cf70a81771f661f8eea41b02bdb8a3ec5ee4a456c228def55b69ee3f156e4710",
+    "expected_build.json": "811f31e322ace088e311e644daaaef897d07cf3b750ad5d0fb2807a3dff81765",
+    "inputs_pin.json": "df608adfca3a893cfba7aeb59adc559524742e3cb57d184bc7819dd4002d05a7",
+    "runner_snapshot.py": "1ffc3b603b2ae311f7dfcf6ef8d43216ef23e81895f22e7796691a3c0cafbce2"
+  },
+  "finished_utc": "2026-10-27T01:53:51.602604+00:00"
+}

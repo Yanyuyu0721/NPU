@@ -1,0 +1,3 @@
+#pragma once
+#define MODEL_SHA "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37"
+#define INPUT_SHA "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e"

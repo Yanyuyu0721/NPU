@@ -1,0 +1,7 @@
+{
+  "kind": "image",
+  "name": "synthetic hand stroke 8",
+  "task": "mnist",
+  "input_sha256": "3b4b4191863ad4d763fc6d7bfd35bc86b1d259790aa39276c7087a88dd29947a",
+  "created_at": "2026-10-30T15:08:28.275907"
+}

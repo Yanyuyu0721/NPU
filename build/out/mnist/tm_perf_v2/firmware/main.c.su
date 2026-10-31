@@ -1,0 +1,7 @@
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:24:13:fixed3	48	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:33:17:layer_cb	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:128:17:median_cycles	48	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:41:12:input_ready	48	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:25:7:bench_malloc	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:26:6:bench_free	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\main.c:157:5:main	352	static

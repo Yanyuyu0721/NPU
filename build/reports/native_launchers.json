@@ -1,0 +1,12 @@
+{
+  "mnist": {
+    "passed": true,
+    "title": "MNIST 手写数字 · TinyMaix FPGA 推理演示 · XC7A100T",
+    "no_browser_launcher": true
+  },
+  "kws": {
+    "passed": true,
+    "title": "KWS 关键词 · TinyMaix FPGA 推理演示 · XC7A100T",
+    "no_browser_launcher": true
+  }
+}

@@ -1,0 +1,18 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Oct 27 09:53:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/ppu_transport/xsim_script.tcl
+# xsim {ppu_transport} -testplusarg test=0 -testplusarg max_cycles=20000 -autoloadwcfg -tclbatch {E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_new_unit_root_v1/run.tcl} -onfinish quit -onerror quit
+Time resolution is 1 ps
+source E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_new_unit_root_v1/run.tcl
+## run 201000 ns
+PPU_DESCRIPTOR_UNIT_PASS all_lanes=8 randomized=700 full=32 sync_reset=1
+$finish called at time : 26820 ns : File "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_new_unit_root_v1/source/tb_ppu_descriptor.sv" Line 116
+exit 0
+INFO: [Common 17-206] Exiting xsim at Tue Oct 27 09:53:36 2026...

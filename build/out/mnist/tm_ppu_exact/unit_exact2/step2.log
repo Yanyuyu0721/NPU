@@ -1,0 +1,16 @@
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/exact_sim/xsim_script.tcl
+# xsim {exact_sim} -autoloadwcfg -tclbatch {run.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source run.tcl
+## run all
+EXACT_PPU_PASS tasks=410 samples=21573
+$finish called at time : 296430 ns : File "D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/mnist/tm_ppu_exact/unit_exact2/tb_exact.sv" Line 45
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Oct 29 16:24:24 2026...

@@ -1,0 +1,9 @@
+{
+  "source": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\image_demo1",
+  "normal_conv_channels": 60,
+  "depthwise_exact_channels": 56,
+  "depthwise_software_channels": 4,
+  "denominator_min": 2049,
+  "denominator_max": 65535,
+  "model_changed": false
+}

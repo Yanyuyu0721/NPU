@@ -1,0 +1,10 @@
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:6:5:npu_span_contains	16	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:9:5:npu_span_disjoint	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:17:6:npu_views_init	16	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:24:6:npu_views_clear_layer	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:27:5:npu_views_register	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:33:5:npu_views_layer	16	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:43:5:npu_views_validate	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:51:5:npu_window_sizes	0	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:60:5:npu_window_direct	32	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\source\npu_views.c:63:5:npu_window_native	48	static

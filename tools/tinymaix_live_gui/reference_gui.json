@@ -1,0 +1,11 @@
+{
+  "reference": "D:\\final_prj\\tools\\tinymaix_web_gui",
+  "visuals": "warm white, rounded input/result panels and cyan/amber accents",
+  "features": [
+    "pen pointer input",
+    "audio selection",
+    "microphone recording",
+    "live CPU/NPU benchmark"
+  ],
+  "word_documents_edited": false
+}

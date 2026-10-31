@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/common_cells/fifo/gnrl_dfflr.v" into library work
+INFO: [VRFC 10-311] analyzing module gnrl_dfflr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/common_cells/fifo/syncfifo.v" into library work
+INFO: [VRFC 10-311] analyzing module syncfifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/common_cells/arbiter/round_robin_arbiter.v" into library work
+INFO: [VRFC 10-311] analyzing module round_robin_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/post_processing_unit/ppu_control.v" into library work
+INFO: [VRFC 10-311] analyzing module ppu_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/tb_ppu_descriptor.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_ppu_descriptor

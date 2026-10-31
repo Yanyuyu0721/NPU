@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "produced_at": "2026-10-30T14:46:31.305973+08:00",
+  "protocol": "VEX_MNIST_PQ6",
+  "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+  "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+  "cpu_reference_unchanged": true,
+  "word_documents_edited": false,
+  "verified_final_runs": 4,
+  "verified_final_timing_samples": 68,
+  "median_cycles": {
+    "0": 1148403,
+    "1": 259770,
+    "2": 114958,
+    "3": 97533
+  },
+  "median_ms": {
+    "0": 22.96806,
+    "1": 5.1954,
+    "2": 2.29916,
+    "3": 1.95066
+  },
+  "speedup": {
+    "1": 4.420845363205913,
+    "2": 9.989761478105047,
+    "3": 11.774507089908031
+  },
+  "bit_sha256": "9d61a5d177c759c0ca6034bcdb4acb142a5e3edf9a3310fc7b597a530fe255dd",
+  "firmware_mem_sha256": "092eeeb554b3dcf99cc15542d6c323fd99ec07da69a967a09b6ca9360ed5b61c",
+  "baseline_bit_sha256": "558cf07439ce2bb878fb6a0d68e7041c665e9e4a4c05ceb62323c7859c344ce8",
+  "kws_optimized_bit_sha256": "58af111d85c35cf1bb2b2fbb84af407dceeb6d12db7ad10f77c9cae69f588175",
+  "final_evidence": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_perf_v2\\demo_runs\\20261030_144222_740603",
+  "weight_resident": true,
+  "execution_configuration_cached": true,
+  "new_checks": {
+    "layout_cases": 432,
+    "dequant_values": 256,
+    "softmax_quant_values": 33024,
+    "configuration_cache_cases": 72
+  },
+  "capture_validator_rejected_cases": 22
+}

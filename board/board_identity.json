@@ -1,0 +1,25 @@
+{
+  "board": "ALIENTEK DaVinci Pro / A7-100T core",
+  "vendor": "ALIENTEK / 正点原子",
+  "fpga": "XC7A100T-2FGG484I",
+  "vivado_part": "xc7a100tfgg484-2",
+  "manual": "1_【正点原子】达芬奇Pro之FPGA开发指南 V2.1..pdf",
+  "manual_sha256": "d052236a08a283559e5076224e09325e07d4c229110827bc57a25953f2a775d6",
+  "manual_pages": 2227,
+  "configuration_voltage": "3.3",
+  "cfgbvs": "VCCO",
+  "electrical_source_pages": [
+    226,
+    1698
+  ],
+  "pin_source_page": 610,
+  "identity_source_page": 122,
+  "board_has_external_ddr3": true,
+  "board_ddr3_bytes": 536870912,
+  "board_ddr3_part": "NT5CC128M16IP-DI",
+  "design_uses_external_memory": false,
+  "physical_board_tested": false,
+  "pcb_revision_confirmed": false,
+  "ddr3_authorized_by_user": false,
+  "ddr3_integration_status": "NOT_IN_SCOPE_USER_SELECTED_BRAM"
+}

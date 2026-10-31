@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/mnist/tm_ppu_exact/rtl_override/src/rtl/post_processing_unit/ppu.v" into library work
+INFO: [VRFC 10-311] analyzing module ppu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/mnist/tm_ppu_exact/unit_exact2/tb_exact.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_exact

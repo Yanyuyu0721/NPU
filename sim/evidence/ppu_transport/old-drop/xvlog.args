@@ -1,0 +1,8 @@
+--sv
+--work work
+--log xvlog.log
+"E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/common_cells/fifo/gnrl_dfflr.v"
+"E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/common_cells/fifo/syncfifo.v"
+"E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/common_cells/arbiter/round_robin_arbiter.v"
+"E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/src/rtl/post_processing_unit/ppu_control.v"
+"E:/xys/codex_projects/fpga2026lite/work/image_arch_opt_7020_20261026/ppu_descriptor_fix/evidence/native_old_drop_root_v1/source/tb_ppu_descriptor.sv"

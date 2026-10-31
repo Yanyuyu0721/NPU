@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-30",
+  "scope": "FINAL_PACKAGE_VERIFICATION_WITH_EXPLICIT_TEST_BOUNDARIES",
+  "final_folder_board_retest": {
+    "passed": true,
+    "tasks": 2,
+    "timed_outputs": 34,
+    "source": "data/benchmark.json",
+    "clock_hz": 50000000,
+    "cache_mode_for_headline": "hot",
+    "measurements": {
+      "mnist": {
+        "cpu_ms": 22.96778,
+        "npu_ms": 1.95034,
+        "speedup": 11.776295415158383
+      },
+      "kws": {
+        "cpu_ms": 275.87612,
+        "npu_ms": 28.06528,
+        "speedup": 9.829801092310499
+      }
+    }
+  },
+  "saved_run_reparse": {
+    "scope": "SAVED_REAL_UART_REPARSE_NOT_NEW_BOARD_RUN",
+    "passed": true,
+    "runs": 25,
+    "samples": 425
+  },
+  "skill_controls": {
+    "passed": true,
+    "scope": "REUSABLE_TOOL_CONTROLS_NOT_RTL",
+    "checks": [
+      "file_identity_positive",
+      "changed_source_rejected",
+      "path_traversal_rejected",
+      "windows_drive_rejected",
+      "empty_manifest_rejected",
+      "hex_binary_bit_exact_positive",
+      "zero_slack_mutation_rejected_at_word3",
+      "short_vector_rejected",
+      "sparse_memory_rejected",
+      "empty_binary_rejected",
+      "command_capture_positive",
+      "partial_pass_rejected",
+      "duplicate_pass_rejected",
+      "error_then_pass_rejected",
+      "nonzero_exit_rejected",
+      "source_changed_during_run_rejected",
+      "finite_timeout_rejected",
+      "mismatch_cli_exit_nonzero"
+    ]
+  },
+  "host_controls": {
+    "checks": [
+      "original_wav_exact_feature_hash",
+      "pcm_wav_8",
+      "pcm_wav_16",
+      "pcm_wav_24",
+      "pcm_wav_32",
+      "invalid_pcm_rejected",
+      "silence_warning",
+      "launcher_reuses_existing_service"
+    ]
+  },
+  "hardware_source_paths": {
+    "passed": true,
+    "sources_and_include_paths": 69
+  },
+  "python_syntax": {
+    "passed": true,
+    "files": 63
+  },
+  "fresh_firmware_build": {
+    "scope": "FRESH_SOURCE_BUILD_AND_CONFIG_PAYLOAD_COMPARISON",
+    "passed": true,
+    "tasks": {
+      "mnist": {
+        "firmware_bin_sha256": "17e142893c250c1b8c64d83d54f14659b058b8a6e382b4736eeefb068e7be51f",
+        "firmware_mem_sha256": "241ebcf16c80acbe56fef0fa37b2d7b3c7ccee18201c9852244238d091b4ba34",
+        "firmware_byte_identical": true,
+        "configuration_payload_identical": true,
+        "bitstream_file_sha256": "7009f4f6b5c018a6d3949fb6d066eb658dff2c9e7ca40b41fbe1f18250c0bc86",
+        "note": "Bit header generation time may differ; configuration payload and complete firmware are byte-identical",
+        "words_verified": 24576
+      },
+      "kws": {
+        "firmware_bin_sha256": "0749d2974a841a62fdeda32f46d22b704043a3f9e921eb1671af30f0d2944bd8",
+        "firmware_mem_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",
+        "firmware_byte_identical": true,
+        "configuration_payload_identical": true,
+        "bitstream_file_sha256": "8564dfbbc5889297a3850fd98f0ad1fa9e1ba67513d3df6691fae3aec10cf555",
+        "note": "Bit header generation time may differ; configuration payload and complete firmware are byte-identical",
+        "words_verified": 24576
+      }
+    }
+  },
+  "document_visual_review": {
+    "passed": true,
+    "method": "Native Word/PowerPoint PDF export and all-page visual review, changed-page reinspection",
+    "documents": {
+      "design_report.docx": {
+        "pages": 25,
+        "sha256": "0d2043faa03541b0a9c062e8a7d1a0af1ecb05a8cfb7733269aac9dc02b69da6"
+      },
+      "technical_paper.docx": {
+        "pages": 31,
+        "sha256": "6e725abcc1c11b2bb1d2d4bf48362a88aa46cac33fa4f129a52af3057954367a"
+      },
+      "presentation.pptx": {
+        "pages": 6,
+        "sha256": "92473b3394c93174d4a562a0498798fb71fec78e0caf49bae5bd89e523674d60"
+      }
+    }
+  },
+  "original_snapshot_crc": {
+    "passed": true,
+    "scope": "ALL_SNAPSHOT_ZIP_MEMBER_CRC",
+    "zip_members": 9190
+  },
+  "limitations": [
+    "Original Zynq implementation, resource and power material is preserved from the supplied documents; the refreshed performance table is for the XC7A100T demo.",
+    "Physical pen tablet and external microphone are host-dependent; Windows Ink adapter and virtual-audio recording path were exercised.",
+    "Official poster and filmed demo video are separate deliverables."
+  ],
+  "revision": "native_window_and_original_document_restoration",
+  "native_gui": {
+    "passed": true,
+    "checks": [
+      "native_tk_window_and_pen_adapter",
+      "native_draw_pointer_to_real_preprocess",
+      "mnist_native_controls_board_inference_and_output_display",
+      "kws_native_controls_board_inference_and_output_display",
+      "native_wav_input_exact_fixture_features",
+      "native_audio_playback_start_stop",
+      "native_recording_32768_samples_virtual_input",
+      "native_recorded_audio_board_inference"
+    ],
+    "results": {
+      "mnist": {
+        "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175215_582225_mnist",
+        "cpu_ms": 22.96778,
+        "npu_ms": 1.95034,
+        "speedup": 11.776295415158383,
+        "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941"
+      },
+      "kws": {
+        "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175232_525014_kws",
+        "cpu_ms": 275.87612,
+        "npu_ms": 28.06528,
+        "speedup": 9.829801092310499,
+        "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e"
+      },
+      "recording": {
+        "input_device": "默认麦克风",
+        "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175238_730364_kws",
+        "speedup": 9.818173148231182
+      }
+    },
+    "board_images_unchanged": true,
+    "scope": "Native Tk controls, preprocessing and actual board inference; virtual audio device available on this host"
+  },
+  "native_launchers": {
+    "mnist": {
+      "passed": true,
+      "title": "MNIST 手写数字 · TinyMaix FPGA 推理演示 · XC7A100T",
+      "no_browser_launcher": true
+    },
+    "kws": {
+      "passed": true,
+      "title": "KWS 关键词 · TinyMaix FPGA 推理演示 · XC7A100T",
+      "no_browser_launcher": true
+    }
+  },
+  "protected_assets_unchanged": {
+    "passed": true,
+    "files": 311,
+    "scope": "Existing model, source firmware and benchmark data hashes compared with previous release"
+  },
+  "document_local_edit_check": {
+    "design_report.docx": {
+      "all_retained_original_media_bytes_preserved": true,
+      "retained_original_media_count": 25,
+      "arm_figure_parts_excluded": []
+    },
+    "technical_paper.docx": {
+      "all_retained_original_media_bytes_preserved": true,
+      "retained_original_media_count": 25,
+      "arm_figure_parts_excluded": [
+        "word/media/image24.png",
+        "word/media/image26.png"
+      ]
+    }
+  },
+  "spacing_cleanup": {
+    "scope": "HAN_ENGLISH_BOUNDARY_SPACING_ONLY",
+    "passed": true,
+    "changes": {
+      "design_report.docx": {
+        "word/document.xml": {
+          "boundary_space_groups_removed": 353,
+          "mixed_paragraphs": 70
+        },
+        "word/styles.xml": {
+          "boundary_space_groups_removed": 0,
+          "mixed_paragraphs": 0
+        }
+      },
+      "technical_paper.docx": {
+        "word/document.xml": {
+          "boundary_space_groups_removed": 399,
+          "mixed_paragraphs": 89
+        },
+        "word/header1.xml": {
+          "boundary_space_groups_removed": 2,
+          "mixed_paragraphs": 1
+        },
+        "word/styles.xml": {
+          "boundary_space_groups_removed": 0,
+          "mixed_paragraphs": 0
+        }
+      }
+    },
+    "documents": {
+      "design_report.docx": {
+        "non_space_characters_identical": true,
+        "all_images_identical": true,
+        "xml_parts_compared": 11,
+        "residual_boundary_spaces": 0,
+        "pages": 25,
+        "sha256": "54f88866f2deeadc801ba1d6e2eb5d11be000885ee04d135e84972e662e28ff8",
+        "visual_review": "All pages inspected after native Word export and PNG rendering"
+      },
+      "technical_paper.docx": {
+        "non_space_characters_identical": true,
+        "all_images_identical": true,
+        "xml_parts_compared": 12,
+        "residual_boundary_spaces": 0,
+        "pages": 31,
+        "sha256": "6e725abcc1c11b2bb1d2d4bf48362a88aa46cac33fa4f129a52af3057954367a",
+        "visual_review": "All pages inspected after native Word export and PNG rendering"
+      }
+    }
+  },
+  "packaging": {
+    "verified_date": "2026-10-31",
+    "guideline_section": "3.3.5.2 / 3.3.5.4",
+    "report_files": [
+      "collaboration_notes.md",
+      "collaboration_record.json",
+      "design_report.docx",
+      "presentation.pptx",
+      "technical_paper.docx"
+    ],
+    "readme_files": [
+      "README.md",
+      "skill/README.md"
+    ],
+    "guideline_pdf_in_package": false,
+    "formal_document_part_contents_unchanged": true,
+    "models_firmware_measurements_unchanged": true
+  }
+}

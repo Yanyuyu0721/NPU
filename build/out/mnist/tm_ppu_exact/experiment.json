@@ -1,0 +1,20 @@
+{
+  "created": "2026-10-29T16:20:02.346825+08:00",
+  "baseline": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_tinymaix",
+  "baseline_archive": {
+    "passed": true,
+    "archive": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\checkpoints\\mnist_tinymaix_20261029_151545.zip",
+    "archive_sha256": "526fdb3d2a27d39ad9328992b09b844f40a4c7b75cb95c8c953fa3a4ff4d2f14",
+    "archive_bytes": 66211035,
+    "archived_files": 164,
+    "verified_runs": 6,
+    "word_documents_unchanged": {
+      "D:\\\u6280\u672f\u6587\u6863\\\u6280\u672f\u8bba\u6587 (1).docx": true,
+      "D:\\\u6280\u672f\u6587\u6863\\\u6587\u6863\u8fc1\u79fb.docx": true
+    }
+  },
+  "baseline_bit_sha256": "e34e910038061021b1536d2d74b7b5a27c1446a89d02c5c94e47c57a92215adc",
+  "scope": "ISOLATED_EXACT_PPU_MNIST_EXPERIMENT",
+  "model_changed": false,
+  "cpu_reference_changed": false
+}

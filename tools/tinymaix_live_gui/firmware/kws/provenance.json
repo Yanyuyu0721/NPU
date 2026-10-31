@@ -1,0 +1,299 @@
+{
+  "model_source": "D:\\final_prj\\vitis\\kws\\src\\include\\kws_mdl.h",
+  "model_header_sha256": "4cb93030552120e5b046ef151ddd6e30aae57caf81400fad91d157517942ba58",
+  "model_binary_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+  "source_input_sha256": "a20922e2c8890b6d331c37f3ae97a75d97ef80cfa2d3e10eabdfd4d72a2df529",
+  "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+  "input_shape": [
+    64,
+    40,
+    1
+  ],
+  "input_layout_conversion": "same FBank values, mel-major40x64 to model frame-major64x40",
+  "model_bytes": 9448,
+  "model_buffer_bytes": 5120,
+  "layers": [
+    {
+      "index": 0,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 152,
+      "input": [
+        3,
+        64,
+        40,
+        1
+      ],
+      "output": [
+        3,
+        32,
+        20,
+        4
+      ]
+    },
+    {
+      "index": 1,
+      "type": 5,
+      "is_output": 0,
+      "bytes": 176,
+      "input": [
+        3,
+        32,
+        20,
+        4
+      ],
+      "output": [
+        3,
+        32,
+        20,
+        4
+      ]
+    },
+    {
+      "index": 2,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 432,
+      "input": [
+        3,
+        32,
+        20,
+        4
+      ],
+      "output": [
+        3,
+        16,
+        10,
+        8
+      ]
+    },
+    {
+      "index": 3,
+      "type": 5,
+      "is_output": 0,
+      "bytes": 264,
+      "input": [
+        3,
+        16,
+        10,
+        8
+      ],
+      "output": [
+        3,
+        16,
+        10,
+        8
+      ]
+    },
+    {
+      "index": 4,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 1360,
+      "input": [
+        3,
+        16,
+        10,
+        8
+      ],
+      "output": [
+        3,
+        8,
+        5,
+        16
+      ]
+    },
+    {
+      "index": 5,
+      "type": 5,
+      "is_output": 0,
+      "bytes": 320,
+      "input": [
+        3,
+        8,
+        5,
+        16
+      ],
+      "output": [
+        3,
+        8,
+        5,
+        16
+      ]
+    },
+    {
+      "index": 6,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 4944,
+      "input": [
+        3,
+        8,
+        5,
+        16
+      ],
+      "output": [
+        3,
+        4,
+        3,
+        32
+      ]
+    },
+    {
+      "index": 7,
+      "type": 5,
+      "is_output": 0,
+      "bytes": 560,
+      "input": [
+        3,
+        4,
+        3,
+        32
+      ],
+      "output": [
+        3,
+        4,
+        3,
+        32
+      ]
+    },
+    {
+      "index": 8,
+      "type": 1,
+      "is_output": 0,
+      "bytes": 48,
+      "input": [
+        3,
+        4,
+        3,
+        32
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        32
+      ]
+    },
+    {
+      "index": 9,
+      "type": 2,
+      "is_output": 0,
+      "bytes": 704,
+      "input": [
+        1,
+        1,
+        1,
+        32
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        16
+      ]
+    },
+    {
+      "index": 10,
+      "type": 2,
+      "is_output": 0,
+      "bytes": 256,
+      "input": [
+        1,
+        1,
+        1,
+        16
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "index": 11,
+      "type": 2,
+      "is_output": 0,
+      "bytes": 120,
+      "input": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "index": 12,
+      "type": 3,
+      "is_output": 1,
+      "bytes": 48,
+      "input": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        3
+      ]
+    }
+  ],
+  "clock_hz": 50000000,
+  "framework": "TinyMaix tm_load/tm_preprocess/tm_run",
+  "quantization": "Exact TinyMaix Q8 hardware PPU on 116 convolution channels; original software rules on remaining 4",
+  "native_mode": 0,
+  "hardware_im2col": true,
+  "persistent_weight_residency": false,
+  "source_inputs": {
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\arch_cpu.h": "40d1775b0eab91c37152c80c09fc81c755bccbdebcbd72cdfbb051acdca1e431",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\model_registry.h": "d56ece86a0f4cfb7b15dc37d70d446cde0dc432f15bb57e0241bcedb84266e39",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_api.h": "eaded9edaf175a4fb4f296d7f0c2cc71dd26958f04370288f77fc6fa5ad60fac",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_board_impl.c": "be46460e2ae751bea2a3272f89d5b98f356e024d9077f08c2c9d9e87c5eb64df",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_mac_adapter.inc": "f2196d3ebb28710f8c82056490e1b908dbf2c8842c56965446413b45a2989843",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_runtime.c": "7fea552c350df5e755b45b2e93a811aa6b539e0011ee961e59e2d504ad831640",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_runtime.h": "b3a5670c36afa17b0373028f62bbc546a3a6ed6f1581a2e7b4f2b0790935637c",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_views.c": "adf04c8487eaa8ba30ff544174d27ec41b6a8e6d85990cec7ae79fae145815a3",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_views.h": "a3fb25b7ffa2f56786fbb3bfb9e5aababa10523bb36572504860e500995ebc1e",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\npu_zynq.c": "3fc348f8c93586c6802b0738869804c6bee23eb35a898392e9333bd19cd343dc",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\serial_identity.inc": "618d86f5ebcf45d349c5f10510a320cb3c1c5a8c83f64cc66b30b043def89983",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tinymaix.h": "af04a08a1d78013625dd5671788ca54d37123c22c7c3a3ae24bbb49c4b542a5d",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tinymaix_api.h": "ea13e4c39761580f2b71ffd8baa5632586861e79142586e56e642d1c6b7d5dfc",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tinymaix_arch_cpu.h": "ef99b9930c63680429483cc84bd6e773918a754507df27cc6f367a3842427651",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tinymaix_layers_impl.inc": "b85d47ca7fc406ee10549380407cf94a2f8f516d630cda07c87330be0dbb8dc1",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tinymaix_model_impl.inc": "4cff153dbc71d933d7fd0ebd9f35647a4dc44f20752f2e6988255c924f333711",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tinymaix_stat_impl.inc": "c46932bb2ae1e2ae263ea29597744e5eba115cfae365751b9fffcc56b162965b",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tiny_npu.c": "df6e6f8918d80463ef564975789540d9fa64f820c39b7591ad660340ed21bb85",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tiny_npu.h": "2c8a968b7fd3bb631931cecf316dba43df446a3e859701bf8344b8eb888713c8",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tm_layers.c": "7951338cb63a39d5910133673d94a74bc8804cf5261d248a72ae2174a5de2851",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tm_model.c": "3e154a6ed7fbf2fa1a37f4764ffec55fef144563d0ae397930fb7f2081ca419d",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\common\\tm_stat.c": "3eb952bb706aa4d97c4705399035f15db115adf8f040df3f3d60a6c118c56e64",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\fixture.h": "4b77a258b1a62bb279f90c90b0897dd234ed05d7f72230c3a57caba8daeecc48",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\libc.c": "1a57264a57bfeedd0efcf55bec80879c17e1c5a50bc02fcc51b87c486e86e595",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\main.c": "7aaa98506d3301c9933965b8aa9e89b4340db7748dd6fc2dab0b8f5e2eec7eba",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\model_blob.h": "f78ca38b840f9cd5f8f1167ae36b9a9184dc8853f902ab0b37827d7767c47f56",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\tm_port.h": "2e0c6aefeb8275151f1a435857b1ae787e01e20da8b3bf01059cefe8bfbf6fe3",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\vex_hal.c": "03bdbad98ce264c745796b3470c864bbfb855a149c79e181a9580a2e6ed28118",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\vex_platform.h": "933cf17169e745722faed074cefd09c8513d67ee718627437196e1282524875e",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\src\\software\\cifar10\\vex_port\\xil_io.h": "32d2c2ef4daa6f9dfafdd5f7d21a2cbcf48ec2cd06b66c17f7f2d74b41267231",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\board\\firmware_source\\start.s": "240f1f2e144ea2db353ad8477e16783544470d438453d8503abab5836fa148d7",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\board\\firmware_source\\linker.ld": "3d3dc79bc278e7f414614e180fce544b20ad9d5edfb18b23e8ed840b657edf66",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\board\\firmware_source\\vex_platform.h": "2f990e2897a4c85fc4757746ba02986d8ddf75a0fc07a2c4c89e5e150a4652a3",
+    "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\board\\firmware_source\\xil_io.h": "32d2c2ef4daa6f9dfafdd5f7d21a2cbcf48ec2cd06b66c17f7f2d74b41267231",
+    "D:\\final_prj\\vitis\\kws\\src\\include\\kws_mdl.h": "4cb93030552120e5b046ef151ddd6e30aae57caf81400fad91d157517942ba58"
+  },
+  "rollback_bit": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\img_final\\board_top.bit",
+  "rollback_sha256": "32a95adddef16e8c569c5bc55f9421ec683cb9697fd7c9f19ae7618732dc76cf",
+  "software_math": "Exact model-parameter GAP and FC function tables",
+  "execution_version": "VEX_TM_KWS3",
+  "baseline": "tm_optimized 6.68746x"
+}

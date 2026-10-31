@@ -1,0 +1,953 @@
+{
+  "schema": 1,
+  "name": "MNIST TinyMaix CNN 28x28 INT8 Conv4-8-16 GAP FC10 Softmax",
+  "model_id": 1,
+  "classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "source_model_header": "D:\\final_prj\\vitis\\mnist\\src\\include\\mnist_valid_q.h",
+  "model_header_sha256": "d673c632399e863722148c3283a8e1490ad5299229fcae97fd1a70346e0067aa",
+  "model_binary_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+  "model_bytes": 2408,
+  "model_buffer_bytes": 1464,
+  "sub_buffer_bytes": 0,
+  "framework": "TinyMaix",
+  "model_type": "INT8",
+  "input_shape": [
+    28,
+    28,
+    1
+  ],
+  "output_shape": [
+    1,
+    1,
+    10
+  ],
+  "out_dequantize": true,
+  "macs": 21220,
+  "layers": [
+    {
+      "index": 0,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 152,
+      "input": [
+        3,
+        28,
+        28,
+        1
+      ],
+      "output": [
+        3,
+        13,
+        13,
+        4
+      ],
+      "input_offset": 0,
+      "output_offset": 784,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "activation": 1,
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "layer_sha256": "9cd938bba1eaf0824126f3381ea2c62ebd8225a59b306f148a37c94b6cf4bad9",
+      "input_scale": 0.003921568859368563,
+      "input_zero_point": -128,
+      "output_scale": 0.01622447557747364,
+      "output_zero_point": -128,
+      "weight_scale_offset": 80,
+      "weight_offset": 96,
+      "bias_offset": 136,
+      "weight_scales": [
+        0.012357589788734913,
+        0.01656223274767399,
+        0.006029385142028332,
+        0.012255125679075718
+      ],
+      "weight_sha256": "cdfe720e8511ddf46203c81c91e4ff177361239daf98fa8fb643abfd118e8751",
+      "bias_sha256": "54fc2b822729c028e551389485129ad74ac3fac331916d34ccefa4689219434c"
+    },
+    {
+      "index": 1,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 432,
+      "input": [
+        3,
+        13,
+        13,
+        4
+      ],
+      "output": [
+        3,
+        6,
+        6,
+        8
+      ],
+      "input_offset": 784,
+      "output_offset": 0,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "activation": 1,
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "layer_sha256": "a633ff250fee518cb5031fbaee479edc2a983c216dfd837ed6918e6dba40b617",
+      "input_scale": 0.01622447557747364,
+      "input_zero_point": -128,
+      "output_scale": 0.016133606433868408,
+      "output_zero_point": -128,
+      "weight_scale_offset": 80,
+      "weight_offset": 112,
+      "bias_offset": 400,
+      "weight_scales": [
+        0.004238213412463665,
+        0.002787165343761444,
+        0.006141342222690582,
+        0.004434495232999325,
+        0.0032900888472795486,
+        0.00361109571531415,
+        0.0048567201010882854,
+        0.0036812392063438892
+      ],
+      "weight_sha256": "8d8d2e25e15dd3804fbffd30a10ab74da978ed47ac4eab16c65e7732024ad71b",
+      "bias_sha256": "a4443e38d4c388420019d2a5db9c7e41d3940dff447253503f4b474a30fe27b0"
+    },
+    {
+      "index": 2,
+      "type": 0,
+      "is_output": 0,
+      "bytes": 1360,
+      "input": [
+        3,
+        6,
+        6,
+        8
+      ],
+      "output": [
+        3,
+        2,
+        2,
+        16
+      ],
+      "input_offset": 0,
+      "output_offset": 1400,
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "activation": 1,
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "layer_sha256": "3604369f773c66933b88367fcc57421c34b3b030d65fce6062fad4f6ad5cc30e",
+      "input_scale": 0.016133606433868408,
+      "input_zero_point": -128,
+      "output_scale": 0.05664922669529915,
+      "output_zero_point": -128,
+      "weight_scale_offset": 80,
+      "weight_offset": 144,
+      "bias_offset": 1296,
+      "weight_scales": [
+        0.021188681945204735,
+        0.014196009375154972,
+        0.01841423101723194,
+        0.012672850862145424,
+        0.01450240146368742,
+        0.020090201869606972,
+        0.019770028069615364,
+        0.016100984066724777,
+        0.012074607424438,
+        0.013641854748129845,
+        0.01312070433050394,
+        0.020866652950644493,
+        0.014051772654056549,
+        0.019911929965019226,
+        0.016370698809623718,
+        0.018881425261497498
+      ],
+      "weight_sha256": "5e0ecccd2102e63c5684b8c7efbb8bfc477ef0d2d4079e97ac5ff2b536fbb185",
+      "bias_sha256": "8ab2f05319a79f481c16baabe1758335422b369ff85447cda8734be157bcdcaf"
+    },
+    {
+      "index": 3,
+      "type": 1,
+      "is_output": 0,
+      "bytes": 48,
+      "input": [
+        3,
+        2,
+        2,
+        16
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        16
+      ],
+      "input_offset": 1400,
+      "output_offset": 0,
+      "layer_sha256": "473b0b3fdc621d785aaa53a87288d6c064247a8d2eaa9c3f55ef8c1c006d6e1a",
+      "input_scale": 0.05664922669529915,
+      "input_zero_point": -128,
+      "output_scale": 0.022351326420903206,
+      "output_zero_point": -128
+    },
+    {
+      "index": 4,
+      "type": 2,
+      "is_output": 0,
+      "bytes": 304,
+      "input": [
+        1,
+        1,
+        1,
+        16
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        10
+      ],
+      "input_offset": 0,
+      "output_offset": 1448,
+      "layer_sha256": "2ae5c4dad291f9ed89b188fc19d898e1e24c25554fa0f45feb1ec4bf41f43ff8",
+      "input_scale": 0.022351326420903206,
+      "input_zero_point": -128,
+      "output_scale": 0.1513938456773758,
+      "output_zero_point": 42,
+      "weight_scale_offset": 64,
+      "weight_offset": 104,
+      "bias_offset": 264,
+      "weight_scales": [
+        0.021470503881573677,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "weight_sha256": "8aff929b5a87b5a4ed6d618ef6912536fba3439ad1fdf67c2e7d986769a22621",
+      "bias_sha256": "81374d63fd1406c1e63f82513985c81e33f8016399d7dd0c86b0a95c9cb3fc7c"
+    },
+    {
+      "index": 5,
+      "type": 3,
+      "is_output": 1,
+      "bytes": 48,
+      "input": [
+        1,
+        1,
+        1,
+        10
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        10
+      ],
+      "input_offset": 1448,
+      "output_offset": 0,
+      "layer_sha256": "51bb15e139f2d7627b5c16fcd5a86abb428ee34f10520e9d571bf183aed2e2ee",
+      "input_scale": 0.1513938456773758,
+      "input_zero_point": 42,
+      "output_scale": 0.00390625,
+      "output_zero_point": -128
+    }
+  ],
+  "input": {
+    "shape": [
+      28,
+      28,
+      1
+    ],
+    "layout": "HWC row-major",
+    "source_dtype": "uint8",
+    "preprocess": "TMPP_UINT2INT: int8(uint8-128)",
+    "transpose": false,
+    "additional_normalization": false,
+    "fixture_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+    "fixture_label": 7
+  },
+  "execution": {
+    "cpu_entry": "tm_run_cpu",
+    "npu_entry": "tm_run",
+    "same_model_pointer": "mdl_data",
+    "tm_fastscale": 1,
+    "tm_local_math": 1,
+    "tm_npu_cpu_compat": 1,
+    "cpu_clock_hz": 50000000,
+    "npu_clock_hz": 50000000,
+    "timing_boundary": "tm_run only; loading, preprocessing, validation and UART excluded",
+    "npu_submissions": 4,
+    "hardware_windows": 3,
+    "weight_resident": true,
+    "ppu_quantization": true,
+    "ppu_quantization_mode": "EXACT_TINYMAIX_Q8_CONV; modulo32/truncation preserved",
+    "hardware_quantized_layers": 3,
+    "model_parameter_math_tables": {
+      "scope": "MODEL_PARAMETER_FUNCTION_TABLES_NOT_INPUT_OUTPUT_MEMOIZATION",
+      "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+      "gap_entries": 256,
+      "fc_thresholds": 255,
+      "softmax_pairs": 32896,
+      "packed_delta_bytes": 16448,
+      "delta_range": [
+        -2,
+        2
+      ],
+      "table_bytes": 18748,
+      "header_sha256": "4ff4b4ee0f8d6f8edeba9a308ae8fe75ab5f54e9ae899ee398b72d11bb7b526d"
+    },
+    "execution_config_cache": true,
+    "dequant_function_table_entries": 256,
+    "softmax_quant_fast_path": "conservative exact INT8 intervals with original FP32 fallback"
+  },
+  "source_evidence": {
+    "candidate_headers": [
+      {
+        "path": "D:\\final_prj\\vitis\\kws\\src\\include\\mnist_valid_q.h",
+        "header_sha256": "d673c632399e863722148c3283a8e1490ad5299229fcae97fd1a70346e0067aa",
+        "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+        "bytes": 2408,
+        "layers": [
+          {
+            "type": 0,
+            "input": [
+              3,
+              28,
+              28,
+              1
+            ],
+            "output": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "bytes": 152
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "output": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "bytes": 432
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "output": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "bytes": 1360
+          },
+          {
+            "type": 1,
+            "input": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "bytes": 48
+          },
+          {
+            "type": 2,
+            "input": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 304
+          },
+          {
+            "type": 3,
+            "input": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 48
+          }
+        ]
+      },
+      {
+        "path": "D:\\final_prj\\vitis\\KWS_final\\src\\include\\mnist_valid_q.h",
+        "header_sha256": "d673c632399e863722148c3283a8e1490ad5299229fcae97fd1a70346e0067aa",
+        "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+        "bytes": 2408,
+        "layers": [
+          {
+            "type": 0,
+            "input": [
+              3,
+              28,
+              28,
+              1
+            ],
+            "output": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "bytes": 152
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "output": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "bytes": 432
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "output": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "bytes": 1360
+          },
+          {
+            "type": 1,
+            "input": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "bytes": 48
+          },
+          {
+            "type": 2,
+            "input": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 304
+          },
+          {
+            "type": 3,
+            "input": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 48
+          }
+        ]
+      },
+      {
+        "path": "D:\\final_prj\\vitis\\kws_new\\src\\include\\mnist_valid_q.h",
+        "header_sha256": "d673c632399e863722148c3283a8e1490ad5299229fcae97fd1a70346e0067aa",
+        "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+        "bytes": 2408,
+        "layers": [
+          {
+            "type": 0,
+            "input": [
+              3,
+              28,
+              28,
+              1
+            ],
+            "output": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "bytes": 152
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "output": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "bytes": 432
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "output": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "bytes": 1360
+          },
+          {
+            "type": 1,
+            "input": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "bytes": 48
+          },
+          {
+            "type": 2,
+            "input": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 304
+          },
+          {
+            "type": 3,
+            "input": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 48
+          }
+        ]
+      },
+      {
+        "path": "D:\\final_prj\\vitis\\mnist\\src\\include\\mnist_valid_q.h",
+        "header_sha256": "d673c632399e863722148c3283a8e1490ad5299229fcae97fd1a70346e0067aa",
+        "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+        "bytes": 2408,
+        "layers": [
+          {
+            "type": 0,
+            "input": [
+              3,
+              28,
+              28,
+              1
+            ],
+            "output": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "bytes": 152
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              13,
+              13,
+              4
+            ],
+            "output": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "bytes": 432
+          },
+          {
+            "type": 0,
+            "input": [
+              3,
+              6,
+              6,
+              8
+            ],
+            "output": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "bytes": 1360
+          },
+          {
+            "type": 1,
+            "input": [
+              3,
+              2,
+              2,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "bytes": 48
+          },
+          {
+            "type": 2,
+            "input": [
+              1,
+              1,
+              1,
+              16
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 304
+          },
+          {
+            "type": 3,
+            "input": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "output": [
+              1,
+              1,
+              1,
+              10
+            ],
+            "bytes": 48
+          }
+        ]
+      }
+    ],
+    "registry_file": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_tinymaix\\source\\model_registry.h",
+    "registry_header_sha256": "d56ece86a0f4cfb7b15dc37d70d446cde0dc432f15bb57e0241bcedb84266e39",
+    "original_cpu_replay_file": "D:\\\u6280\u672f\u6587\u6863\\.migration-work\\model_alignment_20261029\\original_cpu_replay.json",
+    "original_cpu_replay_sha256": "d652955d98fb83802371d47335fb86ec822ed8471a7c7929a723f4a7376baaef",
+    "original_source_fc_note": "Source FC casts directly; migrated port saturates before cast. No saturation triggered in the seven verified inputs. Not a universal equivalence proof."
+  },
+  "golden_inputs": [
+    {
+      "case": 0,
+      "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
+      "score_bits": [
+        998244352,
+        998244352,
+        998244352,
+        998244352,
+        0,
+        998244352,
+        0,
+        1065287680,
+        0,
+        998244352
+      ],
+      "layer_hashes": [
+        "D9AEB518",
+        "3246EA94",
+        "100C601B",
+        "667C5E34",
+        "95C0D164",
+        "D4231834"
+      ]
+    },
+    {
+      "case": 1,
+      "input_sha256": "09dd6ce3e28ea03f905d2a21cc44d591a8ead378c75dad058447b4cc088d770d",
+      "score_bits": [
+        1047265280,
+        998244352,
+        0,
+        0,
+        1047265280,
+        0,
+        1057619968,
+        998244352,
+        998244352,
+        998244352
+      ],
+      "layer_hashes": [
+        "E0A6E78A",
+        "32848E85",
+        "C7A3E4B5",
+        "821986BC",
+        "6D11BBCC",
+        "24446BDD"
+      ]
+    },
+    {
+      "case": 2,
+      "input_sha256": "76b4988762ce7c0ddd02264c06d617127aa26ceba100400161beea6bf1a2b870",
+      "score_bits": [
+        998244352,
+        0,
+        0,
+        998244352,
+        1065287680,
+        998244352,
+        0,
+        998244352,
+        998244352,
+        998244352
+      ],
+      "layer_hashes": [
+        "F26A5725",
+        "AA5CB93C",
+        "31AE7C82",
+        "50319324",
+        "6FDCA8CF",
+        "62711F76"
+      ]
+    },
+    {
+      "case": 3,
+      "input_sha256": "00bd8725b42eabe0dd622c50b77fbb64fd69937e1827f223ea10032c5c80392d",
+      "score_bits": [
+        1034420224,
+        0,
+        0,
+        998244352,
+        1061158912,
+        0,
+        998244352,
+        998244352,
+        1043070976,
+        998244352
+      ],
+      "layer_hashes": [
+        "4F00B390",
+        "FA03131C",
+        "185C82B4",
+        "09C62CE9",
+        "88CC6D8A",
+        "8E5E9B59"
+      ]
+    },
+    {
+      "case": 4,
+      "input_sha256": "75ebab95cad7fade3e445e5f48dbea0b57ea77fc09f3624a1ad3c8efa880e72c",
+      "score_bits": [
+        0,
+        0,
+        0,
+        0,
+        1065287680,
+        0,
+        0,
+        998244352,
+        998244352,
+        0
+      ],
+      "layer_hashes": [
+        "4B90B9BF",
+        "F17BBCDC",
+        "D5AA891C",
+        "ED58BB98",
+        "C21F60C7",
+        "3E4D087C"
+      ]
+    },
+    {
+      "case": 5,
+      "input_sha256": "0c37ddc45244523ca3b841e3ea85e147a1d35c6ae1cd767e8c30dabf057516fd",
+      "score_bits": [
+        998244352,
+        1057226752,
+        1023410176,
+        1053818880,
+        998244352,
+        1015021568,
+        998244352,
+        1023410176,
+        998244352,
+        998244352
+      ],
+      "layer_hashes": [
+        "B8547EF1",
+        "DA67D6CD",
+        "256F0025",
+        "AEB68954",
+        "04F64280",
+        "7160D0EA"
+      ]
+    },
+    {
+      "case": 6,
+      "input_sha256": "3aab5662a134cd4abbc697b84e642f15fd978b38b2f27ed95de8aa1c71118921",
+      "score_bits": [
+        1064566784,
+        998244352,
+        0,
+        0,
+        1023410176,
+        0,
+        998244352,
+        998244352,
+        1015021568,
+        998244352
+      ],
+      "layer_hashes": [
+        "1BEEC3FF",
+        "0D8511A5",
+        "2793C7DD",
+        "90B04DB4",
+        "2BAA31F5",
+        "97D4ECC3"
+      ]
+    }
+  ],
+  "paper": {
+    "model_identity_confirmed": false,
+    "reason": "Both Word files only name MNIST CNN and TinyMaix; no architecture, weights, hash, fixture, cache state, detailed timing boundary, or original logs. User has no additional original files.",
+    "reference_cpu_ms": 41.41,
+    "reference_npu_ms": 3.65,
+    "reference_speedup": 11.3,
+    "hardware": "Zynq-7020",
+    "reported_hardware_hz": 150000000,
+    "claim": "Current project model identity fixed; paper performance reproduction not established."
+  }
+}

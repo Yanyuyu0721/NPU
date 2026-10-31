@@ -1,0 +1,412 @@
+{
+  "task": "kws",
+  "seq": 8,
+  "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+  "input_crc32": "f371164a",
+  "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+  "clock_hz": 50000000,
+  "cpu_ms": 275.8805,
+  "cpu_cycles": 13794025,
+  "modes": {
+    "first": {
+      "cycles": 1935522,
+      "ms": 38.71044,
+      "speedup": 7.126772519248037
+    },
+    "cold": {
+      "cycles": 1592926,
+      "ms": 31.85852,
+      "speedup": 8.65955166781131
+    },
+    "hot": {
+      "cycles": 1406660,
+      "ms": 28.1332,
+      "speedup": 9.80622538495443
+    }
+  },
+  "scores": [
+    0.33984375,
+    0.36328125,
+    0.30078125
+  ],
+  "labels": [
+    "Hi xiaowen",
+    "Nihao wenwen",
+    "Background"
+  ],
+  "prediction": "Nihao wenwen",
+  "confidence": 0.36328125,
+  "rows": [
+    {
+      "mode": 0,
+      "rep": 0,
+      "cycles": 13794025,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 1,
+      "cycles": 13794025,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 2,
+      "cycles": 13794025,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 3,
+      "cycles": 13794025,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 4,
+      "cycles": 13794025,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 0,
+      "rep": 5,
+      "cycles": 13794025,
+      "hits": 0,
+      "misses": 0,
+      "submissions": 0,
+      "windows": 0,
+      "quants": 0,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 1,
+      "rep": 0,
+      "cycles": 1935522,
+      "hits": 0,
+      "misses": 11,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 0,
+      "cycles": 1592926,
+      "hits": 0,
+      "misses": 11,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 1,
+      "cycles": 1592926,
+      "hits": 0,
+      "misses": 11,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 2,
+      "cycles": 1592926,
+      "hits": 0,
+      "misses": 11,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 3,
+      "cycles": 1592926,
+      "hits": 0,
+      "misses": 11,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 2,
+      "rep": 4,
+      "cycles": 1592926,
+      "hits": 0,
+      "misses": 11,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 0,
+      "cycles": 1406660,
+      "hits": 11,
+      "misses": 0,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 1,
+      "cycles": 1406660,
+      "hits": 11,
+      "misses": 0,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 2,
+      "cycles": 1406660,
+      "hits": 11,
+      "misses": 0,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 3,
+      "cycles": 1406660,
+      "hits": 11,
+      "misses": 0,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    },
+    {
+      "mode": 3,
+      "rep": 4,
+      "cycles": 1406660,
+      "hits": 11,
+      "misses": 0,
+      "submissions": 11,
+      "windows": 4,
+      "quants": 8,
+      "weight_loads": 0,
+      "weight_hits": 0,
+      "score_bits": [
+        1051590656,
+        1052377088,
+        1050279936
+      ]
+    }
+  ],
+  "layers": [
+    [
+      0,
+      2812357061,
+      2812357061
+    ],
+    [
+      1,
+      4211140669,
+      4211140669
+    ],
+    [
+      2,
+      344286263,
+      344286263
+    ],
+    [
+      3,
+      276190676,
+      276190676
+    ],
+    [
+      4,
+      57290815,
+      57290815
+    ],
+    [
+      5,
+      471102414,
+      471102414
+    ],
+    [
+      6,
+      16401709,
+      16401709
+    ],
+    [
+      7,
+      475953122,
+      475953122
+    ],
+    [
+      8,
+      700407512,
+      700407512
+    ],
+    [
+      9,
+      1632813295,
+      1632813295
+    ],
+    [
+      10,
+      2301595021,
+      2301595021
+    ],
+    [
+      11,
+      3493766040,
+      3493766040
+    ],
+    [
+      12,
+      2028197140,
+      2028197140
+    ]
+  ],
+  "verified": true,
+  "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+  "token": "b176c772cf2743089026268211b9c241",
+  "host_elapsed_ms": 3000.0,
+  "run_dir": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\runs\\20261030_150853_598949_kws",
+  "input_source": {
+    "kind": "audio",
+    "name": "silence 16000",
+    "sample_rate": 16000,
+    "samples": 32000,
+    "duration": 2.0,
+    "task": "kws",
+    "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+    "created_at": "2026-10-30T15:08:53.596463"
+  }
+}

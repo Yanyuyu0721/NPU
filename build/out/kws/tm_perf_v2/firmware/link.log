@@ -1,0 +1,1 @@
+D:/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/bin/ld.exe: warning: D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\firmware\firmware.elf has a LOAD segment with RWX permissions

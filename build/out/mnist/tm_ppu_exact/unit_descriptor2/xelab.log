@@ -1,0 +1,19 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xlinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe tb_ppu_descriptor -s descriptor --timescale 1ns/1ps 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.gnrl_dfflr(DW=6)
+Compiling module work.gnrl_dfflr(DW=113)
+Compiling module work.syncfifo(DATA_WIDTH=113,ADDR_WID...
+Compiling module work.gnrl_dfflr(DW=5)
+Compiling module work.gnrl_dfflr(DW=45)
+Compiling module work.syncfifo(DATA_WIDTH=45)
+Compiling module work.round_robin_arbiter(N=4)
+Compiling module work.ppu_control_default
+Compiling module work.tb_ppu_descriptor
+Built simulation snapshot descriptor

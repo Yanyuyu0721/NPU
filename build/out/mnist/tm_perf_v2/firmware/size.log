@@ -1,0 +1,19 @@
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\firmware\firmware.elf  :
+section               size         addr
+.text                67916   2147483648
+.rodata              24820   2147551568
+.data                    4   2147576388
+.bss                 38468   2684354560
+.riscv.attributes       46            0
+.debug_line         136536            0
+.debug_line_str       4662            0
+.debug_info          92282            0
+.debug_abbrev        14638            0
+.debug_aranges        1512            0
+.debug_str            9025            0
+.debug_loclists     112042            0
+.debug_rnglists      12730            0
+.debug_frame          7012            0
+Total               521693
+
+

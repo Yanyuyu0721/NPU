@@ -1,0 +1,17 @@
+{
+  "scope": "PHYSICAL_ONLY_CAPACITY_AND_PROTOCOL_PRESERVED_BANKING",
+  "rows": [
+    {
+      "path": "rtl/src/rtl/common_cells/ram/axi_ram.v",
+      "input_sha256": "f8641e6927fec84d442c86929b9e036d8f988a8337e9aeb626c07ae89f6e34f1",
+      "output_sha256": "3851bf40e9d9cf99d1b6599579f96a51842778bc99ddb45189deddf3a0c01978"
+    },
+    {
+      "path": "rtl/src/rtl/common_cells/ram/axi_dp_ram.v",
+      "input_sha256": "d492dc111c1455b47f7545dcfd65b9cc7dfeb111744db82e1ba3ed4e2dda59fa",
+      "output_sha256": "d926d32097864640ba3dd740ba17af3ac478cd5db7d16acd2231e25e9c9e547f"
+    }
+  ],
+  "new_module_sha256": "a3db852adf9c88e107c0bb3b749aef4c9c59134f06735e6de2b8d2bdbccffa74",
+  "image_candidate_changed": false
+}

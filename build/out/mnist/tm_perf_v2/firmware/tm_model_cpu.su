@@ -1,0 +1,4 @@
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\tm_model.c:186:18:tm_load_cpu	32	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\tm_model.c:227:14:tm_unload_cpu	32	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\tm_model.c:235:18:tm_preprocess_cpu	32	static
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\mnist\tm_perf_v2\source\tm_model.c:276:18:tm_run_cpu	192	static

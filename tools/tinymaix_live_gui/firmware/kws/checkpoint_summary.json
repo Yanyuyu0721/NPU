@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "produced_at": "2026-10-30T12:09:24.257799+08:00",
+  "protocol": "VEX_TM_KWS3",
+  "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+  "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+  "cpu_reference_unchanged": true,
+  "word_documents_edited": false,
+  "verified_final_runs": 4,
+  "verified_final_timing_samples": 68,
+  "median_cycles": {
+    "0": 13793853,
+    "1": 1932175,
+    "2": 1589579,
+    "3": 1403313
+  },
+  "median_ms": {
+    "0": 275.87706,
+    "1": 38.6435,
+    "2": 31.79158,
+    "3": 28.06626
+  },
+  "speedup": {
+    "1": 7.13902881467776,
+    "2": 8.67767691948623,
+    "3": 9.829491353675195
+  },
+  "bit_sha256": "58af111d85c35cf1bb2b2fbb84af407dceeb6d12db7ad10f77c9cae69f588175",
+  "firmware_mem_sha256": "03be1ae89948d181f2dcecfb06ae3be88109e6e1617e3ed82bf327e43b941882",
+  "baseline_bit_sha256": "615ce60103ebe13914c6c6c0c9c51205b127a14c91a34c11203c0ca576320d3c",
+  "custom_bit_sha256": "32a95adddef16e8c569c5bc55f9421ec683cb9697fd7c9f19ae7618732dc76cf",
+  "final_evidence": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088",
+  "rtl_test": {
+    "passed": true,
+    "tasks": 1290,
+    "samples": 56666,
+    "commands": [
+      {
+        "command": [
+          "D:\\Xlinx\\Vivado\\2018.2\\bin\\xvlog.bat",
+          "--sv",
+          "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\rtl_override\\src\\rtl\\post_processing_unit\\ppu.v",
+          "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\unit_exact\\tb_exact.sv"
+        ],
+        "exit": 0
+      },
+      {
+        "command": [
+          "D:\\Xlinx\\Vivado\\2018.2\\bin\\xelab.bat",
+          "tb_exact",
+          "-s",
+          "exact_sim",
+          "--timescale",
+          "1ns/1ps"
+        ],
+        "exit": 0
+      },
+      {
+        "command": [
+          "D:\\Xlinx\\Vivado\\2018.2\\bin\\xsim.bat",
+          "exact_sim",
+          "-tclbatch",
+          "run.tcl"
+        ],
+        "exit": 0
+      }
+    ]
+  },
+  "capture_validator_cases": 18
+}

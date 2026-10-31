@@ -1,0 +1,50 @@
+{
+  "scope": "HAN_ENGLISH_BOUNDARY_SPACING_ONLY",
+  "passed": true,
+  "changes": {
+    "design_report.docx": {
+      "word/document.xml": {
+        "boundary_space_groups_removed": 353,
+        "mixed_paragraphs": 70
+      },
+      "word/styles.xml": {
+        "boundary_space_groups_removed": 0,
+        "mixed_paragraphs": 0
+      }
+    },
+    "technical_paper.docx": {
+      "word/document.xml": {
+        "boundary_space_groups_removed": 399,
+        "mixed_paragraphs": 89
+      },
+      "word/header1.xml": {
+        "boundary_space_groups_removed": 2,
+        "mixed_paragraphs": 1
+      },
+      "word/styles.xml": {
+        "boundary_space_groups_removed": 0,
+        "mixed_paragraphs": 0
+      }
+    }
+  },
+  "documents": {
+    "design_report.docx": {
+      "non_space_characters_identical": true,
+      "all_images_identical": true,
+      "xml_parts_compared": 11,
+      "residual_boundary_spaces": 0,
+      "pages": 25,
+      "sha256": "54f88866f2deeadc801ba1d6e2eb5d11be000885ee04d135e84972e662e28ff8",
+      "visual_review": "All pages inspected after native Word export and PNG rendering"
+    },
+    "technical_paper.docx": {
+      "non_space_characters_identical": true,
+      "all_images_identical": true,
+      "xml_parts_compared": 12,
+      "residual_boundary_spaces": 0,
+      "pages": 31,
+      "sha256": "6e725abcc1c11b2bb1d2d4bf48362a88aa46cac33fa4f129a52af3057954367a",
+      "visual_review": "All pages inspected after native Word export and PNG rendering"
+    }
+  }
+}

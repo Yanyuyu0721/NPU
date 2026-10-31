@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# xsim v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Oct 30 11:54:41 2026
+# Process ID: 246840
+# Current directory: D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact
+# Command line: xsim.exe -mode tcl -source {xsim.dir/exact_sim/xsim_script.tcl}
+# Log file: D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact/xsim.log
+# Journal file: D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/exact_sim/xsim_script.tcl
+# xsim {exact_sim} -autoloadwcfg -tclbatch {run.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source run.tcl
+## run all
+EXACT_PPU_PASS tasks=1290 samples=56666
+$finish called at time : 800400 ns : File "D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/unit_exact/tb_exact.sv" Line 45
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 11:54:45 2026...

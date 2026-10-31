@@ -1,0 +1,83 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 29-dec-2026.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 12:06:43 2026
+# Process ID         : 330684
+# Current directory  : D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/demo_runs/20261030_120643_076088/program
+# Command line       : vivado.exe -mode batch -source D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\board\program_2018_2.tcl -log D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\demo_runs\20261030_120643_076088\program\program.log -journal D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\demo_runs\20261030_120643_076088\program\program.jou -tclargs D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\image_final\board_top.bit 127.0.0.1:3122  D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\demo_runs\20261030_120643_076088\program\capture_arm.txt D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\demo_runs\20261030_120643_076088\program\capture_ack.txt
+# Log file           : D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/build/out/kws/tm_perf_v2/demo_runs/20261030_120643_076088/program/program.log
+# Journal file       : D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\build\out\kws\tm_perf_v2\demo_runs\20261030_120643_076088\program\program.jou
+# Running On         : DESKTOP-9IH4LM7
+# Platform           : Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-14400
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 34008 MB
+# Swap memory        : 49683 MB
+# Total Virtual      : 83691 MB
+# Available Virtual  : 16819 MB
+#-----------------------------------------------------------
+source {D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\board\program_2018_2.tcl}
+# if {[llength $argv] != 5} {error {Usage: program_2018_2.tcl image server exact_target_or_empty arm_file ack_file}}
+# lassign $argv image server target arm ack
+# puts "PORT_VIVADO=[version -short]"
+PORT_VIVADO=2026.1
+# if {![file isfile $image]} {error {Matching bitstream missing}}
+# if {[catch {open_hw_manager} hw_err]} {
+#  puts "PORT_NOTE=open_hw_manager unavailable (${hw_err}); using open_hw"
+#  open_hw
+#  set closer close_hw
+# } else {
+#  set closer close_hw_manager
+# }
+open_hw_manager: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 596.605 ; gain = 270.984
+# connect_hw_server -url $server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:127.0.0.1:3122
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx cs_server v2026.1
+  **** Build Info : #60 | 2026-06-15 19:15 UTC | a9691a9
+    ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+# set targets [get_hw_targets -quiet]
+# if {$target ne {}} {
+#  set selected {}
+#  foreach item $targets {if {[get_property NAME $item] eq $target} {lappend selected $item}}
+#  set targets $selected
+# }
+# if {[llength $targets] != 1} {error {Exactly one explicitly selected hardware target required}}
+# current_hw_target [lindex $targets 0]
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 127.0.0.1:3122/xilinx_tcf/Digilent/210512180081
+# set matches [get_hw_devices -quiet -filter {PART =~ xc7a100t*}]
+# if {[llength $matches] != 1} {error {Exactly one XC7A100T required; no device fallback}}
+# set device [lindex $matches 0]
+# current_hw_device $device
+# puts "ACTUAL_HW_PART=[get_property PART $device]"
+ACTUAL_HW_PART=xc7a100t
+# set_property PROGRAM.FILE [file normalize $image] $device
+# set f [open $arm w]
+# puts $f {capture_arm}
+# close $f
+# set deadline [expr {[clock milliseconds]+10000}]
+# while {![file exists $ack]} {
+#  if {[clock milliseconds]>$deadline} {error {UART capture acknowledgment timeout}}
+#  after 10
+# }
+# program_hw_devices $device
+INFO: [Labtools 27-3164] End of startup status: HIGH
+# puts {MATCHING_A7_IMAGE_PROGRAMMED}
+MATCHING_A7_IMAGE_PROGRAMMED
+# $closer
+# exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 12:06:58 2026...

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": [
+    "native_tk_window_and_pen_adapter",
+    "native_draw_pointer_to_real_preprocess",
+    "mnist_native_controls_board_inference_and_output_display",
+    "kws_native_controls_board_inference_and_output_display",
+    "native_wav_input_exact_fixture_features",
+    "native_audio_playback_start_stop",
+    "native_recording_32768_samples_virtual_input",
+    "native_recorded_audio_board_inference"
+  ],
+  "results": {
+    "mnist": {
+      "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175215_582225_mnist",
+      "cpu_ms": 22.96778,
+      "npu_ms": 1.95034,
+      "speedup": 11.776295415158383,
+      "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941"
+    },
+    "kws": {
+      "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175232_525014_kws",
+      "cpu_ms": 275.87612,
+      "npu_ms": 28.06528,
+      "speedup": 9.829801092310499,
+      "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e"
+    },
+    "recording": {
+      "input_device": "默认麦克风",
+      "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175238_730364_kws",
+      "speedup": 9.818173148231182
+    }
+  },
+  "board_images_unchanged": true,
+  "scope": "Native Tk controls, preprocessing and actual board inference; virtual audio device available on this host"
+}

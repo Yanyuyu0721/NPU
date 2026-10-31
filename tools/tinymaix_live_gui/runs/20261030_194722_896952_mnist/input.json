@@ -1,0 +1,7 @@
+{
+  "kind": "image",
+  "name": "手写画板",
+  "task": "mnist",
+  "input_sha256": "615452126419c4bc28906f22ad8e03f31b8b5887afb7b051b10e622015ad5ee8",
+  "created_at": "2026-10-30T19:47:22.055599"
+}

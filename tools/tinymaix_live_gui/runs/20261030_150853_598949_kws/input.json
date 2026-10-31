@@ -1,0 +1,10 @@
+{
+  "kind": "audio",
+  "name": "silence 16000",
+  "sample_rate": 16000,
+  "samples": 32000,
+  "duration": 2.0,
+  "task": "kws",
+  "input_sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15",
+  "created_at": "2026-10-30T15:08:53.596463"
+}

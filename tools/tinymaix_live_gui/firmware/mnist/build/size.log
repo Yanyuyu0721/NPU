@@ -1,0 +1,19 @@
+D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\mnist\build\firmware.elf  :
+section               size         addr
+.text                64656   2147483648
+.rodata              24124   2147548304
+.data                    4   2147572428
+.bss                 38076   2684354560
+.riscv.attributes       46            0
+.debug_line         132417            0
+.debug_line_str       4779            0
+.debug_info          90779            0
+.debug_abbrev        14641            0
+.debug_aranges        1520            0
+.debug_str            8903            0
+.debug_loclists     111492            0
+.debug_rnglists      12291            0
+.debug_frame          7216            0
+Total               510944
+
+

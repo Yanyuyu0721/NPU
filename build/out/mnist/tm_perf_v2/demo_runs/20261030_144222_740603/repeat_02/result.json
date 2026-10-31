@@ -1,0 +1,592 @@
+{
+  "passed": true,
+  "board_measurement": true,
+  "finished": "2026-10-30T14:42:56.406531+08:00",
+  "scope": "REAL_BOARD_UART_RERUN",
+  "validation": {
+    "passed": true,
+    "simulation": false,
+    "stress_inputs": [
+      [
+        "00000000",
+        " 3E6C0000 3B800000 00000000 00000000 3E6C0000 00000000 3F0A0000 3B800000 3B800000 3B800000",
+        " 3E6C0000 3B800000 00000000 00000000 3E6C0000 00000000 3F0A0000 3B800000 3B800000 3B800000",
+        "00000001"
+      ],
+      [
+        "00000001",
+        " 3B800000 00000000 00000000 3B800000 3F7F0000 3B800000 00000000 3B800000 3B800000 3B800000",
+        " 3B800000 00000000 00000000 3B800000 3F7F0000 3B800000 00000000 3B800000 3B800000 3B800000",
+        "00000001"
+      ],
+      [
+        "00000002",
+        " 3DA80000 00000000 00000000 3B800000 3F400000 00000000 3B800000 3B800000 3E2C0000 3B800000",
+        " 3DA80000 00000000 00000000 3B800000 3F400000 00000000 3B800000 3B800000 3E2C0000 3B800000",
+        "00000001"
+      ],
+      [
+        "00000003",
+        " 00000000 00000000 00000000 00000000 3F7F0000 00000000 00000000 3B800000 3B800000 00000000",
+        " 00000000 00000000 00000000 00000000 3F7F0000 00000000 00000000 3B800000 3B800000 00000000",
+        "00000001"
+      ],
+      [
+        "00000004",
+        " 3B800000 3F040000 3D000000 3ED00000 3B800000 3C800000 3B800000 3D000000 3B800000 3B800000",
+        " 3B800000 3F040000 3D000000 3ED00000 3B800000 3C800000 3B800000 3D000000 3B800000 3B800000",
+        "00000001"
+      ],
+      [
+        "00000005",
+        " 3F740000 3B800000 00000000 00000000 3D000000 00000000 3B800000 3B800000 3C800000 3B800000",
+        " 3F740000 3B800000 00000000 00000000 3D000000 00000000 3B800000 3B800000 3C800000 3B800000",
+        "00000001"
+      ]
+    ],
+    "records": [
+      {
+        "mode": 0,
+        "repeat": 0,
+        "cycles": 1148403,
+        "ms": 22.96806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "hardware_quantizations": 0,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 1,
+        "cycles": 1148403,
+        "ms": 22.96806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "hardware_quantizations": 0,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 2,
+        "cycles": 1148403,
+        "ms": 22.96806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "hardware_quantizations": 0,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 3,
+        "cycles": 1148403,
+        "ms": 22.96806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "hardware_quantizations": 0,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 4,
+        "cycles": 1148403,
+        "ms": 22.96806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "hardware_quantizations": 0,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "repeat": 5,
+        "cycles": 1148403,
+        "ms": 22.96806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "hardware_windows": 0,
+        "hardware_quantizations": 0,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 1,
+        "repeat": 0,
+        "cycles": 259770,
+        "ms": 5.1954,
+        "hits": 0,
+        "misses": 4,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 0,
+        "cycles": 114958,
+        "ms": 2.29916,
+        "hits": 0,
+        "misses": 4,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 1,
+        "cycles": 114958,
+        "ms": 2.29916,
+        "hits": 0,
+        "misses": 4,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 2,
+        "cycles": 114958,
+        "ms": 2.29916,
+        "hits": 0,
+        "misses": 4,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 3,
+        "cycles": 114958,
+        "ms": 2.29916,
+        "hits": 0,
+        "misses": 4,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "repeat": 4,
+        "cycles": 114958,
+        "ms": 2.29916,
+        "hits": 0,
+        "misses": 4,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 0,
+        "cycles": 97533,
+        "ms": 1.95066,
+        "hits": 4,
+        "misses": 0,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 1,
+        "cycles": 97533,
+        "ms": 1.95066,
+        "hits": 4,
+        "misses": 0,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 2,
+        "cycles": 97533,
+        "ms": 1.95066,
+        "hits": 4,
+        "misses": 0,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 3,
+        "cycles": 97533,
+        "ms": 1.95066,
+        "hits": 4,
+        "misses": 0,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "repeat": 4,
+        "cycles": 97533,
+        "ms": 1.95066,
+        "hits": 4,
+        "misses": 0,
+        "submissions": 4,
+        "hardware_windows": 3,
+        "hardware_quantizations": 3,
+        "score_bits": [
+          998244352,
+          998244352,
+          998244352,
+          998244352,
+          0,
+          998244352,
+          0,
+          1065287680,
+          0,
+          998244352
+        ]
+      }
+    ],
+    "layer_count": 6,
+    "layer_hashes": [
+      [
+        "00000000",
+        "D9AEB518",
+        "D9AEB518"
+      ],
+      [
+        "00000001",
+        "3246EA94",
+        "3246EA94"
+      ],
+      [
+        "00000002",
+        "100C601B",
+        "100C601B"
+      ],
+      [
+        "00000003",
+        "667C5E34",
+        "667C5E34"
+      ],
+      [
+        "00000004",
+        "95C0D164",
+        "95C0D164"
+      ],
+      [
+        "00000005",
+        "D4231834",
+        "D4231834"
+      ]
+    ],
+    "layer_profiles": [
+      {
+        "backend": 0,
+        "layer": 0,
+        "cycles": 412920,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 1,
+        "cycles": 407329,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 2,
+        "cycles": 177309,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 3,
+        "cycles": 35785,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 4,
+        "cycles": 33068,
+        "external_cycles": 0
+      },
+      {
+        "backend": 0,
+        "layer": 5,
+        "cycles": 80674,
+        "external_cycles": 0
+      },
+      {
+        "backend": 1,
+        "layer": 0,
+        "cycles": 27097,
+        "external_cycles": 15214
+      },
+      {
+        "backend": 1,
+        "layer": 1,
+        "cycles": 22090,
+        "external_cycles": 10985
+      },
+      {
+        "backend": 1,
+        "layer": 2,
+        "cycles": 17536,
+        "external_cycles": 10464
+      },
+      {
+        "backend": 1,
+        "layer": 3,
+        "cycles": 2826,
+        "external_cycles": 0
+      },
+      {
+        "backend": 1,
+        "layer": 4,
+        "cycles": 14648,
+        "external_cycles": 5827
+      },
+      {
+        "backend": 1,
+        "layer": 5,
+        "cycles": 12010,
+        "external_cycles": 0
+      }
+    ],
+    "expected_submissions": 4,
+    "score_bits": [
+      998244352,
+      998244352,
+      998244352,
+      998244352,
+      0,
+      998244352,
+      0,
+      1065287680,
+      0,
+      998244352
+    ],
+    "probabilities": [
+      0.00390625,
+      0.00390625,
+      0.00390625,
+      0.00390625,
+      0.0,
+      0.00390625,
+      0.0,
+      0.99609375,
+      0.0,
+      0.00390625
+    ],
+    "median_cycles": {
+      "0": 1148403,
+      "1": 259770,
+      "2": 114958,
+      "3": 97533
+    },
+    "median_ms": {
+      "0": 22.96806,
+      "1": 5.1954,
+      "2": 2.29916,
+      "3": 1.95066
+    },
+    "speedup": {
+      "1": 4.420845363205913,
+      "2": 9.989761478105047,
+      "3": 11.774507089908031
+    }
+  },
+  "uart_sha256": "a5b1c58514a1007262beb62d385a6a0b49d898cc7185178f76b4fe340c8df384",
+  "image_reference": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_perf_v2\\image_final\\result.json"
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "D:\\Xlinx\\Vivado\\2018.2\\bin\\xvlog.bat",
+        "--sv",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\shadow\\platform\\rtl\\src\\rtl\\common_cells\\fifo\\gnrl_dfflr.v",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\shadow\\platform\\rtl\\src\\rtl\\common_cells\\fifo\\syncfifo.v",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\shadow\\platform\\rtl\\src\\rtl\\common_cells\\arbiter\\round_robin_arbiter.v",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\rtl_override\\src\\rtl\\post_processing_unit\\ppu_control.v",
+        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\unit_descriptor2\\tb_descriptor.sv"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "D:\\Xlinx\\Vivado\\2018.2\\bin\\xelab.bat",
+        "tb_ppu_descriptor",
+        "-s",
+        "descriptor",
+        "--timescale",
+        "1ns/1ps"
+      ],
+      "exit": 0
+    },
+    {
+      "command": [
+        "D:\\Xlinx\\Vivado\\2018.2\\bin\\xsim.bat",
+        "descriptor",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "exit": 0
+    }
+  ]
+}

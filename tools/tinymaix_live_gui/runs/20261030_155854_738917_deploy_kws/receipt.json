@@ -1,0 +1,8 @@
+{
+  "task": "kws",
+  "hz": 50000000,
+  "model": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+  "protocol": "TMLIVE1",
+  "port": "COM3",
+  "image_sha256": "2fa0afb97b4bf0b7426aa9c5b5dc3c56a6a17dfb5d826ff4578cb64eee768fa0"
+}

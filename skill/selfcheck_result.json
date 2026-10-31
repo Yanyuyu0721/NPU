@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "REUSABLE_TOOL_CONTROLS_NOT_RTL",
+  "checks": [
+    "file_identity_positive",
+    "changed_source_rejected",
+    "path_traversal_rejected",
+    "windows_drive_rejected",
+    "empty_manifest_rejected",
+    "hex_binary_bit_exact_positive",
+    "zero_slack_mutation_rejected_at_word3",
+    "short_vector_rejected",
+    "sparse_memory_rejected",
+    "empty_binary_rejected",
+    "command_capture_positive",
+    "partial_pass_rejected",
+    "duplicate_pass_rejected",
+    "error_then_pass_rejected",
+    "nonzero_exit_rejected",
+    "source_changed_during_run_rejected",
+    "finite_timeout_rejected",
+    "mismatch_cli_exit_nonzero"
+  ]
+}
