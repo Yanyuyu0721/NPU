@@ -1,7 +1,7 @@
 /**************************************
 @ filename     : syncfifo_diffwidth.v
-@ origin author: xu xiaokang
-@ update by    : yyrwkk
+@ origin author: anonymous contributor
+@ update by    : anonymous contributor
 @ create time  : 2025/03/28 21:51:18
 @ version      : v1.0.0
 **************************************/

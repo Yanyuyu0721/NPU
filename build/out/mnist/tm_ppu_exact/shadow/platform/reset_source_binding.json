@@ -63,56 +63,56 @@
     },
     {
       "path": "src/rtl/axi_dma/axis_1to8.v",
-      "source_sha256": "711925b9a8ce5d103fd612dbeb158c139119059c6b60aba79943a88064cbbc4e",
-      "generated_sha256": "711925b9a8ce5d103fd612dbeb158c139119059c6b60aba79943a88064cbbc4e",
+      "source_sha256": "d518726697518b321588bbf60091da8feb467c5b147b4e5d6c6ee65745d4c8cb",
+      "generated_sha256": "d518726697518b321588bbf60091da8feb467c5b147b4e5d6c6ee65745d4c8cb",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/common_cells/ram/simple_dp_ram.v",
-      "source_sha256": "615d60e139e5498e33bcd47c85a376a827ee5eeaa6846cbd42761f322d831968",
-      "generated_sha256": "615d60e139e5498e33bcd47c85a376a827ee5eeaa6846cbd42761f322d831968",
+      "source_sha256": "73c5f84c58fd78cf962fe624f4b180e5bbb50aa3b70c4cc29306be209ea0dbae",
+      "generated_sha256": "73c5f84c58fd78cf962fe624f4b180e5bbb50aa3b70c4cc29306be209ea0dbae",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/common_cells/stack/stack.v",
       "source_sha256": "6e2ca54b62782753259c39efd564241cd736666d45064495c83f7cab2cd53fe7",
-      "generated_sha256": "b7467a4d5f725fe05be40cc2920e62de018cca4ad83b5af1085808d9e31f1784",
+      "generated_sha256": "63fb852ea264539058c8d5b8e8c01aab6e9021782fbae9e6bf908b902560ef28",
       "internal_reset_event_changes": 1
     },
     {
       "path": "src/rtl/systolic_unit/systolic_pe.v",
       "source_sha256": "5b91013e6e97a9a7b21fd3cb43d52fadbc6418205768356368cec768396f0849",
-      "generated_sha256": "4b039d5b74f9ecc6e499bf37648dbc9a319738a465f9921e0b2e30bac1071626",
+      "generated_sha256": "7197555159372fb685092466bad03cef60d642fd1b27aa4ad80f4698f3dd0388",
       "internal_reset_event_changes": 4
     },
     {
       "path": "src/rtl/systolic_unit/systolic_array.v",
-      "source_sha256": "887bc6a599cc7af67b735051c85e12c511091113f019d06e6119211cb592eb66",
-      "generated_sha256": "887bc6a599cc7af67b735051c85e12c511091113f019d06e6119211cb592eb66",
+      "source_sha256": "47ba13a36b3854744c9a663d8f43c6309e9bb6c5634ddc3dafee15fb32fc7500",
+      "generated_sha256": "47ba13a36b3854744c9a663d8f43c6309e9bb6c5634ddc3dafee15fb32fc7500",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/systolic_unit/systolic_fifo.v",
       "source_sha256": "8ebb805bae78fe2bde3418e78490132b42878b348fb9e5c63260d5e8ac682108",
-      "generated_sha256": "1ec8753ed515fe4243e5ab295917bebe516b6878d79ebe45ea41bb754de6cae8",
+      "generated_sha256": "8a29f32e4224499a3b389ad035418673c8aebdc040f82ec429fcc436c9ce4575",
       "internal_reset_event_changes": 2
     },
     {
       "path": "src/rtl/systolic_unit/systolic_buffer.v",
       "source_sha256": "3f43a4162edb6eb46381155fbe5bda5980771a1ff4b59c6fffe48926d77d6f29",
-      "generated_sha256": "68d23deb2ed092b1d287bf0c567a73dd2fa9a7b7c31996fd407675b35f38d63d",
+      "generated_sha256": "b0acce184654b7e0fd3e7503f26214ed347dd61a7a82ca59565cd48f51e21849",
       "internal_reset_event_changes": 6
     },
     {
       "path": "src/rtl/systolic_unit/systolic_reorder.v",
       "source_sha256": "6dc420ae2c53321aaf5a7515fdff57e77bb5665a396f6cb29fb418e617cab440",
-      "generated_sha256": "ffe06fefc2e54a70394844aca8f2244226b307c6afe3047d2ec3bb03a64571f6",
+      "generated_sha256": "7085c1480a32596630aef831a40232f90a3f6e75de93d6feb0f0d3d1787f3238",
       "internal_reset_event_changes": 3
     },
     {
       "path": "src/rtl/systolic_unit/systolic_unit.v",
-      "source_sha256": "993421b0b325a697fe6e304d21327c76ac2fc7a3bc89d8c6ffe83b770fcd66df",
-      "generated_sha256": "993421b0b325a697fe6e304d21327c76ac2fc7a3bc89d8c6ffe83b770fcd66df",
+      "source_sha256": "5842d58350fba52ccfac703547d8030e44dfe491703f33d2f3e44ea98b095e10",
+      "generated_sha256": "5842d58350fba52ccfac703547d8030e44dfe491703f33d2f3e44ea98b095e10",
       "internal_reset_event_changes": 0
     },
     {
@@ -123,44 +123,44 @@
     },
     {
       "path": "src/rtl/common_cells/fifo/syncfifo.v",
-      "source_sha256": "163ab26382c27e97dd558cbe45134e7789e43cfd10b6d2e080daa87a710b8baf",
-      "generated_sha256": "163ab26382c27e97dd558cbe45134e7789e43cfd10b6d2e080daa87a710b8baf",
+      "source_sha256": "7c3f84d0bda993fb8b6bd8cbb2ea4f552af629b4c1a3d32590acf0d309e72f19",
+      "generated_sha256": "7c3f84d0bda993fb8b6bd8cbb2ea4f552af629b4c1a3d32590acf0d309e72f19",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/common_cells/timing/bwdfwdpipe.v",
-      "source_sha256": "b8e22d1027a517ce8940b6f0ab3cb72064c475d9c20ffbee6c6c34a805787e9d",
-      "generated_sha256": "b8e22d1027a517ce8940b6f0ab3cb72064c475d9c20ffbee6c6c34a805787e9d",
+      "source_sha256": "5718602950f07fceb1f6fa4b4945cd0e9d9c3f8da7bc53cb58e4670b57ce7533",
+      "generated_sha256": "5718602950f07fceb1f6fa4b4945cd0e9d9c3f8da7bc53cb58e4670b57ce7533",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/common_cells/timing/bwdpipe.v",
       "source_sha256": "05bbc93e8ca28431ae35a21a592a373484dc15225722a286314b6c39a5004f3f",
-      "generated_sha256": "bd96bd4a982c9ecb3e66061103bd11058ec3818d4f657dc879eec529fcaf5443",
+      "generated_sha256": "6080a2ccc7b20890988c31252066cecef23763c640622664dd251c41450d668d",
       "internal_reset_event_changes": 3
     },
     {
       "path": "src/rtl/common_cells/timing/fwdpipe.v",
       "source_sha256": "f80ff8572e4726c697ef352b119d4270e30fac8fdaa30dc014361694e62119f3",
-      "generated_sha256": "6675487554a81710a7d6c9e3e1a4e577bb673d2965baff68b2c2759b9471a292",
+      "generated_sha256": "6b767ce7ca1c5247b9d922e12a445a543f466b2b74335e11d1628dd07663eb6e",
       "internal_reset_event_changes": 2
     },
     {
       "path": "src/rtl/systolic_unit/systolic_control.v",
       "source_sha256": "35e2be8b210d478aa5ff34f65e9dc7d0bebd43f8c2ef1aefa213eb8d441956d9",
-      "generated_sha256": "b492da1cce303996a8fef45f20ec377bab59346e61722cbf33d5382249176e4c",
+      "generated_sha256": "f3144e0698c78e0f71f65e340bb3e39523710fbab17cb9e4bdefd59814a2260e",
       "internal_reset_event_changes": 6
     },
     {
       "path": "src/rtl/systolic_unit/top_systolic_unit.v",
-      "source_sha256": "3800e7822d4660e8cea30c6f3d08e04171a402d6169905a46d48f10054b1ff94",
-      "generated_sha256": "3800e7822d4660e8cea30c6f3d08e04171a402d6169905a46d48f10054b1ff94",
+      "source_sha256": "6cc801fa619be288f5c8bbb0f529b52e834b6c9fb9aeb19e2b7b6eb85e86d74a",
+      "generated_sha256": "6cc801fa619be288f5c8bbb0f529b52e834b6c9fb9aeb19e2b7b6eb85e86d74a",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/common_cells/arbiter/round_robin_arbiter.v",
-      "source_sha256": "289b5bdeeccfa4855c2aa2a16fe72bc10c6b4417c347261b6b06036ddfd0a794",
-      "generated_sha256": "e3f22604f5dd84153d38f55852942888682e6de253c566e329639601aba2e0fb",
+      "source_sha256": "9810ff5bf0be076b2353485dd115b7181fe1562814ccb09f39275de0458cae92",
+      "generated_sha256": "c1104d50445e9ae7c8a7f498ed07a610cdf2b3a08ff7626e45379b4c3f26aedf",
       "internal_reset_event_changes": 2
     },
     {
@@ -171,38 +171,38 @@
     },
     {
       "path": "src/rtl/axi_dma/axis_4to1.v",
-      "source_sha256": "bc236cf5b7c53c5fdfab4769bf41061698eff15b795a374c31877412cef2be21",
-      "generated_sha256": "bc236cf5b7c53c5fdfab4769bf41061698eff15b795a374c31877412cef2be21",
+      "source_sha256": "2b09677c18ca6c6edcb483bbf724741e62bb3b3fecafff4cdb99879c1f7aa98a",
+      "generated_sha256": "2b09677c18ca6c6edcb483bbf724741e62bb3b3fecafff4cdb99879c1f7aa98a",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/post_processing_unit/ppu.v",
       "source_sha256": "907db7a4e2bc5ec90ac5244b8cc80d48147b100191a65946f4558bf07adb052b",
-      "generated_sha256": "d2f520e9fb06ba2a902a96dacbabed9a29a424f1b6e52dc40d33de7f2d28055a",
+      "generated_sha256": "a53d79af177857e5d46b117815c5b5991a42cc6edaf1645d2e3292c6589418ab",
       "internal_reset_event_changes": 15
     },
     {
       "path": "src/rtl/post_processing_unit/ppu_control.v",
-      "source_sha256": "dbaf81a65a722a78c1cdf492a15e1f6f36d9bc44c908db8c7f13fd8a514f0f2b",
-      "generated_sha256": "655e2b8de1b409e7baa8377c86ccacd33310841ddc77a81320160c845245a008",
+      "source_sha256": "a484ad776182b72823c18544c32fe3b32a1187c5c49ea573e4c6f4c5d473d826",
+      "generated_sha256": "9487aeef678b5ff0e3fda3ed9f36d2e8dbb44a74ff8a1762fc15c5a6d3f5af70",
       "internal_reset_event_changes": 7
     },
     {
       "path": "src/rtl/post_processing_unit/top_ppu.v",
-      "source_sha256": "81a99a321a17eb094e06935416aefc8f39ab4fcca46bfca06b0819026a6f0c1f",
-      "generated_sha256": "81a99a321a17eb094e06935416aefc8f39ab4fcca46bfca06b0819026a6f0c1f",
+      "source_sha256": "b1e5e72cc91d4867184d2a5ce4d13ebff789188d43e3d4ce58d2c71ec3d9b564",
+      "generated_sha256": "b1e5e72cc91d4867184d2a5ce4d13ebff789188d43e3d4ce58d2c71ec3d9b564",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/common_cells/fifo/syncfifo_diffw.v",
       "source_sha256": "c5e8ee3622b529a822b6bd86a87838d47b0eb583364cc26fa1e02bfb048b5cce",
-      "generated_sha256": "254c337290caaf1a22e64fd8e2897a3d0761e89d6cabc11a25cda4578242eb51",
+      "generated_sha256": "d76dd4c070d4eff5d42dbab1a7f6dea1c8dd1083a0448a454d2840eb28fb1cc5",
       "internal_reset_event_changes": 4
     },
     {
       "path": "src/rtl/common_cells/fifo/axil_fifo.v",
       "source_sha256": "d740135935f02ed69b9a8509077541e0182c8bb63e440d1bb8c5785674a1d04f",
-      "generated_sha256": "831d9e84da1dae8f532f217592cd06f9fc66b984ec924fc69b6d78c64222cd1c",
+      "generated_sha256": "366f6a6bec5cc1cb4409580c6fae57ae02eb2c3da4728f1a7ee4859bdc1805f4",
       "internal_reset_event_changes": 1
     },
     {
@@ -214,7 +214,7 @@
     {
       "path": "src/rtl/common_cells/intr/intr_pulse.v",
       "source_sha256": "2f147886facc221e3c0d9ca78cf550a596b8d1f34010b4c92f7145190868cfd1",
-      "generated_sha256": "7e5203c53fc061fe79b4f00e89d2a2cf3dce2dacac5b54bcedc5afe5547eb240",
+      "generated_sha256": "ac09fb160a5e948c2902263fdcd72f1cf4604c16c2e5543800da2054486a7815",
       "internal_reset_event_changes": 2
     },
     {
@@ -226,19 +226,19 @@
     {
       "path": "src/rtl/axi_cdma/control_axi_cdma.v",
       "source_sha256": "09ad946e6241d6fca2e5c318388873a7b6421971c3290470438e6f8ba3a90fd6",
-      "generated_sha256": "72bae6011274207f04b1dd5e7ed2e0d75924169f89bc237ff9ddabe0f85c4ae1",
+      "generated_sha256": "ca538a3aa9af11622439b3bb108499cc3e49104f68477f5ba5ffba53ef2ba054",
       "internal_reset_event_changes": 4
     },
     {
       "path": "src/rtl/axi_cdma/top_axi_cdma.v",
-      "source_sha256": "07cd1b3fc6de7d478cba218f30d53b551b886f9b2d41b2b47079849cb9dd2730",
-      "generated_sha256": "07cd1b3fc6de7d478cba218f30d53b551b886f9b2d41b2b47079849cb9dd2730",
+      "source_sha256": "694bb145a400467f9593cc15cf905d313ccf029d13829badb0a258b48e0e33b7",
+      "generated_sha256": "694bb145a400467f9593cc15cf905d313ccf029d13829badb0a258b48e0e33b7",
       "internal_reset_event_changes": 0
     },
     {
       "path": "src/rtl/tiny_npu/control_tiny_npu.v",
       "source_sha256": "f448202c507d60e33ec031f2c5bb391c0bab8c94e0407b032f04961a48d77d3e",
-      "generated_sha256": "add3134fb0020fb5577fed3d7fcd60f2bbe2c936d1c6304fe58125941685854f",
+      "generated_sha256": "066721370a185aa2230c7fe515381af09dbeb4be2cf65e4d4b2c23ba59b46daf",
       "internal_reset_event_changes": 1
     },
     {
@@ -250,13 +250,13 @@
     {
       "path": "src/rtl/tiny_npu/register_tiny_npu.v",
       "source_sha256": "a4d69d621896d6916aa0e60ce90d26615610cce41cdd2b3e192864b5d57c4a82",
-      "generated_sha256": "c7c88812b2900d9fd937c06fbe6aff4bfbbbb9a8085f3e97f4120070bc71668f",
+      "generated_sha256": "132ea11009f61dab910eb61a55e8d8037f067df4977e2bc74ce6a8fb9338e7ef",
       "internal_reset_event_changes": 5
     },
     {
       "path": "src/rtl/tiny_npu/top_tiny_npu.v",
-      "source_sha256": "805d9ef8abe1b503ca6436b7b96493a809f96b928a379ca4dc85001b04231e4b",
-      "generated_sha256": "805d9ef8abe1b503ca6436b7b96493a809f96b928a379ca4dc85001b04231e4b",
+      "source_sha256": "4d39f42014f639d42a8e20e438d6bfdf4f2df89deb0d028a7f2c4b9d2294d6ef",
+      "generated_sha256": "4d39f42014f639d42a8e20e438d6bfdf4f2df89deb0d028a7f2c4b9d2294d6ef",
       "internal_reset_event_changes": 0
     },
     {
@@ -273,8 +273,8 @@
     },
     {
       "path": "src/rtl/tiny_npu/top_tiny_npu_wrapper.v",
-      "source_sha256": "caefd44bcc84e08daf3a6732e13cdf18c827170873e35d41483f2853efed7a85",
-      "generated_sha256": "caefd44bcc84e08daf3a6732e13cdf18c827170873e35d41483f2853efed7a85",
+      "source_sha256": "3621da7715ba97a849bf657f0081bfce065a9add4f984f3dddc63f86cdb79e51",
+      "generated_sha256": "3621da7715ba97a849bf657f0081bfce065a9add4f984f3dddc63f86cdb79e51",
       "internal_reset_event_changes": 0
     },
     {
@@ -321,8 +321,8 @@
     },
     {
       "path": "src/rtl/tiny_npu/top_tiny_npu.vh",
-      "source_sha256": "2e31db9dddb867de1cf7abdbc649e151de3605bf6c827bbbd1a7015974e17b2d",
-      "generated_sha256": "2e31db9dddb867de1cf7abdbc649e151de3605bf6c827bbbd1a7015974e17b2d",
+      "source_sha256": "bbf65456d219131a7c7f4eb0e7814abf709f658e92510b7f723e7645236e35d6",
+      "generated_sha256": "bbf65456d219131a7c7f4eb0e7814abf709f658e92510b7f723e7645236e35d6",
       "internal_reset_event_changes": 0
     }
   ],

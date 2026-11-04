@@ -1,4 +1,4 @@
-D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\mnist\source\tm_model.c:186:18:tm_load	32	static
-D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\mnist\source\tm_model.c:227:14:tm_unload	32	static
-D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\mnist\source\tm_model.c:235:18:tm_preprocess	32	static
-D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\mnist\source\tm_model.c:276:18:tm_run	192	static
+D:\a7_finalize_20261102\fresh_mnist\source\tm_model.c:186:18:tm_load	32	static
+D:\a7_finalize_20261102\fresh_mnist\source\tm_model.c:227:14:tm_unload	32	static
+D:\a7_finalize_20261102\fresh_mnist\source\tm_model.c:235:18:tm_preprocess	32	static
+D:\a7_finalize_20261102\fresh_mnist\source\tm_model.c:276:18:tm_run	192	static

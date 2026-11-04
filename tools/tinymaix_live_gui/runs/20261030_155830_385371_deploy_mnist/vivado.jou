@@ -9,7 +9,7 @@
 # Command line       : vivado.exe -mode batch -source D:\vexriscv_tinymaix_final_20261030\board\program.tcl -log D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_155830_385371_deploy_mnist\vivado.log -journal D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_155830_385371_deploy_mnist\vivado.jou -tclargs D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\firmware\mnist\image\board_top.bit 127.0.0.1:3122  D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_155830_385371_deploy_mnist\capture.arm D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_155830_385371_deploy_mnist\capture.ack
 # Log file           : D:/vexriscv_tinymaix_final_20261030/tools/tinymaix_live_gui/runs/20261030_155830_385371_deploy_mnist/vivado.log
 # Journal file       : D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_155830_385371_deploy_mnist\vivado.jou
-# Running On         : DESKTOP-9IH4LM7
+# Running On         : BUILD-HOST
 # Platform           : Windows 10
 # Operating System   : 19045
 # Processor Detail   : Intel(R) Core(TM) i5-14400

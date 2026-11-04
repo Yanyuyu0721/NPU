@@ -4,7 +4,7 @@ created    : 2026/01/05 21:02:06
 modified   : 2026-03-18 22:59:30
 description: AXI-Lite to FIFO interface
 notes      : Replaced combinatorial handshake with standard AXI state machine
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `timescale 1ns / 1ps
 `default_nettype none

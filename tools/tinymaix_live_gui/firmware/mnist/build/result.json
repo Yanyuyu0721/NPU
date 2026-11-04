@@ -19,16 +19,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\start.s",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\start.s",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\start.s.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\start.s.o"
       ],
       "exit": 0
     },
@@ -48,16 +48,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\main.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\main.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\main.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\main.c.o"
       ],
       "exit": 0
     },
@@ -77,16 +77,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\vex_hal.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\vex_hal.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\vex_hal.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\vex_hal.c.o"
       ],
       "exit": 0
     },
@@ -106,16 +106,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\libc.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\libc.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\libc.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\libc.c.o"
       ],
       "exit": 0
     },
@@ -135,16 +135,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\tm_layers.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\tm_layers.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tm_layers.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tm_layers.c.o"
       ],
       "exit": 0
     },
@@ -164,16 +164,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\tm_model.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\tm_model.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tm_model.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tm_model.c.o"
       ],
       "exit": 0
     },
@@ -193,16 +193,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\tiny_npu.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\tiny_npu.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tiny_npu.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tiny_npu.c.o"
       ],
       "exit": 0
     },
@@ -222,16 +222,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\npu_runtime.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\npu_runtime.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\npu_runtime.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\npu_runtime.c.o"
       ],
       "exit": 0
     },
@@ -251,16 +251,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
         "-DLIVE_TASK=1",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\npu_views.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\npu_views.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\npu_views.c.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\npu_views.c.o"
       ],
       "exit": 0
     },
@@ -280,7 +280,7 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
@@ -291,9 +291,9 @@
         "-Dtm_unload=tm_unload_cpu",
         "-Dtm_preprocess=tm_preprocess_cpu",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\tm_model.c",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\tm_model.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tm_model_cpu.o"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tm_model_cpu.o"
       ],
       "exit": 0
     },
@@ -313,7 +313,7 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=1",
@@ -321,22 +321,22 @@
         "-nostdlib",
         "-nostartfiles",
         "-Wl,--gc-sections,--no-relax,--build-id=none",
-        "-Wl,-Map=D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\firmware.map",
+        "-Wl,-Map=D:\\a7_finalize_20261102\\fresh_mnist\\build\\firmware.map",
         "-T",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\source\\linker.ld",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\start.s.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\main.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\vex_hal.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\libc.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tm_layers.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tm_model.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tiny_npu.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\npu_runtime.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\npu_views.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\tm_model_cpu.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\source\\linker.ld",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\start.s.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\main.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\vex_hal.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\libc.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tm_layers.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tm_model.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tiny_npu.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\npu_runtime.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\npu_views.c.o",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\tm_model_cpu.o",
         "-lgcc",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\firmware.elf"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\firmware.elf"
       ],
       "exit": 0
     },
@@ -345,8 +345,8 @@
         "D:\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
         "-O",
         "binary",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\firmware.elf",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\firmware.bin"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\firmware.elf",
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\firmware.bin"
       ],
       "exit": 0
     },
@@ -354,7 +354,7 @@
       "command": [
         "D:\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-size.exe",
         "-A",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\build\\firmware.elf"
+        "D:\\a7_finalize_20261102\\fresh_mnist\\build\\firmware.elf"
       ],
       "exit": 0
     }
@@ -397,7 +397,7 @@
     "tinymaix_model_impl.inc": "4cff153dbc71d933d7fd0ebd9f35647a4dc44f20752f2e6988255c924f333711",
     "tinymaix_stat_impl.inc": "c46932bb2ae1e2ae263ea29597744e5eba115cfae365751b9fffcc56b162965b",
     "tiny_npu.c": "8d3f10312c117f6a22f0cd0d67a7969b547afa73c7c4478de5a57b4750e60d21",
-    "tiny_npu.h": "7ddcfc91fc5579d27adaf92c21a6d39bec3f4d64f09a7f42eb11d08a8512d4c7",
+    "tiny_npu.h": "be804df7137f0b7cf5a78b4ee8efa1f967bdf1c4906235879c023bb56c3b699c",
     "tm_layers.c": "0c4b27cfd961a50bf9dfe9c7dd841874090b16a03d99abc29e68993b880908aa",
     "tm_model.c": "65d865bb600172d0ba3af0264f49153151efbc1893f0e1387bb09040fabed444",
     "tm_port.h": "d1d345f6ee8d15362fc54f35416f6d03d72607595f63ab7ef9e732c5b59b3f71",

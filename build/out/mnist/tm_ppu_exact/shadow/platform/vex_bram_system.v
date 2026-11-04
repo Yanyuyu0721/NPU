@@ -6,7 +6,7 @@ created    : 2026/01/13 21:22:47
 modified   : 2026-03-15 14:36:08
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `include "top_tiny_npu.vh"
 `define SIM_CTRL_ADDR (32'hc000_03fc)

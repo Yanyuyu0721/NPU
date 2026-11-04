@@ -4,7 +4,7 @@ created    : 2025/12/09 22:43:42
 modified   : 2026-01-27 21:15:31
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 
@@ -53,7 +53,7 @@ reg                fifo_rd_en;
 syncfifo # (
     .DATA_WIDTH (DIWIDTH),
     .ADDR_WIDTH (AWIDTH ),
-    .RAM_STYLE  ("block"), 
+    .RAM_STYLE  ("distributed"), 
     .FWFT_EN    (1)           
 ) u_fifo_core (
     .clk     (clk),

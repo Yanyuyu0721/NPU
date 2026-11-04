@@ -4,7 +4,7 @@ created    : 2026/01/05 22:19:11
 modified   : 2026-02-25 18:28:00
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module control_tiny_npu # (

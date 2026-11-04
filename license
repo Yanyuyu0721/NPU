@@ -4,7 +4,7 @@ Copyright (c) 2026 edge_ai_fpga migration contributors
 
 This license applies only to original migration utilities, tests and documents
 created for this package. Imported and derived components retain their original
-licenses and notices, as described in THIRD_PARTY_NOTICES.md. It does not grant
+licenses and notices, as described in third_party_notices.md. It does not grant
 rights to imported components without an identified license.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

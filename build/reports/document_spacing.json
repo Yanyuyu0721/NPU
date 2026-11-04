@@ -1,50 +1,33 @@
 {
-  "scope": "HAN_ENGLISH_BOUNDARY_SPACING_ONLY",
-  "passed": true,
-  "changes": {
-    "design_report.docx": {
-      "word/document.xml": {
-        "boundary_space_groups_removed": 353,
-        "mixed_paragraphs": 70
-      },
-      "word/styles.xml": {
-        "boundary_space_groups_removed": 0,
-        "mixed_paragraphs": 0
-      }
+  "date": "2026-11-02",
+  "scope": "POST_AUTHOR_EDIT_OBSERVATION_NOT_SPACING_REWRITE",
+  "documents": {
+    "design_report": {
+      "pages": 27,
+      "sha256": "8aec44f5e6c425bc52f82ca15ca317f1fb5fd3d48c36c102c24b13a1ebf567fd",
+      "residual_han_english_boundary_spaces": 26,
+      "visual_review": "Native Word PDF, changed pages 19-27 reviewed; preceding content retained",
+      "author_changes_preserved": true,
+      "body_text_unchanged": false,
+      "toc_fields": 1,
+      "toc_hyperlinks": 33,
+      "existing_body_text_preserved_except_caption_label": true,
+      "existing_images_unchanged": true,
+      "added_photos": 1
     },
-    "technical_paper.docx": {
-      "word/document.xml": {
-        "boundary_space_groups_removed": 399,
-        "mixed_paragraphs": 89
-      },
-      "word/header1.xml": {
-        "boundary_space_groups_removed": 2,
-        "mixed_paragraphs": 1
-      },
-      "word/styles.xml": {
-        "boundary_space_groups_removed": 0,
-        "mixed_paragraphs": 0
-      }
+    "technical_paper": {
+      "pages": 30,
+      "sha256": "76b957c1fd2285e62c668cffe5130fdc25a45660099abe89254e5ba7a0726cce",
+      "residual_han_english_boundary_spaces": 0,
+      "visual_review": "Native Word PDF exported and page images reviewed; TOC verified against actual pagination",
+      "author_changes_preserved": true,
+      "body_text_unchanged": true,
+      "all_images_unchanged": true,
+      "toc_fields": 1,
+      "toc_hyperlinks": 27
     }
   },
-  "documents": {
-    "design_report.docx": {
-      "non_space_characters_identical": true,
-      "all_images_identical": true,
-      "xml_parts_compared": 11,
-      "residual_boundary_spaces": 0,
-      "pages": 25,
-      "sha256": "54f88866f2deeadc801ba1d6e2eb5d11be000885ee04d135e84972e662e28ff8",
-      "visual_review": "All pages inspected after native Word export and PNG rendering"
-    },
-    "technical_paper.docx": {
-      "non_space_characters_identical": true,
-      "all_images_identical": true,
-      "xml_parts_compared": 12,
-      "residual_boundary_spaces": 0,
-      "pages": 31,
-      "sha256": "6e725abcc1c11b2bb1d2d4bf48362a88aa46cac33fa4f129a52af3057954367a",
-      "visual_review": "All pages inspected after native Word export and PNG rendering"
-    }
-  }
+  "note": "Author section-number spacing is preserved; counts are observations, not a claim of zero spacing.",
+  "last_toc_update": "2026-11-03",
+  "last_photo_update": "2026-11-03"
 }

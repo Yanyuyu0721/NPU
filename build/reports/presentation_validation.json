@@ -1,7 +1,7 @@
 {
   "schemaVersion": "presentation-finalization.v1",
-  "finalSha256": "92473b3394c93174d4a562a0498798fb71fec78e0caf49bae5bd89e523674d60",
-  "byteCount": 2941636,
+  "finalSha256": "9cfeb962b69223a1a04d004b895e4e1d77213b70aa9dcf0b68b0aa1a43ac53cc",
+  "byteCount": 1756184,
   "packageIntegrity": {
     "chart_count": 0,
     "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
@@ -39,9 +39,9 @@
     "performed": true,
     "passed": true,
     "slideCount": 6,
-    "sha256": "92473b3394c93174d4a562a0498798fb71fec78e0caf49bae5bd89e523674d60",
-    "runtimeNodeModules": "C:\\Users\\65274\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules",
-    "nodeExecutable": "C:\\Users\\65274\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe"
+    "sha256": "9cfeb962b69223a1a04d004b895e4e1d77213b70aa9dcf0b68b0aa1a43ac53cc",
+    "runtimeNodeModules": "runtime_node_modules",
+    "nodeExecutable": "node"
   },
   "nativeTableArithmetic": {
     "performed": true,
@@ -51,7 +51,7 @@
     "eligible_table_count": 0,
     "finding_count": 0,
     "findings": [],
-    "native_table_count": 2,
+    "native_table_count": 3,
     "passed": true,
     "schema_version": "presentation-native-table-arithmetic.v1",
     "skipped_tables": [
@@ -61,9 +61,14 @@
         "table": 1
       },
       {
-        "reason": "no_numeric_amounts",
+        "reason": "no_unambiguous_bottom_total",
         "slide": 6,
         "table": 1
+      },
+      {
+        "reason": "no_numeric_amounts",
+        "slide": 6,
+        "table": 2
       }
     ],
     "slide_count": 6,
@@ -78,7 +83,7 @@
     "native_chart_count": 0,
     "native_powerpoint_verified": false,
     "passed": true,
-    "presentation_sha256": "92473b3394c93174d4a562a0498798fb71fec78e0caf49bae5bd89e523674d60",
+    "presentation_sha256": "9cfeb962b69223a1a04d004b895e4e1d77213b70aa9dcf0b68b0aa1a43ac53cc",
     "schema_version": "presentation-native-chart-titles.v1",
     "slide_count": 6,
     "source_text_emitted": false,

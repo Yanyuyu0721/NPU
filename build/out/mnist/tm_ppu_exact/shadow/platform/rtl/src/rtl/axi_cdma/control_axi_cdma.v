@@ -4,7 +4,7 @@ created    : 2026/01/08 16:04:44
 modified   : 2026-02-09 17:58:27
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module control_axi_cdma # (

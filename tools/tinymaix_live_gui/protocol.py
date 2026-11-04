@@ -4,8 +4,15 @@ from pathlib import Path
 try:
     import serial
 except ImportError:
-    sys.path.append(r'C:\Users\65274\AppData\Local\miniconda3\Lib\site-packages')
-    import serial
+    # Discover an optional per-user Conda dependency without embedding an account name.
+    for dependency_root in (Path.home()/'AppData/Local/miniconda3/Lib/site-packages',Path.home()/'miniconda3/Lib/site-packages'):
+        if (dependency_root/'serial/__init__.py').is_file():
+            sys.path.append(str(dependency_root))
+            break
+    try:
+        import serial
+    except ImportError:
+        raise RuntimeError('Install pyserial in the selected Python environment: python -m pip install pyserial') from None
 from serial.tools import list_ports
 
 HOME = Path(__file__).resolve().parent

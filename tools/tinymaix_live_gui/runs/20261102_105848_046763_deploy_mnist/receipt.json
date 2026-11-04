@@ -1,0 +1,8 @@
+{
+  "task": "mnist",
+  "hz": 50000000,
+  "model": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
+  "protocol": "TMLIVE1",
+  "port": "COM3",
+  "image_sha256": "3e179cac4203e3395b505f2e95168ebb1b27a4d0f1f6b8ade21f7952c3c19ea9"
+}

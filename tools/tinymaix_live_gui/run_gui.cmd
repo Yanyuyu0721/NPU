@@ -3,13 +3,15 @@ set PYTHONUTF8=1
 set PYTHONIOENCODING=utf-8
 set PYTHONDONTWRITEBYTECODE=1
 if defined TINYMAIX_PYTHON goto configured
-if exist "C:\Users\65274\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" (
- set "TINYMAIX_PYTHON=C:\Users\65274\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
+if exist "%~dp0..\..\.venv\Scripts\python.exe" (
+ set "TINYMAIX_PYTHON=%~dp0..\..\.venv\Scripts\python.exe"
+) else if exist "%USERPROFILE%\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" (
+ set "TINYMAIX_PYTHON=%USERPROFILE%\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
 ) else (
  set "TINYMAIX_PYTHON=python"
 )
 :configured
-for %%I in ("%TINYMAIX_PYTHON%") do if exist "%%~dpIpythonw.exe" (
+for /f "delims=" %%I in ('where "%TINYMAIX_PYTHON%" 2^>nul') do if exist "%%~dpIpythonw.exe" (
  start "" "%%~dpIpythonw.exe" -B "%~dp0desktop.py" %*
  exit /b 0
 )

@@ -4,7 +4,7 @@ created    : 2025/12/02 01:07:47
 modified   : 2026-03-17 23:54:01
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module systolic_array # (

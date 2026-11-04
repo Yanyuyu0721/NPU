@@ -232,5 +232,12 @@
   "kws_restore_sha256": "615ce60103ebe13914c6c6c0c9c51205b127a14c91a34c11203c0ca576320d3c",
   "historical_paper_model_identity_confirmed": false,
   "execution_version": "VEX_MNIST_PQ6",
-  "execution_config_cache": true
+  "execution_config_cache": true,
+  "active_hardware": {
+    "part": "xc7a100tfgg484-2",
+    "clock_hz": 50000000,
+    "vivado": "2026.1",
+    "implementation": "build/reports/implementation_20261102.json",
+    "image_sha256": "3e179cac4203e3395b505f2e95168ebb1b27a4d0f1f6b8ade21f7952c3c19ea9"
+  }
 }

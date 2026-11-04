@@ -4,7 +4,7 @@ created    : 2026/01/16 20:13:04
 modified   : 2026-03-20 12:35:29
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 #ifndef TINY_NPU_H
 #define TINY_NPU_H

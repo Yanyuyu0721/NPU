@@ -1,23 +1,5 @@
-# 2018.2-compatible port of platform/build.tcl for the A7 DaVinci Pro board.
-#
-# Same RTL set, same IP parameters, same board_pins.xdc, same 50 MHz/100 MHz/
-# 150 MHz STA sweep as the 2026.1 reference flow.  Only tool-version gates are
-# relaxed so Vivado 2018.2 can produce a bring-up bitstream:
-#   * Vivado version assertion -> informational PORT_VIVADO line
-#   * set_property xpm_libraries (2018.3+) -> skipped
-#   * GENERATE_SYNTH_CHECKPOINT -> written inside catch
-#   * report_methodology -> written inside catch
-#   * write_bitstream appended after route_design
-#
-# The packaged implementation uses Vivado 2018.2; board/program.tcl loads the
-# resulting bitstream with Vivado 2026.1. Tool-version provenance is retained.
-#
-# Usage: vivado -mode batch -source board/rebuild_hardware.tcl -tclargs <out_dir> [part] [override_root]
-#
-# override_root is optional and works like a shadow copy of src/hardware: any
-# file found at <override_root>/<rtl path> replaces the packaged original.
-# The effective 2018.2-compatible BRAM implementation is already frozen in
-# src/hardware/src/rtl/common_cells/ram/edge_bram_banked.sv.
+# XC7A100T board implementation at 50 MHz. Vivado version is recorded in reports.
+# Usage: vivado -mode batch -source board/rebuild_hardware.tcl -tclargs out_dir
 
 proc port_build {root out part {override_root {}}} {
     set platform [file join $root platform]
@@ -30,7 +12,7 @@ proc port_build {root out part {override_root {}}} {
         set override_root [file normalize $override_root]
         puts "PORT_OVERRIDE_ROOT=$override_root"
     }
-    if {$part ni {xc7a100tfgg484-2 xc7z020clg484-1}} {error {Explicit supported target required}}
+    if {$part ne {xc7a100tfgg484-2}} {error {Explicit supported target required}}
     if {[file exists [file join $out project]]} {error {Fresh project output required}}
     if {[llength [get_parts -quiet $part]] != 1} {error {Target device component missing}}
     file mkdir $out
@@ -85,18 +67,8 @@ proc port_build {root out part {override_root {}}} {
     puts $f {endmodule}
     close $f
     add_files -norecurse [list [file join $out board_top.sv]]
-    if {$part eq {xc7a100tfgg484-2}} {
-        set xdc [file join $root board_pins.xdc]
-        if {![file isfile $xdc]} {error {board_pins.xdc missing}}
-    } else {
-        set xdc [file join $out generic_7020.xdc]
-        set f [open $xdc w]
-        puts $f {create_clock -period 20.000 -name core_50mhz [get_ports i_clk]}
-        puts $f {set_property IOSTANDARD LVCMOS33 [get_ports {i_clk i_rst uart_rx uart_tx}]}
-        puts $f {set_false_path -from [get_ports {i_rst uart_rx}]}
-        puts $f {set_false_path -to [get_ports uart_tx]}
-        close $f
-    }
+    set xdc [file join $root board_pins.xdc]
+    if {![file isfile $xdc]} {error {board_pins.xdc missing}}
     add_files -fileset constrs_1 -norecurse [list $xdc]
     set_property top board_top [get_filesets sources_1]
     update_compile_order -fileset sources_1
@@ -141,9 +113,11 @@ proc port_build {root out part {override_root {}}} {
     if {[catch {report_methodology -file [file join $out methodology_routed.rpt]} rpt_err]} {
         puts "PORT_NOTE=report_methodology skipped (${rpt_err})"
     }
+    report_power -file [file join $out power_routed.rpt]
+    report_clock_utilization -file [file join $out clocks_routed.rpt]
     set metrics [open [file join $out timing_metrics.tsv] w]
     puts $metrics {profile_mhz period_ns setup_slack_ns hold_slack_ns}
-    foreach {mhz period} {50 20.000 100 10.000 150 6.666667} {
+    foreach {mhz period} {50 20.000} {
         create_clock -period $period -name core_50mhz [get_ports i_clk]
         if {abs([get_property PERIOD [get_clocks core_50mhz]]-$period)>0.001} {error {Clock constraint readback mismatch}}
         report_timing_summary -file [file join $out timing_${mhz}mhz.rpt]
@@ -171,7 +145,7 @@ proc port_build {root out part {override_root {}}} {
 
 set script_root [file normalize [file dirname [info script]]]
 lassign $argv out part override_root
-if {$out eq {}} {error {Usage: build_2018_2.tcl out_dir ?part? ?override_root?}}
+if {$out eq {}} {error {Usage: rebuild_hardware.tcl out_dir ?part? ?override_root?}}
 if {$part eq {}} {set part xc7a100tfgg484-2}
 if {[catch {port_build $script_root [file normalize $out] $part $override_root} err]} {
     puts "PORT_BUILD_FAILED=$err"

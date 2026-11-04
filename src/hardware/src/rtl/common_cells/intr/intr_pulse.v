@@ -4,7 +4,7 @@ created    : 2026/01/10 21:01:29
 modified   : 2026-01-11 15:46:05
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none 
 module intr_pulse # (

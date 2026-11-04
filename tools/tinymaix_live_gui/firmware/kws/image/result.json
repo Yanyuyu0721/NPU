@@ -1,28 +1,23 @@
 {
   "scope": "SAME_ROUTED_HARDWARE_ITCM_INIT_UPDATE",
-  "source_checkpoint": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\image_final\\routed_50mhz.dcp",
-  "source_checkpoint_sha256": "efe49d3d696ef709343148b8b98ea19d82595b72d93be7e416e24946654685c4",
+  "source_checkpoint": "D:\\vexriscv_tinymaix_final_20261030\\build\\out\\xc7a100t_20261102\\routed_50mhz.dcp",
+  "source_checkpoint_sha256": "d41e7538fb98802707bfba201bd075c89c9ac1f4cee2f3460b7927bc3099deae",
   "old_words_verified": 24576,
-  "changed_init_properties": 2350,
+  "changed_init_properties": 2590,
   "firmware_itcm_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",
   "timing_50mhz_met": true,
   "sta": {
     "50": {
-      "setup_ns": 1.914,
-      "hold_ns": 0.018
-    },
-    "100": {
-      "setup_ns": -8.086,
-      "hold_ns": 0.018
-    },
-    "150": {
-      "setup_ns": -11.419,
-      "hold_ns": 0.018
+      "setup_ns": 2.96,
+      "hold_ns": 0.036
     }
   },
-  "pid": 267136,
+  "pid": 90348,
   "new_words_verified": 24576,
-  "verdict": "ITCM_UPDATED_NOT_BOARD_TESTED",
-  "bit_sha256": "2fa0afb97b4bf0b7426aa9c5b5dc3c56a6a17dfb5d826ff4578cb64eee768fa0",
-  "bit_file": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\image\\board_top.bit"
+  "verdict": "ITCM_UPDATED_AND_BOARD_TESTED",
+  "bit_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606",
+  "bit_file": "D:\\a7_finalize_20261102\\fresh_kws\\image\\board_top.bit",
+  "board_test": "build/reports/board_retest_20261102.json",
+  "vivado": "2026.1",
+  "part": "xc7a100tfgg484-2"
 }

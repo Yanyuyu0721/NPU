@@ -295,5 +295,12 @@
   "rollback_sha256": "32a95adddef16e8c569c5bc55f9421ec683cb9697fd7c9f19ae7618732dc76cf",
   "software_math": "Exact model-parameter GAP and FC function tables",
   "execution_version": "VEX_TM_KWS3",
-  "baseline": "tm_optimized 6.68746x"
+  "baseline": "tm_optimized 6.68746x",
+  "active_hardware": {
+    "part": "xc7a100tfgg484-2",
+    "clock_hz": 50000000,
+    "vivado": "2026.1",
+    "implementation": "build/reports/implementation_20261102.json",
+    "image_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606"
+  }
 }

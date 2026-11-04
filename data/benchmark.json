@@ -1,7 +1,7 @@
 {
   "mnist": {
     "task": "mnist",
-    "seq": 1,
+    "seq": 42,
     "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
     "input_crc32": "7eb3cd06",
     "model_sha256": "1cf43cece8f0f400cb94ff4716d11db88a98696fdbe683d00b23b90037cab6f0",
@@ -495,20 +495,22 @@
     ],
     "verified": true,
     "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
-    "token": "b4d1bf8152bf4c1cab62e88f8f6e7465",
-    "host_elapsed_ms": 672.0000000204891,
-    "run_dir": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_155853_966600_mnist",
+    "token": "e76c9b21887e44a2a6a28f658c1cf5cb",
+    "host_elapsed_ms": 686.9999999180436,
+    "run_dir": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261102_105908_607505_mnist",
     "input_source": {
       "kind": "example",
       "name": "固定样例（复核基准）",
       "task": "mnist",
       "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941",
-      "created_at": "2026-10-30T15:58:53.964614"
-    }
+      "created_at": "2026-11-02T10:59:08.540687"
+    },
+    "implementation": "build/out/xc7a100t_20261102/routed_50mhz.dcp",
+    "image_sha256": "3e179cac4203e3395b505f2e95168ebb1b27a4d0f1f6b8ade21f7952c3c19ea9"
   },
   "kws": {
     "task": "kws",
-    "seq": 2,
+    "seq": 44,
     "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
     "input_crc32": "a4b31c61",
     "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
@@ -904,15 +906,17 @@
     ],
     "verified": true,
     "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
-    "token": "ebe7ac7afa92416e8cc7b1efd39f6b87",
-    "host_elapsed_ms": 2983.9999999385327,
-    "run_dir": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_155910_110746_kws",
+    "token": "c0ac32e08720426a8c110a0e7fba5871",
+    "host_elapsed_ms": 3000.0,
+    "run_dir": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261102_105940_513310_kws",
     "input_source": {
       "kind": "example",
       "name": "固定样例（复核基准）",
       "task": "kws",
       "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
-      "created_at": "2026-10-30T15:59:10.109257"
-    }
+      "created_at": "2026-11-02T10:59:40.472337"
+    },
+    "implementation": "build/out/xc7a100t_20261102/routed_50mhz.dcp",
+    "image_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606"
   }
 }

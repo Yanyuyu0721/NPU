@@ -10,7 +10,7 @@ INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been d
 # Command line       : vivado.exe -mode batch -source D:\vexriscv_tinymaix_final_20261030\board\program.tcl -log D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_192415_021472_deploy_kws\vivado.log -journal D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_192415_021472_deploy_kws\vivado.jou -tclargs D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\firmware\kws\image\board_top.bit 127.0.0.1:3122  D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_192415_021472_deploy_kws\capture.arm D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_192415_021472_deploy_kws\capture.ack
 # Log file           : D:/vexriscv_tinymaix_final_20261030/tools/tinymaix_live_gui/runs/20261030_192415_021472_deploy_kws/vivado.log
 # Journal file       : D:\vexriscv_tinymaix_final_20261030\tools\tinymaix_live_gui\runs\20261030_192415_021472_deploy_kws\vivado.jou
-# Running On         : DESKTOP-9IH4LM7
+# Running On         : BUILD-HOST
 # Platform           : Windows 10
 # Operating System   : 19045
 # Processor Detail   : Intel(R) Core(TM) i5-14400

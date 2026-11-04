@@ -1,230 +1,479 @@
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Oct 30 15:53:28 2026
-| Host         : DESKTOP-9IH4LM7 running 64-bit major release  (build 9200)
-| Command      : report_utilization -file D:/vexriscv_tinymaix_final_20261030/build/reports/utilization_routed.rpt
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 10:53:50 2026
+| Host         : BUILD-HOST running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file D:/a7_build_20261102_v3/utilization_routed.rpt
 | Design       : board_top
-| Device       : 7a100tfgg484-2
+| Device       : xc7a100tfgg484-2
+| Speed File   : -2
 | Design State : Routed
--------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
 Table of Contents
 -----------------
-1. Slice Logic
-1.1 Summary of Registers by Type
-2. Slice Logic Distribution
-3. Memory
-4. DSP
-5. IO and GT Specific
-6. Clocking
-7. Specific Feature
-8. Primitives
-9. Black Boxes
-10. Instantiated Netlists
+1. Utilization by Hierarchy
 
-1. Slice Logic
---------------
-
-+----------------------------+-------+-------+-----------+-------+
-|          Site Type         |  Used | Fixed | Available | Util% |
-+----------------------------+-------+-------+-----------+-------+
-| Slice LUTs                 | 40968 |     0 |     63400 | 64.62 |
-|   LUT as Logic             | 30748 |     0 |     63400 | 48.50 |
-|   LUT as Memory            | 10220 |     0 |     19000 | 53.79 |
-|     LUT as Distributed RAM | 10210 |     0 |           |       |
-|     LUT as Shift Register  |    10 |     0 |           |       |
-| Slice Registers            | 33727 |     0 |    126800 | 26.60 |
-|   Register as Flip Flop    | 33727 |     0 |    126800 | 26.60 |
-|   Register as Latch        |     0 |     0 |    126800 |  0.00 |
-| F7 Muxes                   |   568 |     0 |     31700 |  1.79 |
-| F8 Muxes                   |     1 |     0 |     15850 | <0.01 |
-+----------------------------+-------+-------+-----------+-------+
-
-
-1.1 Summary of Registers by Type
---------------------------------
-
-+-------+--------------+-------------+--------------+
-| Total | Clock Enable | Synchronous | Asynchronous |
-+-------+--------------+-------------+--------------+
-| 0     |            _ |           - |            - |
-| 0     |            _ |           - |          Set |
-| 0     |            _ |           - |        Reset |
-| 0     |            _ |         Set |            - |
-| 0     |            _ |       Reset |            - |
-| 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
-| 4     |          Yes |           - |        Reset |
-| 456   |          Yes |         Set |            - |
-| 33267 |          Yes |       Reset |            - |
-+-------+--------------+-------------+--------------+
-
-
-2. Slice Logic Distribution
+1. Utilization by Hierarchy
 ---------------------------
 
-+-------------------------------------------+-------+-------+-----------+-------+
-|                 Site Type                 |  Used | Fixed | Available | Util% |
-+-------------------------------------------+-------+-------+-----------+-------+
-| Slice                                     | 13643 |     0 |     15850 | 86.08 |
-|   SLICEL                                  |  9452 |     0 |           |       |
-|   SLICEM                                  |  4191 |     0 |           |       |
-| LUT as Logic                              | 30748 |     0 |     63400 | 48.50 |
-|   using O5 output only                    |    12 |       |           |       |
-|   using O6 output only                    | 24377 |       |           |       |
-|   using O5 and O6                         |  6359 |       |           |       |
-| LUT as Memory                             | 10220 |     0 |     19000 | 53.79 |
-|   LUT as Distributed RAM                  | 10210 |     0 |           |       |
-|     using O5 output only                  |     0 |       |           |       |
-|     using O6 output only                  |  7742 |       |           |       |
-|     using O5 and O6                       |  2468 |       |           |       |
-|   LUT as Shift Register                   |    10 |     0 |           |       |
-|     using O5 output only                  |    10 |       |           |       |
-|     using O6 output only                  |     0 |       |           |       |
-|     using O5 and O6                       |     0 |       |           |       |
-| LUT Flip Flop Pairs                       | 12748 |     0 |     63400 | 20.11 |
-|   fully used LUT-FF pairs                 |  3477 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |  8552 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  8737 |       |           |       |
-| Unique Control Sets                       |  1400 |       |           |       |
-+-------------------------------------------+-------+-------+-----------+-------+
-* Note: Review the Control Sets Report for more information regarding control sets.
-
-
-3. Memory
----------
-
-+-------------------+-------+-------+-----------+-------+
-|     Site Type     |  Used | Fixed | Available | Util% |
-+-------------------+-------+-------+-----------+-------+
-| Block RAM Tile    | 134.5 |     0 |       135 | 99.63 |
-|   RAMB36/FIFO*    |   134 |     0 |       135 | 99.26 |
-|     RAMB36E1 only |   134 |       |           |       |
-|   RAMB18          |     1 |     0 |       270 |  0.37 |
-|     RAMB18E1 only |     1 |       |           |       |
-+-------------------+-------+-------+-----------+-------+
-* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
-
-
-4. DSP
-------
-
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| DSPs           |  212 |     0 |       240 | 88.33 |
-|   DSP48E1 only |  212 |       |           |       |
-+----------------+------+-------+-----------+-------+
-
-
-5. IO and GT Specific
----------------------
-
-+-----------------------------+------+-------+-----------+-------+
-|          Site Type          | Used | Fixed | Available | Util% |
-+-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    4 |     4 |       285 |  1.40 |
-|   IOB Master Pads           |    2 |       |           |       |
-|   IOB Slave Pads            |    1 |       |           |       |
-| Bonded IPADs                |    0 |     0 |        14 |  0.00 |
-| Bonded OPADs                |    0 |     0 |         8 |  0.00 |
-| PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
-| PHASER_REF                  |    0 |     0 |         6 |  0.00 |
-| OUT_FIFO                    |    0 |     0 |        24 |  0.00 |
-| IN_FIFO                     |    0 |     0 |        24 |  0.00 |
-| IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
-| IBUFDS                      |    0 |     0 |       274 |  0.00 |
-| GTPE2_CHANNEL               |    0 |     0 |         4 |  0.00 |
-| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        24 |  0.00 |
-| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        24 |  0.00 |
-| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       300 |  0.00 |
-| IBUFDS_GTE2                 |    0 |     0 |         2 |  0.00 |
-| ILOGIC                      |    0 |     0 |       285 |  0.00 |
-| OLOGIC                      |    0 |     0 |       285 |  0.00 |
-+-----------------------------+------+-------+-----------+-------+
-
-
-6. Clocking
------------
-
-+------------+------+-------+-----------+-------+
-|  Site Type | Used | Fixed | Available | Util% |
-+------------+------+-------+-----------+-------+
-| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
-| BUFIO      |    0 |     0 |        24 |  0.00 |
-| MMCME2_ADV |    0 |     0 |         6 |  0.00 |
-| PLLE2_ADV  |    0 |     0 |         6 |  0.00 |
-| BUFMRCE    |    0 |     0 |        12 |  0.00 |
-| BUFHCE     |    0 |     0 |        96 |  0.00 |
-| BUFR       |    0 |     0 |        24 |  0.00 |
-+------------+------+-------+-----------+-------+
-
-
-7. Specific Feature
--------------------
-
-+-------------+------+-------+-----------+-------+
-|  Site Type  | Used | Fixed | Available | Util% |
-+-------------+------+-------+-----------+-------+
-| BSCANE2     |    0 |     0 |         4 |  0.00 |
-| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
-| DNA_PORT    |    0 |     0 |         1 |  0.00 |
-| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
-| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
-| ICAPE2      |    0 |     0 |         2 |  0.00 |
-| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
-| STARTUPE2   |    0 |     0 |         1 |  0.00 |
-| XADC        |    0 |     0 |         1 |  0.00 |
-+-------------+------+-------+-----------+-------+
-
-
-8. Primitives
--------------
-
-+----------+-------+---------------------+
-| Ref Name |  Used | Functional Category |
-+----------+-------+---------------------+
-| FDRE     | 33267 |        Flop & Latch |
-| LUT6     | 11886 |                 LUT |
-| LUT4     |  8132 |                 LUT |
-| RAMD64E  |  7728 |  Distributed Memory |
-| LUT2     |  6143 |                 LUT |
-| LUT3     |  5861 |                 LUT |
-| LUT5     |  3884 |                 LUT |
-| RAMD32   |  3716 |  Distributed Memory |
-| CARRY4   |  3157 |          CarryLogic |
-| RAMS32   |  1234 |  Distributed Memory |
-| LUT1     |  1201 |                 LUT |
-| MUXF7    |   568 |               MuxFx |
-| FDSE     |   456 |        Flop & Latch |
-| DSP48E1  |   212 |    Block Arithmetic |
-| RAMB36E1 |   134 |        Block Memory |
-| SRL16E   |    10 |  Distributed Memory |
-| FDCE     |     4 |        Flop & Latch |
-| IBUF     |     3 |                  IO |
-| RAMB18E1 |     1 |        Block Memory |
-| OBUF     |     1 |                  IO |
-| MUXF8    |     1 |               MuxFx |
-| BUFG     |     1 |               Clock |
-+----------+-------+---------------------+
-
-
-9. Black Boxes
---------------
-
-+----------+------+
-| Ref Name | Used |
-+----------+------+
-
-
-10. Instantiated Netlists
--------------------------
-
-+----------+------+
-| Ref Name | Used |
-+----------+------+
++-------------------------------------------------------+-------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|                        Instance                       |                Module               | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------+-------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| board_top                                             |                               (top) |      41174 |      31066 |   10098 |   10 | 38150 |    134 |      1 |        212 |
+|   (board_top)                                         |                               (top) |          0 |          0 |       0 |    0 |   163 |      0 |      0 |          0 |
+|   u_system                                            |                     vex_bram_system |      41174 |      31066 |   10098 |   10 | 37987 |    134 |      1 |        212 |
+|     u_top_tiny_npu_wrapper                            |                     edge_im2col_soc |      38590 |      28538 |   10042 |   10 | 35946 |     38 |      1 |        208 |
+|       (u_top_tiny_npu_wrapper)                        |                     edge_im2col_soc |        154 |        154 |       0 |    0 |   512 |      0 |      0 |          0 |
+|       u_im2col                                        |                     edge_im2col_axi |       1801 |       1801 |       0 |    0 |  1005 |      0 |      0 |          0 |
+|       u_npu                                           |                top_tiny_npu_wrapper |      36645 |      26593 |   10042 |   10 | 34429 |     38 |      1 |        208 |
+|         u_axi_cdc                                     |                             axi_cdc |        411 |        245 |     166 |    0 |   380 |      0 |      0 |          0 |
+|           cdc                                         |                           AxiAxi4CC |        411 |        245 |     166 |    0 |   380 |      0 |      0 |          0 |
+|             io_input_ar_queue                         |                     AxiStreamFifoCC |        132 |        100 |      32 |    0 |    74 |      0 |      0 |          0 |
+|               (io_input_ar_queue)                     |                     AxiStreamFifoCC |        129 |         97 |      32 |    0 |    60 |      0 |      0 |          0 |
+|             io_input_aw_queue                         |                   AxiStreamFifoCC_2 |         91 |         59 |      32 |    0 |    72 |      0 |      0 |          0 |
+|               (io_input_aw_queue)                     |                   AxiStreamFifoCC_2 |         89 |         57 |      32 |    0 |    60 |      0 |      0 |          0 |
+|             io_input_w_queue                          |                   AxiStreamFifoCC_3 |         90 |         40 |      50 |    0 |   105 |      0 |      0 |          0 |
+|               (io_input_w_queue)                      |                   AxiStreamFifoCC_3 |         88 |         38 |      50 |    0 |    89 |      0 |      0 |          0 |
+|             io_output_r_queue                         |                   AxiStreamFifoCC_1 |         77 |         29 |      48 |    0 |   102 |      0 |      0 |          0 |
+|               (io_output_r_queue)                     |                   AxiStreamFifoCC_1 |         74 |         26 |      48 |    0 |    84 |      0 |      0 |          0 |
+|         u_axil_cdc                                    |                            axil_cdc |        224 |        140 |      84 |    0 |   247 |      0 |      0 |          0 |
+|           arFifo                                      |                  AxilStreamFifoCC_2 |         38 |         18 |      20 |    0 |    54 |      0 |      0 |          0 |
+|           awFifo                                      |                    AxilStreamFifoCC |         59 |         39 |      20 |    0 |    55 |      0 |      0 |          0 |
+|             (awFifo)                                  |                    AxilStreamFifoCC |         56 |         36 |      20 |    0 |    41 |      0 |      0 |          0 |
+|           rFifo                                       |                  AxilStreamFifoCC_4 |         72 |         50 |      22 |    0 |    56 |      0 |      0 |          0 |
+|             (rFifo)                                   |                  AxilStreamFifoCC_4 |         70 |         48 |      22 |    0 |    44 |      0 |      0 |          0 |
+|           wFifo                                       |                  AxilStreamFifoCC_1 |         43 |         21 |      22 |    0 |    56 |      0 |      0 |          0 |
+|         u_top_tiny_npu                                |                        top_tiny_npu |      36012 |      26210 |    9792 |   10 | 33802 |     38 |      1 |        208 |
+|           (u_top_tiny_npu)                            |                        top_tiny_npu |         50 |          0 |      50 |    0 |     0 |      0 |      0 |          0 |
+|           u_axi_crossbar_wrap_4x2                     |               axi_crossbar_wrap_4x2 |       1178 |       1178 |       0 |    0 |  1278 |      0 |      0 |          0 |
+|             axi_crossbar_inst                         |                        axi_crossbar |       1178 |       1178 |       0 |    0 |  1278 |      0 |      0 |          0 |
+|               axi_crossbar_wr_inst                    |                     axi_crossbar_wr |        379 |        379 |       0 |    0 |   506 |      0 |      0 |          0 |
+|                 m_ifaces[1].reg_inst                  | axi_register_wr__parameterized0_498 |         90 |         90 |       0 |    0 |   194 |      0 |      0 |          0 |
+|                 m_ifaces[0].reg_inst                  |     axi_register_wr__parameterized0 |         86 |         86 |       0 |    0 |   172 |      0 |      0 |          0 |
+|               axi_crossbar_rd_inst                    |                     axi_crossbar_rd |        777 |        777 |       0 |    0 |   772 |      0 |      0 |          0 |
+|                 s_ifaces[3].reg_inst                  |                 axi_register_rd_519 |         27 |         27 |       0 |    0 |   131 |      0 |      0 |          0 |
+|                 s_ifaces[0].r_arb_inst                |                         arbiter_510 |        118 |        118 |       0 |    0 |     6 |      0 |      0 |          0 |
+|                 s_ifaces[0].reg_inst                  |                     axi_register_rd |         27 |         27 |       0 |    0 |   131 |      0 |      0 |          0 |
+|                 s_ifaces[1].r_arb_inst                |                         arbiter_512 |        115 |        115 |       0 |    0 |     6 |      0 |      0 |          0 |
+|                 s_ifaces[1].reg_inst                  |                 axi_register_rd_513 |         27 |         27 |       0 |    0 |   131 |      0 |      0 |          0 |
+|                 s_ifaces[2].r_arb_inst                |                         arbiter_515 |        121 |        121 |       0 |    0 |     6 |      0 |      0 |          0 |
+|                 s_ifaces[2].reg_inst                  |                 axi_register_rd_516 |          3 |          3 |       0 |    0 |   131 |      0 |      0 |          0 |
+|                 s_ifaces[3].r_arb_inst                |                         arbiter_518 |        118 |        118 |       0 |    0 |     6 |      0 |      0 |          0 |
+|           u_axi_dma_rd_cmd                            |                          axi_dma_rd |        400 |        356 |      44 |    0 |   296 |      0 |      0 |          0 |
+|           u_control_tiny_npu                          |                    control_tiny_npu |        327 |        297 |      30 |    0 |   330 |     12 |      0 |          0 |
+|             (u_control_tiny_npu)                      |                    control_tiny_npu |          3 |          3 |       0 |    0 |    78 |      0 |      0 |          0 |
+|             (u_cdma_queue)                            |            syncfifo__parameterized1 |         56 |         56 |       0 |    0 |     0 |      0 |      0 |          0 |
+|             u_inst_dma_queue                          |            syncfifo__parameterized3 |         88 |         58 |      30 |    0 |   115 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |       xpm_fifo_sync__parameterized5 |         53 |         23 |      30 |    0 |   115 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized5 |         53 |         23 |      30 |    0 |   115 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |     xpm_memory_base__parameterized5 |         30 |          0 |      30 |    0 |    88 |      0 |      0 |          0 |
+|             u_ppu_queue                               |            syncfifo__parameterized2 |        127 |        127 |       0 |    0 |    55 |      7 |      0 |          0 |
+|               (u_ppu_queue)                           |            syncfifo__parameterized2 |        101 |        101 |       0 |    0 |     0 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |       xpm_fifo_sync__parameterized4 |         26 |         26 |       0 |    0 |    55 |      7 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized4 |         26 |         26 |       0 |    0 |    55 |      7 |      0 |          0 |
+|             u_systolic_queue                          |            syncfifo__parameterized0 |         45 |         45 |       0 |    0 |    55 |      3 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |       xpm_fifo_sync__parameterized2 |         23 |         23 |       0 |    0 |    55 |      3 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized2 |         23 |         23 |       0 |    0 |    55 |      3 |      0 |          0 |
+|           u_global_buffer                             |          global_buffer_top_tiny_npu |        146 |        142 |       4 |    0 |    72 |      1 |      0 |          0 |
+|             U0                                        |                 blk_mem_gen_v8_4_13 |        146 |        142 |       4 |    0 |    72 |      1 |      0 |          0 |
+|               inst_blk_mem_gen                        |           blk_mem_gen_v8_4_13_synth |        146 |        142 |       4 |    0 |    72 |      1 |      0 |          0 |
+|                 gnbram.gaxibmg.axi_rd_sm              |            blk_mem_axi_read_wrapper |         83 |         83 |       0 |    0 |    33 |      0 |      0 |          0 |
+|                   axi_read_fsm                        |                blk_mem_axi_read_fsm |         66 |         66 |       0 |    0 |     6 |      0 |      0 |          0 |
+|                 gnbram.gaxibmg.axi_wr_fsm             |           blk_mem_axi_write_wrapper |         63 |         59 |       4 |    0 |    39 |      0 |      0 |          0 |
+|           u_instr_fifo                                |                           axil_fifo |        209 |        165 |      44 |    0 |   250 |      8 |      1 |          0 |
+|             u_syncfifo_inst                           |                            syncfifo |         81 |         81 |       0 |    0 |    59 |      7 |      1 |          0 |
+|               (u_syncfifo_inst)                       |                            syncfifo |         58 |         58 |       0 |    0 |     0 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |       xpm_fifo_sync__parameterized1 |         23 |         23 |       0 |    0 |    59 |      7 |      1 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized1 |         23 |         23 |       0 |    0 |    59 |      7 |      1 |          0 |
+|             u_syncfifo_diffw_data                     |      syncfifo_diffw__parameterized0 |        104 |         60 |      44 |    0 |   159 |      0 |      0 |          0 |
+|               xpm_fifo_inst                           |       xpm_fifo_sync__parameterized0 |         71 |         27 |      44 |    0 |   159 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized0 |         71 |         27 |      44 |    0 |   159 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |     xpm_memory_base__parameterized0 |         44 |          0 |      44 |    0 |   128 |      0 |      0 |          0 |
+|           u_top_axi_cdma                              |                        top_axi_cdma |        716 |        658 |      58 |    0 |  1160 |      0 |      0 |          0 |
+|             u_axi_cdma                                |                            axi_cdma |        462 |        460 |       2 |    0 |   442 |      0 |      0 |          0 |
+|             u_control_axi_cdma                        |                    control_axi_cdma |         92 |         36 |      56 |    0 |   274 |      0 |      0 |          0 |
+|               (u_control_axi_cdma)                    |                    control_axi_cdma |          4 |          4 |       0 |    0 |    85 |      0 |      0 |          0 |
+|               u_cdma_cmd_fio                          |           syncfifo__parameterized12 |         88 |         32 |      56 |    0 |   189 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |      xpm_fifo_sync__parameterized14 |         79 |         23 |      56 |    0 |   189 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |      xpm_fifo_base__parameterized14 |         79 |         23 |      56 |    0 |   189 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   |    xpm_memory_base__parameterized15 |         56 |          0 |      56 |    0 |   162 |      0 |      0 |          0 |
+|             u_slice_ar                                |          bwdfwdpipe__parameterized0 |         36 |         36 |       0 |    0 |    82 |      0 |      0 |          0 |
+|             u_slice_aw                                |      bwdfwdpipe__parameterized0_450 |         31 |         31 |       0 |    0 |    82 |      0 |      0 |          0 |
+|             u_slice_r                                 |          bwdfwdpipe__parameterized3 |         56 |         56 |       0 |    0 |   130 |      0 |      0 |          0 |
+|               u_bwdpipe                               |             bwdpipe__parameterized3 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|               u_fwdpipe                               |             fwdpipe__parameterized3 |         24 |         24 |       0 |    0 |    65 |      0 |      0 |          0 |
+|             u_slice_w                                 |          bwdfwdpipe__parameterized1 |         40 |         40 |       0 |    0 |   148 |      0 |      0 |          0 |
+|               u_bwdpipe                               |             bwdpipe__parameterized1 |         37 |         37 |       0 |    0 |    74 |      0 |      0 |          0 |
+|               u_fwdpipe                               |             fwdpipe__parameterized1 |          3 |          3 |       0 |    0 |    74 |      0 |      0 |          0 |
+|           u_top_ppu                                   |                             top_ppu |      24483 |      17771 |    6712 |    0 | 15818 |      1 |      0 |         16 |
+|             ppu_item[0].u_ppu                         |                                 ppu |       1627 |       1597 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[0].u_syncfifo_bus                |            syncfifo__parameterized7 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized9__1 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized9__1 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized10__1 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[0].u_syncfifo_raw                |            syncfifo__parameterized6 |         83 |         61 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__1 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__1 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__1 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[1].u_ppu                         |                             ppu_215 |       1620 |       1590 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[1].u_syncfifo_bus                |        syncfifo__parameterized7_216 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized9__2 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized9__2 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized10__2 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[1].u_syncfifo_raw                |        syncfifo__parameterized6_217 |         83 |         61 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__2 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__2 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__2 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[2].u_ppu                         |                             ppu_218 |       1616 |       1586 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[2].u_syncfifo_bus                |        syncfifo__parameterized7_219 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized9__3 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized9__3 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized10__3 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[2].u_syncfifo_raw                |        syncfifo__parameterized6_220 |         84 |         62 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__3 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__3 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__3 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[3].u_ppu                         |                             ppu_221 |       1617 |       1587 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[3].u_syncfifo_bus                |        syncfifo__parameterized7_222 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized9__4 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized9__4 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized10__4 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[3].u_syncfifo_raw                |        syncfifo__parameterized6_223 |         83 |         61 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__4 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__4 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__4 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[4].u_ppu                         |                             ppu_224 |       1620 |       1590 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[4].u_syncfifo_bus                |        syncfifo__parameterized7_225 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized9__5 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized9__5 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized10__5 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[4].u_syncfifo_raw                |        syncfifo__parameterized6_226 |         83 |         61 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__5 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__5 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__5 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[5].u_ppu                         |                             ppu_227 |       1618 |       1588 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[5].u_syncfifo_bus                |        syncfifo__parameterized7_228 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized9__6 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized9__6 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized10__6 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[5].u_syncfifo_raw                |        syncfifo__parameterized6_229 |         83 |         61 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__6 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__6 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__6 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[6].u_ppu                         |                             ppu_230 |       1621 |       1591 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[6].u_syncfifo_bus                |        syncfifo__parameterized7_231 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |       xpm_fifo_sync__parameterized9 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized9 |        864 |        176 |     688 |    0 |   626 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |    xpm_memory_base__parameterized10 |        820 |        132 |     688 |    0 |   579 |      0 |      0 |          0 |
+|             ppu_item[6].u_syncfifo_raw                |        syncfifo__parameterized6_232 |         84 |         62 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |    xpm_fifo_sync__parameterized8__7 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |    xpm_fifo_base__parameterized8__7 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |  xpm_memory_base__parameterized9__7 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             ppu_item[7].u_ppu                         |                             ppu_233 |       1623 |       1593 |      30 |    0 |   784 |      0 |      0 |          2 |
+|             ppu_item[7].u_syncfifo_raw                |        syncfifo__parameterized6_234 |         83 |         61 |      22 |    0 |    95 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |       xpm_fifo_sync__parameterized8 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |       xpm_fifo_base__parameterized8 |         49 |         27 |      22 |    0 |    95 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |     xpm_memory_base__parameterized9 |         22 |          0 |      22 |    0 |    64 |      0 |      0 |          0 |
+|             u_axi_dma_wr_gp0                          |                          axi_dma_wr |        746 |        694 |      52 |    0 |   314 |      0 |      0 |          0 |
+|             u_axi_dma_wr_gp1                          |                      axi_dma_wr_235 |        670 |        618 |      52 |    0 |   314 |      0 |      0 |          0 |
+|             u_dma_gp0_cmd                             |           syncfifo__parameterized11 |        375 |        119 |     256 |    0 |   280 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |   xpm_fifo_sync__parameterized13__1 |        355 |         99 |     256 |    0 |   280 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |   xpm_fifo_base__parameterized13__1 |        355 |         99 |     256 |    0 |   280 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     | xpm_memory_base__parameterized14__1 |        305 |         49 |     256 |    0 |   237 |      0 |      0 |          0 |
+|             u_dma_gp1_cmd                             |       syncfifo__parameterized11_236 |        375 |        119 |     256 |    0 |   280 |      0 |      0 |          0 |
+|               xpm_fifo_sync_inst                      |      xpm_fifo_sync__parameterized13 |        355 |         99 |     256 |    0 |   280 |      0 |      0 |          0 |
+|                 xpm_fifo_base_inst                    |      xpm_fifo_base__parameterized13 |        355 |         99 |     256 |    0 |   280 |      0 |      0 |          0 |
+|                   gen_sdpram.xpm_memory_base_inst     |    xpm_memory_base__parameterized14 |        305 |         49 |     256 |    0 |   237 |      0 |      0 |          0 |
+|             u_ppu_control                             |                         ppu_control |       2711 |       1847 |     864 |    0 |  3169 |      0 |      0 |          0 |
+|               (u_ppu_control)                         |                         ppu_control |       1326 |       1326 |       0 |    0 |   169 |      0 |      0 |          0 |
+|               gp0_fifos[0].u_fifo_gp0                 |           syncfifo__parameterized10 |         56 |         24 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__1 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__1 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__1 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp0_fifos[1].u_fifo_gp0                 |       syncfifo__parameterized10_237 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__2 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__2 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__2 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp0_fifos[2].u_fifo_gp0                 |       syncfifo__parameterized10_238 |         59 |         27 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__3 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__3 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__3 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp0_fifos[3].u_fifo_gp0                 |       syncfifo__parameterized10_239 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__4 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__4 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__4 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp1_fifos[0].u_fifo_gp1                 |       syncfifo__parameterized10_240 |         56 |         24 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__5 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__5 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__5 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp1_fifos[1].u_fifo_gp1                 |       syncfifo__parameterized10_241 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__6 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__6 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__6 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp1_fifos[2].u_fifo_gp1                 |       syncfifo__parameterized10_242 |         56 |         24 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized12__7 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized12__7 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized13__7 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               gp1_fifos[3].u_fifo_gp1                 |       syncfifo__parameterized10_243 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |      xpm_fifo_sync__parameterized12 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |      xpm_fifo_base__parameterized12 |         55 |         23 |      32 |    0 |   117 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   |    xpm_memory_base__parameterized13 |         32 |          0 |      32 |    0 |    90 |      0 |      0 |          0 |
+|               inst_fifos[0].u_syncfifo                |            syncfifo__parameterized9 |        106 |         30 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__1 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__1 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__1 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[1].u_syncfifo                |        syncfifo__parameterized9_244 |        105 |         29 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__2 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__2 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__2 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[2].u_syncfifo                |        syncfifo__parameterized9_245 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__3 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__3 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__3 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[3].u_syncfifo                |        syncfifo__parameterized9_246 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__4 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__4 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__4 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[4].u_syncfifo                |        syncfifo__parameterized9_247 |        104 |         28 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__5 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__5 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__5 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[5].u_syncfifo                |        syncfifo__parameterized9_248 |        105 |         29 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__6 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__6 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__6 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[6].u_syncfifo                |        syncfifo__parameterized9_249 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |   xpm_fifo_sync__parameterized11__7 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |   xpm_fifo_base__parameterized11__7 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   | xpm_memory_base__parameterized12__7 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               inst_fifos[7].u_syncfifo                |        syncfifo__parameterized9_250 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |      xpm_fifo_sync__parameterized11 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |      xpm_fifo_base__parameterized11 |        103 |         27 |      76 |    0 |   257 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   |    xpm_memory_base__parameterized12 |         76 |          0 |      76 |    0 |   226 |      0 |      0 |          0 |
+|               u_arb_gp0                               |                 round_robin_arbiter |         57 |         57 |       0 |    0 |     4 |      0 |      0 |          0 |
+|               u_arb_gp1                               |             round_robin_arbiter_251 |         57 |         57 |       0 |    0 |     4 |      0 |      0 |          0 |
+|           u_top_systolic_unit                         |                   top_systolic_unit |       8550 |       5690 |    2850 |   10 | 14520 |     16 |      0 |        192 |
+|             u_systolic_control                        |                    systolic_control |        138 |        128 |       0 |   10 |   157 |      0 |      0 |          0 |
+|             u_systolic_unit                           |                       systolic_unit |       8414 |       5564 |    2850 |    0 | 14363 |     16 |      0 |        192 |
+|               col_buffer[0].u_systolic_buffer         |                     systolic_buffer |         70 |         70 |       0 |    0 |    65 |      2 |      0 |          0 |
+|                 (col_buffer[0].u_systolic_buffer)     |                     systolic_buffer |         53 |         53 |       0 |    0 |    65 |      0 |      0 |          0 |
+|               col_buffer[1].u_systolic_buffer         |                   systolic_buffer_0 |         61 |         61 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[1].u_systolic_buffer)     |                   systolic_buffer_0 |         51 |         51 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               col_buffer[2].u_systolic_buffer         |                   systolic_buffer_1 |         67 |         67 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[2].u_systolic_buffer)     |                   systolic_buffer_1 |         50 |         50 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               col_buffer[3].u_systolic_buffer         |                   systolic_buffer_2 |         67 |         67 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[3].u_systolic_buffer)     |                   systolic_buffer_2 |         49 |         49 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               col_buffer[4].u_systolic_buffer         |                   systolic_buffer_3 |         60 |         60 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[4].u_systolic_buffer)     |                   systolic_buffer_3 |         51 |         51 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               col_buffer[5].u_systolic_buffer         |                   systolic_buffer_4 |         60 |         60 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[5].u_systolic_buffer)     |                   systolic_buffer_4 |         51 |         51 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               col_buffer[6].u_systolic_buffer         |                   systolic_buffer_5 |         60 |         60 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[6].u_systolic_buffer)     |                   systolic_buffer_5 |         51 |         51 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               col_buffer[7].u_systolic_buffer         |                   systolic_buffer_6 |         61 |         61 |       0 |    0 |    64 |      2 |      0 |          0 |
+|                 (col_buffer[7].u_systolic_buffer)     |                   systolic_buffer_6 |         52 |         52 |       0 |    0 |    64 |      0 |      0 |          0 |
+|               row_fifo[0].u_systolic_fifo             |                       systolic_fifo |        296 |        124 |     172 |    0 |   276 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_193 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |       xpm_fifo_sync__parameterized6 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |       xpm_fifo_base__parameterized6 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |     xpm_memory_base__parameterized6 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[1].u_systolic_fifo             |                     systolic_fifo_7 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_186 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__7 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__7 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__7 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[2].u_systolic_fifo             |                     systolic_fifo_8 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_179 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__6 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__6 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__6 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[3].u_systolic_fifo             |                     systolic_fifo_9 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_172 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__5 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__5 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__5 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[4].u_systolic_fifo             |                    systolic_fifo_10 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_165 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__4 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__4 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__4 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[5].u_systolic_fifo             |                    systolic_fifo_11 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_158 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__3 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__3 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__3 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[6].u_systolic_fifo             |                    systolic_fifo_12 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |        syncfifo__parameterized4_151 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__2 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__2 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__2 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               row_fifo[7].u_systolic_fifo             |                    systolic_fifo_13 |        296 |        124 |     172 |    0 |   277 |      0 |      0 |          0 |
+|                 u_fifo_core                           |            syncfifo__parameterized4 |        282 |        110 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                   xpm_fifo_sync_inst                  |    xpm_fifo_sync__parameterized6__1 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                     xpm_fifo_base_inst                |    xpm_fifo_base__parameterized6__1 |        246 |         74 |     172 |    0 |   232 |      0 |      0 |          0 |
+|                       gen_sdpram.xpm_memory_base_inst |  xpm_memory_base__parameterized6__1 |        206 |         34 |     172 |    0 |   193 |      0 |      0 |          0 |
+|               u_axi_dma_activation                    |          axi_dma_rd__parameterized0 |        450 |        402 |      48 |    0 |   291 |      0 |      0 |          0 |
+|               u_axi_dma_weight                        |       axi_dma_rd__parameterized0_14 |        439 |        389 |      50 |    0 |   292 |      0 |      0 |          0 |
+|               u_axis_1to8_activation                  |                           axis_1to8 |        267 |        267 |       0 |    0 |  1040 |      0 |      0 |          0 |
+|                 gen_router_pipes[0].u_bwdfwdpipe      |                      bwdfwdpipe_124 |         33 |         33 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_145 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_146 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[1].u_bwdfwdpipe      |                      bwdfwdpipe_125 |         33 |         33 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_143 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_144 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[2].u_bwdfwdpipe      |                      bwdfwdpipe_126 |         33 |         33 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_141 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_142 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[3].u_bwdfwdpipe      |                      bwdfwdpipe_127 |         35 |         35 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_139 |         34 |         34 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_140 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[4].u_bwdfwdpipe      |                      bwdfwdpipe_128 |         33 |         33 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_137 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_138 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[5].u_bwdfwdpipe      |                      bwdfwdpipe_129 |         33 |         33 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_135 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_136 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[6].u_bwdfwdpipe      |                      bwdfwdpipe_130 |         33 |         33 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                         bwdpipe_133 |         32 |         32 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_134 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                 gen_router_pipes[7].u_bwdfwdpipe      |                      bwdfwdpipe_131 |         34 |         34 |       0 |    0 |   130 |      0 |      0 |          0 |
+|                   u_bwdpipe                           |                             bwdpipe |         33 |         33 |       0 |    0 |    65 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_132 |          1 |          1 |       0 |    0 |    65 |      0 |      0 |          0 |
+|               u_axis_1to8_weight                      |                        axis_1to8_15 |         16 |         16 |       0 |    0 |   528 |      0 |      0 |          0 |
+|                 gen_router_pipes[0].u_bwdfwdpipe      |                          bwdfwdpipe |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_123 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[1].u_bwdfwdpipe      |                      bwdfwdpipe_110 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_122 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[2].u_bwdfwdpipe      |                      bwdfwdpipe_111 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_121 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[3].u_bwdfwdpipe      |                      bwdfwdpipe_112 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_120 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[4].u_bwdfwdpipe      |                      bwdfwdpipe_113 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_119 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[5].u_bwdfwdpipe      |                      bwdfwdpipe_114 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_118 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[6].u_bwdfwdpipe      |                      bwdfwdpipe_115 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                         fwdpipe_117 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                 gen_router_pipes[7].u_bwdfwdpipe      |                      bwdfwdpipe_116 |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|                   u_fwdpipe                           |                             fwdpipe |          2 |          2 |       0 |    0 |    66 |      0 |      0 |          0 |
+|               u_buffer_cmd_fifo                       |            syncfifo__parameterized5 |        684 |        172 |     512 |    0 |   482 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |    xpm_fifo_sync__parameterized7__1 |        656 |        144 |     512 |    0 |   482 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |    xpm_fifo_base__parameterized7__1 |        656 |        144 |     512 |    0 |   482 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   |  xpm_memory_base__parameterized8__1 |        612 |        100 |     512 |    0 |   435 |      0 |      0 |          0 |
+|               u_fifo_cmd_fifo                         |         syncfifo__parameterized5_16 |        684 |        172 |     512 |    0 |   482 |      0 |      0 |          0 |
+|                 xpm_fifo_sync_inst                    |       xpm_fifo_sync__parameterized7 |        656 |        144 |     512 |    0 |   482 |      0 |      0 |          0 |
+|                   xpm_fifo_base_inst                  |       xpm_fifo_base__parameterized7 |        656 |        144 |     512 |    0 |   482 |      0 |      0 |          0 |
+|                     gen_sdpram.xpm_memory_base_inst   |     xpm_memory_base__parameterized8 |        612 |        100 |     512 |    0 |   435 |      0 |      0 |          0 |
+|               u_systolic_array                        |                      systolic_array |       3026 |       2674 |     352 |    0 |  8520 |      0 |      0 |        192 |
+|                 out_map[0].u_systolic_reorder         |                    systolic_reorder |        109 |         65 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[0].u_systolic_reorder)     |                    systolic_reorder |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                           stack_101 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[1].u_systolic_reorder         |                 systolic_reorder_17 |        109 |         65 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[1].u_systolic_reorder)     |                 systolic_reorder_17 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_99 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[2].u_systolic_reorder         |                 systolic_reorder_18 |        111 |         67 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[2].u_systolic_reorder)     |                 systolic_reorder_18 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_97 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[3].u_systolic_reorder         |                 systolic_reorder_19 |        110 |         66 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[3].u_systolic_reorder)     |                 systolic_reorder_19 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_95 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[4].u_systolic_reorder         |                 systolic_reorder_20 |        110 |         66 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[4].u_systolic_reorder)     |                 systolic_reorder_20 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_93 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[5].u_systolic_reorder         |                 systolic_reorder_21 |        110 |         66 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[5].u_systolic_reorder)     |                 systolic_reorder_21 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_91 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[6].u_systolic_reorder         |                 systolic_reorder_22 |        108 |         64 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[6].u_systolic_reorder)     |                 systolic_reorder_22 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_89 |         71 |         49 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 out_map[7].u_systolic_reorder         |                 systolic_reorder_23 |        109 |         65 |      44 |    0 |    93 |      0 |      0 |          0 |
+|                   (out_map[7].u_systolic_reorder)     |                 systolic_reorder_23 |          9 |          9 |       0 |    0 |    85 |      0 |      0 |          0 |
+|                   u_stack1                            |                            stack_87 |         70 |         48 |      22 |    0 |     4 |      0 |      0 |          0 |
+|                 row_gen[0].col_gen[0].u_systolic_pe   |                         systolic_pe |         21 |         21 |       0 |    0 |    74 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[1].u_systolic_pe   |                      systolic_pe_24 |         22 |         22 |       0 |    0 |    74 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[2].u_systolic_pe   |                      systolic_pe_25 |         22 |         22 |       0 |    0 |    74 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[3].u_systolic_pe   |                      systolic_pe_26 |         22 |         22 |       0 |    0 |    74 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[4].u_systolic_pe   |                      systolic_pe_27 |         22 |         22 |       0 |    0 |    74 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[5].u_systolic_pe   |                      systolic_pe_28 |         22 |         22 |       0 |    0 |    74 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[6].u_systolic_pe   |                      systolic_pe_29 |         22 |         22 |       0 |    0 |    58 |      0 |      0 |          3 |
+|                 row_gen[0].col_gen[7].u_systolic_pe   |                      systolic_pe_30 |         22 |         22 |       0 |    0 |    58 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[0].u_systolic_pe   |                      systolic_pe_31 |         38 |         38 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[1].u_systolic_pe   |                      systolic_pe_32 |         38 |         38 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[2].u_systolic_pe   |                      systolic_pe_33 |         38 |         38 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[3].u_systolic_pe   |                      systolic_pe_34 |         38 |         38 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[4].u_systolic_pe   |                      systolic_pe_35 |         38 |         38 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[5].u_systolic_pe   |                      systolic_pe_36 |         38 |         38 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[6].u_systolic_pe   |                      systolic_pe_37 |         38 |         38 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[1].col_gen[7].u_systolic_pe   |                      systolic_pe_38 |         38 |         38 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[0].u_systolic_pe   |                      systolic_pe_39 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[1].u_systolic_pe   |                      systolic_pe_40 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[2].u_systolic_pe   |                      systolic_pe_41 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[3].u_systolic_pe   |                      systolic_pe_42 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[4].u_systolic_pe   |                      systolic_pe_43 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[5].u_systolic_pe   |                      systolic_pe_44 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[6].u_systolic_pe   |                      systolic_pe_45 |         36 |         36 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[2].col_gen[7].u_systolic_pe   |                      systolic_pe_46 |         36 |         36 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[0].u_systolic_pe   |                      systolic_pe_47 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[1].u_systolic_pe   |                      systolic_pe_48 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[2].u_systolic_pe   |                      systolic_pe_49 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[3].u_systolic_pe   |                      systolic_pe_50 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[4].u_systolic_pe   |                      systolic_pe_51 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[5].u_systolic_pe   |                      systolic_pe_52 |         36 |         36 |       0 |    0 |   137 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[6].u_systolic_pe   |                      systolic_pe_53 |         36 |         36 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[3].col_gen[7].u_systolic_pe   |                      systolic_pe_54 |         36 |         36 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[0].u_systolic_pe   |                      systolic_pe_55 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[1].u_systolic_pe   |                      systolic_pe_56 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[2].u_systolic_pe   |                      systolic_pe_57 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[3].u_systolic_pe   |                      systolic_pe_58 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[4].u_systolic_pe   |                      systolic_pe_59 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[5].u_systolic_pe   |                      systolic_pe_60 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[6].u_systolic_pe   |                      systolic_pe_61 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[4].col_gen[7].u_systolic_pe   |                      systolic_pe_62 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[0].u_systolic_pe   |                      systolic_pe_63 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[1].u_systolic_pe   |                      systolic_pe_64 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[2].u_systolic_pe   |                      systolic_pe_65 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[3].u_systolic_pe   |                      systolic_pe_66 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[4].u_systolic_pe   |                      systolic_pe_67 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[5].u_systolic_pe   |                      systolic_pe_68 |         37 |         37 |       0 |    0 |   138 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[6].u_systolic_pe   |                      systolic_pe_69 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[5].col_gen[7].u_systolic_pe   |                      systolic_pe_70 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[0].u_systolic_pe   |                      systolic_pe_71 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[1].u_systolic_pe   |                      systolic_pe_72 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[2].u_systolic_pe   |                      systolic_pe_73 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[3].u_systolic_pe   |                      systolic_pe_74 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[4].u_systolic_pe   |                      systolic_pe_75 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[5].u_systolic_pe   |                      systolic_pe_76 |         37 |         37 |       0 |    0 |   122 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[6].u_systolic_pe   |                      systolic_pe_77 |         37 |         37 |       0 |    0 |   106 |      0 |      0 |          3 |
+|                 row_gen[6].col_gen[7].u_systolic_pe   |                      systolic_pe_78 |         37 |         37 |       0 |    0 |   106 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[0].u_systolic_pe   |                      systolic_pe_79 |         35 |         35 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[1].u_systolic_pe   |                      systolic_pe_80 |         35 |         35 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[2].u_systolic_pe   |                      systolic_pe_81 |         35 |         35 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[3].u_systolic_pe   |                      systolic_pe_82 |         35 |         35 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[4].u_systolic_pe   |                      systolic_pe_83 |         35 |         35 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[5].u_systolic_pe   |                      systolic_pe_84 |         35 |         35 |       0 |    0 |   121 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[6].u_systolic_pe   |                      systolic_pe_85 |         35 |         35 |       0 |    0 |   105 |      0 |      0 |          3 |
+|                 row_gen[7].col_gen[7].u_systolic_pe   |                      systolic_pe_86 |         35 |         35 |       0 |    0 |   105 |      0 |      0 |          3 |
+|     u_external_ram                                    |                          axi_dp_ram |        368 |        368 |       0 |    0 |   161 |     64 |      0 |          0 |
+|       banked_storage                                  |    edge_bram_banked__parameterized0 |        129 |        129 |       0 |    0 |     2 |     64 |      0 |          0 |
+|       a_if                                            |                    axi_ram_wr_rd_if |        125 |        125 |       0 |    0 |    69 |      0 |      0 |          0 |
+|         axi_ram_rd_if_inst                            |                   axi_ram_rd_if_531 |         89 |         89 |       0 |    0 |    33 |      0 |      0 |          0 |
+|       b_if                                            |                axi_ram_wr_rd_if_530 |        113 |        113 |       0 |    0 |    82 |      0 |      0 |          0 |
+|         axi_ram_rd_if_inst                            |                       axi_ram_rd_if |         78 |         78 |       0 |    0 |    37 |      0 |      0 |          0 |
+|     u_itcm                                            |                             axi_ram |        129 |        129 |       0 |    0 |    73 |     32 |      0 |          0 |
+|       (u_itcm)                                        |                             axi_ram |         60 |         60 |       0 |    0 |    72 |      0 |      0 |          0 |
+|       banked_storage                                  |                    edge_bram_banked |         70 |         70 |       0 |    0 |     1 |     32 |      0 |          0 |
+|     u_riscv_cpu                                       |                           riscv_cpu |       2088 |       2032 |      56 |    0 |  1800 |      0 |      0 |          4 |
+|       (u_riscv_cpu)                                   |                           riscv_cpu |        183 |        183 |       0 |    0 |   421 |      0 |      0 |          0 |
+|       axi4SharedDecoder                               |                vexAxi4SharedDecoder |         72 |         72 |       0 |    0 |    23 |      0 |      0 |          0 |
+|       axi_core_cpu                                    |                         vexVexRiscv |       1578 |       1534 |      44 |    0 |  1126 |      0 |      0 |          4 |
+|         (axi_core_cpu)                                |                         vexVexRiscv |       1450 |       1406 |      44 |    0 |  1092 |      0 |      0 |          4 |
+|         IBusSimplePlugin_rspJoin_rspBuffer_c          |             vexStreamFifoLowLatency |        133 |        133 |       0 |    0 |    34 |      0 |      0 |          0 |
+|           fifo                                        |                     vexStreamFifo_2 |        133 |        133 |       0 |    0 |    34 |      0 |      0 |          0 |
+|       axi_uartCtrl                                    |                     vexApb3UartCtrl |        144 |        132 |      12 |    0 |   147 |      0 |      0 |          0 |
+|         uartCtrl                                      |                         vexUartCtrl |         85 |         85 |       0 |    0 |    66 |      0 |      0 |          0 |
++-------------------------------------------------------+-------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
 
 

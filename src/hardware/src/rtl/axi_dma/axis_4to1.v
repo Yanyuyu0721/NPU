@@ -4,7 +4,7 @@ created    : 2025/12/24 21:39:11
 modified   : 2026-02-06 21:49:19
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module axis_4to1 # (

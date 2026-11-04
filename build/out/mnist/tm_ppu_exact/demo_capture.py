@@ -91,7 +91,7 @@ def main():
  # Use the installed pure-Python serial package with the bundled interpreter.
  try:import serial
  except ImportError:
-  sys.path.append(r'C:\Users\65274\AppData\Local\miniconda3\Lib\site-packages');import serial
+  raise RuntimeError('Install pyserial in the selected Python environment: python -m pip install pyserial') from None
  out=a.out.resolve();out.mkdir(parents=True);arm=out/'capture_arm.txt';ack=out/'capture_ack.txt'
  cmd=[r'D:\Xlinx\Vivado\2018.2\bin\vivado.bat','-mode','batch','-source',str(ROOT/'board/program_2018_2.tcl'),'-log',str(out/'program.log'),'-journal',str(out/'program.jou'),'-tclargs',str(a.bit.resolve()),'127.0.0.1:3121','',str(arm),str(ack)]
  record=dict(passed=False,board_measurement=False,bit_sha256=sha(a.bit),port=a.port,started=datetime.datetime.now().astimezone().isoformat(),command=cmd)

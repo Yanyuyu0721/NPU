@@ -1,7 +1,7 @@
 {
   "scope": "SAME_ROUTED_HARDWARE_ITCM_INIT_UPDATE",
   "source_checkpoint": "D:\\vexriscv_tinymaix_final_20261030\\build\\out\\kws\\tm_perf_v2\\image_final\\routed_50mhz.dcp",
-  "source_checkpoint_sha256": "efe49d3d696ef709343148b8b98ea19d82595b72d93be7e416e24946654685c4",
+  "source_checkpoint_sha256": "b3abee1af89d89ffe8659274a384390598c137e20e8c86df50c7720d1ab71798",
   "old_words_verified": 24576,
   "changed_init_properties": 2350,
   "firmware_itcm_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",

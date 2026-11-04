@@ -1,0 +1,7 @@
+{
+  "kind": "example",
+  "name": "固定样例（复核基准）",
+  "task": "kws",
+  "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+  "created_at": "2026-11-02T10:59:40.472337"
+}

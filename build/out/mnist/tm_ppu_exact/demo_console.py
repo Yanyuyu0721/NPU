@@ -5,7 +5,7 @@ from demo_capture import validate
 H=Path(__file__).resolve().parent
 try:import serial
 except ImportError:
- sys.path.append(r'C:\Users\65274\AppData\Local\miniconda3\Lib\site-packages');import serial
+ raise RuntimeError('Install pyserial in the selected Python environment: python -m pip install pyserial') from None
 
 def show(v):
  print('\n'+'='*66)

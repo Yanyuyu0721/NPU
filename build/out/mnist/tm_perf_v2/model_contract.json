@@ -766,7 +766,7 @@
     ],
     "registry_file": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_tinymaix\\source\\model_registry.h",
     "registry_header_sha256": "d56ece86a0f4cfb7b15dc37d70d446cde0dc432f15bb57e0241bcedb84266e39",
-    "original_cpu_replay_file": "D:\\\u6280\u672f\u6587\u6863\\.migration-work\\model_alignment_20261029\\original_cpu_replay.json",
+    "original_cpu_replay_file": "D:\\技术文档\\.migration-work\\model_alignment_20261029\\original_cpu_replay.json",
     "original_cpu_replay_sha256": "d652955d98fb83802371d47335fb86ec822ed8471a7c7929a723f4a7376baaef",
     "original_source_fc_note": "Source FC casts directly; migrated port saturates before cast. No saturation triggered in the seven verified inputs. Not a universal equivalence proof."
   },

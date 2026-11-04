@@ -1,29 +1,21 @@
 VERIFIED_ALL_24576_OLD_WORDS_MATCH_ROUTED_BRAM_INIT
 {
   "scope": "SAME_ROUTED_HARDWARE_ITCM_INIT_UPDATE",
-  "source_checkpoint": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_perf_v2\\image_final\\routed_50mhz.dcp",
-  "source_checkpoint_sha256": "857e75c880ecaa07d668f99e7344a9f8ab5753b80626525c4e4838766147767b",
+  "source_checkpoint": "D:\\vexriscv_tinymaix_final_20261030\\build\\out\\xc7a100t_20261102\\routed_50mhz.dcp",
+  "source_checkpoint_sha256": "842ac17bf962bdd64d886c713bbaac53c23e1fcae3f51d726828ad1a2cf5c3b2",
   "old_words_verified": 24576,
-  "changed_init_properties": 2688,
+  "changed_init_properties": 0,
   "firmware_itcm_sha256": "241ebcf16c80acbe56fef0fa37b2d7b3c7ccee18201c9852244238d091b4ba34",
   "timing_50mhz_met": true,
   "sta": {
     "50": {
-      "setup_ns": 1.914,
-      "hold_ns": 0.018
-    },
-    "100": {
-      "setup_ns": -8.086,
-      "hold_ns": 0.018
-    },
-    "150": {
-      "setup_ns": -11.419,
-      "hold_ns": 0.018
+      "setup_ns": 2.96,
+      "hold_ns": 0.036
     }
   },
-  "pid": 264788,
+  "pid": 147240,
   "new_words_verified": 24576,
   "verdict": "ITCM_UPDATED_NOT_BOARD_TESTED",
-  "bit_sha256": "1b5de9705376203190474322c7ac248434dd961b5dc418815e79e95fbb50a3a9",
-  "bit_file": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\mnist\\image\\board_top.bit"
+  "bit_sha256": "3e179cac4203e3395b505f2e95168ebb1b27a4d0f1f6b8ade21f7952c3c19ea9",
+  "bit_file": "D:\\a7_finalize_20261102\\fresh_mnist\\image\\board_top.bit"
 }

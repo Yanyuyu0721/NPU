@@ -4,7 +4,7 @@ created    : 2025/12/16 23:09:01
 modified   : 2026-02-10 17:43:09
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `include "top_tiny_npu.vh"
 `default_nettype none

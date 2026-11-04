@@ -10,7 +10,7 @@ def build(task,out=None):
  shutil.copytree(R/'src/software'/task,d/'source')
  for name in ('model.bin','input.bin','baseline.json'):shutil.copy2(H/'firmware'/task/name,d/name)
  s=d/'source';o=d/'build';o.mkdir()
- base=json.loads((d/'baseline.json').read_text());original=R/'build/out'/task/'tm_perf_v2'
+ base=json.loads((d/'baseline.json').read_text())
  assert sha(d/'model.bin')==base['model_sha256']
  for p in s.iterdir():
   if p.is_file()and p.name!='main.c':assert sha(p)==base['source_hashes'][p.name],p
@@ -32,7 +32,7 @@ def build(task,out=None):
  record.update(firmware_bytes=(o/'firmware.bin').stat().st_size,firmware_mem_sha256=sha(mem),source_hashes={p.name:sha(p)for p in s.iterdir()if p.is_file()})
  (o/'result.json').write_text(json.dumps(record,indent=2));print(task,(o/'size.log').read_text(errors='replace'),flush=True)
  image=d/'image';assert not image.exists(),'fresh image output required'
- q=subprocess.run([sys.executable,str(original/'patch_itcm.py'),str(mem),str(image)],capture_output=True)
+ q=subprocess.run([sys.executable,str(R/'build/patch_itcm.py'),str(mem),str(image)],capture_output=True)
  (d/'patch.log').write_bytes(q.stdout+q.stderr);assert q.returncode==0,(d/'patch.log').read_text(errors='replace')
  print('LIVE_IMAGE_READY',task,sha(image/'board_top.bit'),flush=True)
 if __name__=='__main__':

@@ -4,7 +4,7 @@ created    : 2025/12/08 19:47:02
 modified   : 2026-03-18 02:06:44
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module systolic_unit # (
@@ -477,7 +477,7 @@ wire               buffer_cmd_rd_en;
 syncfifo # (
     .DATA_WIDTH  ( CMD_LEN       ), 
     .ADDR_WIDTH  ( 9             ), 
-    .RAM_STYLE   ( "block" ), 
+    .RAM_STYLE   ( "distributed" ), 
     .FWFT_EN     ( 1             )              
 ) u_buffer_cmd_fifo (
     .din    ( axi_dma_cmd     ) ,
@@ -507,7 +507,7 @@ wire               fifo_cmd_rd_en;
 syncfifo # (
     .DATA_WIDTH  ( CMD_LEN       ), 
     .ADDR_WIDTH  ( 9             ), 
-    .RAM_STYLE   ( "block" ), 
+    .RAM_STYLE   ( "distributed" ), 
     .FWFT_EN     ( 1             )              
 ) u_fifo_cmd_fifo (
     .din    ( axi_dma_cmd         ) ,

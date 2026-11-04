@@ -4,7 +4,7 @@ created    : 2026/02/02 22:20:56
 modified   : 2026-02-06 21:24:04
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none 
 module round_robin_arbiter # (

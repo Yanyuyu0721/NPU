@@ -1,24 +1,25 @@
 {
-  "scope": "FRESH_SOURCE_BUILD_AND_CONFIG_PAYLOAD_COMPARISON",
+  "date": "2026-11-02",
+  "scope": "FRESH_FIRMWARE_COMPILE_AND_NEW_2026_1_HARDWARE_IMAGE_BOARD_RETEST",
   "passed": true,
   "tasks": {
     "mnist": {
+      "fresh_compile": true,
+      "firmware_binary_unchanged": true,
       "firmware_bin_sha256": "17e142893c250c1b8c64d83d54f14659b058b8a6e382b4736eeefb068e7be51f",
       "firmware_mem_sha256": "241ebcf16c80acbe56fef0fa37b2d7b3c7ccee18201c9852244238d091b4ba34",
-      "firmware_byte_identical": true,
-      "configuration_payload_identical": true,
-      "bitstream_file_sha256": "7009f4f6b5c018a6d3949fb6d066eb658dff2c9e7ca40b41fbe1f18250c0bc86",
-      "note": "Bit header generation time may differ; configuration payload and complete firmware are byte-identical",
-      "words_verified": 24576
+      "new_hardware_image_sha256": "3e179cac4203e3395b505f2e95168ebb1b27a4d0f1f6b8ade21f7952c3c19ea9",
+      "old_and_new_itcm_words_verified": 24576,
+      "board_retest_passed": true
     },
     "kws": {
+      "fresh_compile": true,
+      "firmware_binary_unchanged": true,
       "firmware_bin_sha256": "0749d2974a841a62fdeda32f46d22b704043a3f9e921eb1671af30f0d2944bd8",
       "firmware_mem_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",
-      "firmware_byte_identical": true,
-      "configuration_payload_identical": true,
-      "bitstream_file_sha256": "8564dfbbc5889297a3850fd98f0ad1fa9e1ba67513d3df6691fae3aec10cf555",
-      "note": "Bit header generation time may differ; configuration payload and complete firmware are byte-identical",
-      "words_verified": 24576
+      "new_hardware_image_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606",
+      "old_and_new_itcm_words_verified": 24576,
+      "board_retest_passed": true
     }
   }
 }

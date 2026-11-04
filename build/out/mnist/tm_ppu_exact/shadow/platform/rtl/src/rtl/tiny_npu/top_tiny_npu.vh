@@ -4,7 +4,7 @@ created    : 2026/01/06 14:00:41
 modified   : 2026-03-14 14:28:40
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `ifndef TOP_TINY_NPU__VH
 `define TOP_TINY_NPU__VH

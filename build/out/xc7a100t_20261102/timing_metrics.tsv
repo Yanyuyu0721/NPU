@@ -1,0 +1,2 @@
+profile_mhz period_ns setup_slack_ns hold_slack_ns
+50	20.000	2.960	0.036

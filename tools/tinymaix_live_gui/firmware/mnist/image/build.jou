@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov  2 10:56:41 2026
+# Process ID         : 305404
+# Current directory  : D:/a7_finalize_20261102/fresh_mnist/image
+# Command line       : vivado.exe -mode batch -source D:\a7_finalize_20261102\fresh_mnist\image\patch.tcl -log D:\a7_finalize_20261102\fresh_mnist\image\build.log -journal D:\a7_finalize_20261102\fresh_mnist\image\build.jou
+# Log file           : D:/a7_finalize_20261102/fresh_mnist/image/build.log
+# Journal file       : D:\a7_finalize_20261102\fresh_mnist\image\build.jou
+# Running On         : BUILD-HOST
+# Platform           : Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-14400
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 34008 MB
+# Swap memory        : 49682 MB
+# Total Virtual      : 83690 MB
+# Available Virtual  : 19083 MB
+#-----------------------------------------------------------
+source {D:\a7_finalize_20261102\fresh_mnist\image\patch.tcl}

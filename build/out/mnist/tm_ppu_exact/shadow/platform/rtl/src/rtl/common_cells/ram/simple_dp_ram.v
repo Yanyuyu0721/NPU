@@ -4,7 +4,7 @@ created    : 2026/01/27 11:48:49
 modified   : 2026-01-27 15:21:01
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 module simple_dp_ram #(
     parameter WRITE_WIDTH =   32,  

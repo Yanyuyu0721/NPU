@@ -4,7 +4,7 @@ created    : 2025/12/25 15:35:58
 modified   : 2026-03-17 23:54:42
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module systolic_control #( 

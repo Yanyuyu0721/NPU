@@ -1,70 +1,420 @@
 {
+  "date": "2026-11-02",
   "passed": true,
-  "produced_at": "2026-10-30T12:09:24.257799+08:00",
-  "protocol": "VEX_TM_KWS3",
-  "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
-  "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
-  "cpu_reference_unchanged": true,
-  "word_documents_edited": false,
-  "verified_final_runs": 4,
-  "verified_final_timing_samples": 68,
-  "median_cycles": {
-    "0": 13793853,
-    "1": 1932175,
-    "2": 1589579,
-    "3": 1403313
-  },
-  "median_ms": {
-    "0": 275.87706,
-    "1": 38.6435,
-    "2": 31.79158,
-    "3": 28.06626
-  },
-  "speedup": {
-    "1": 7.13902881467776,
-    "2": 8.67767691948623,
-    "3": 9.829491353675195
-  },
-  "bit_sha256": "58af111d85c35cf1bb2b2fbb84af407dceeb6d12db7ad10f77c9cae69f588175",
-  "firmware_mem_sha256": "03be1ae89948d181f2dcecfb06ae3be88109e6e1617e3ed82bf327e43b941882",
-  "baseline_bit_sha256": "615ce60103ebe13914c6c6c0c9c51205b127a14c91a34c11203c0ca576320d3c",
-  "custom_bit_sha256": "32a95adddef16e8c569c5bc55f9421ec683cb9697fd7c9f19ae7618732dc76cf",
-  "final_evidence": "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\demo_runs\\20261030_120643_076088",
-  "rtl_test": {
-    "passed": true,
-    "tasks": 1290,
-    "samples": 56666,
-    "commands": [
-      {
-        "command": [
-          "D:\\Xlinx\\Vivado\\2018.2\\bin\\xvlog.bat",
-          "--sv",
-          "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\mnist\\tm_ppu_exact\\rtl_override\\src\\rtl\\post_processing_unit\\ppu.v",
-          "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\build\\out\\kws\\tm_perf_v2\\unit_exact\\tb_exact.sv"
-        ],
-        "exit": 0
+  "hardware": "XC7A100T",
+  "vivado": "2026.1",
+  "clock_hz": 50000000,
+  "bit_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606",
+  "benchmark": {
+    "task": "kws",
+    "seq": 44,
+    "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+    "input_crc32": "a4b31c61",
+    "model_sha256": "ccc3138779cc0475c5bccee25c9f5e0f1ddc2878d22ec675a0ccb14fd5ef7b37",
+    "clock_hz": 50000000,
+    "cpu_ms": 275.87612,
+    "cpu_cycles": 13793806,
+    "modes": {
+      "first": {
+        "cycles": 1932126,
+        "ms": 38.64252,
+        "speedup": 7.1391855396594215
       },
-      {
-        "command": [
-          "D:\\Xlinx\\Vivado\\2018.2\\bin\\xelab.bat",
-          "tb_exact",
-          "-s",
-          "exact_sim",
-          "--timescale",
-          "1ns/1ps"
-        ],
-        "exit": 0
+      "cold": {
+        "cycles": 1589530,
+        "ms": 31.7906,
+        "speedup": 8.677914855334596
       },
-      {
-        "command": [
-          "D:\\Xlinx\\Vivado\\2018.2\\bin\\xsim.bat",
-          "exact_sim",
-          "-tclbatch",
-          "run.tcl"
-        ],
-        "exit": 0
+      "hot": {
+        "cycles": 1403264,
+        "ms": 28.06528,
+        "speedup": 9.829801092310499
       }
-    ]
+    },
+    "scores": [
+      0.98828125,
+      0.0078125,
+      0.00390625
+    ],
+    "labels": [
+      "Hi xiaowen",
+      "Nihao wenwen",
+      "Background"
+    ],
+    "prediction": "Hi xiaowen",
+    "confidence": 0.98828125,
+    "rows": [
+      {
+        "mode": 0,
+        "rep": 0,
+        "cycles": 13793806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "windows": 0,
+        "quants": 0,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "rep": 1,
+        "cycles": 13793806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "windows": 0,
+        "quants": 0,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "rep": 2,
+        "cycles": 13793806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "windows": 0,
+        "quants": 0,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "rep": 3,
+        "cycles": 13793806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "windows": 0,
+        "quants": 0,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "rep": 4,
+        "cycles": 13793806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "windows": 0,
+        "quants": 0,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 0,
+        "rep": 5,
+        "cycles": 13793806,
+        "hits": 0,
+        "misses": 0,
+        "submissions": 0,
+        "windows": 0,
+        "quants": 0,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 1,
+        "rep": 0,
+        "cycles": 1932126,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "rep": 0,
+        "cycles": 1589530,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "rep": 1,
+        "cycles": 1589530,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "rep": 2,
+        "cycles": 1589530,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "rep": 3,
+        "cycles": 1589530,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 2,
+        "rep": 4,
+        "cycles": 1589530,
+        "hits": 0,
+        "misses": 11,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "rep": 0,
+        "cycles": 1403264,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "rep": 1,
+        "cycles": 1403264,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "rep": 2,
+        "cycles": 1403264,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "rep": 3,
+        "cycles": 1403264,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      },
+      {
+        "mode": 3,
+        "rep": 4,
+        "cycles": 1403264,
+        "hits": 11,
+        "misses": 0,
+        "submissions": 11,
+        "windows": 4,
+        "quants": 8,
+        "weight_loads": 0,
+        "weight_hits": 0,
+        "score_bits": [
+          1065156608,
+          1006632960,
+          998244352
+        ]
+      }
+    ],
+    "layers": [
+      [
+        0,
+        1975615549,
+        1975615549
+      ],
+      [
+        1,
+        3324460526,
+        3324460526
+      ],
+      [
+        2,
+        2236323765,
+        2236323765
+      ],
+      [
+        3,
+        4031693917,
+        4031693917
+      ],
+      [
+        4,
+        1305229704,
+        1305229704
+      ],
+      [
+        5,
+        919061832,
+        919061832
+      ],
+      [
+        6,
+        1820732690,
+        1820732690
+      ],
+      [
+        7,
+        4188171371,
+        4188171371
+      ],
+      [
+        8,
+        3436428933,
+        3436428933
+      ],
+      [
+        9,
+        2893576165,
+        2893576165
+      ],
+      [
+        10,
+        1193865764,
+        1193865764
+      ],
+      [
+        11,
+        645353468,
+        645353468
+      ],
+      [
+        12,
+        3837945933,
+        3837945933
+      ]
+    ],
+    "verified": true,
+    "measurement": "mcycle: tm_run_cpu / tm_run; CPU first discarded, median of 5; NPU first + cold 5 + hot 5",
+    "token": "c0ac32e08720426a8c110a0e7fba5871",
+    "host_elapsed_ms": 3000.0,
+    "run_dir": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261102_105940_513310_kws",
+    "input_source": {
+      "kind": "example",
+      "name": "固定样例（复核基准）",
+      "task": "kws",
+      "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e",
+      "created_at": "2026-11-02T10:59:40.472337"
+    },
+    "implementation": "build/out/xc7a100t_20261102/routed_50mhz.dcp",
+    "image_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606"
   },
-  "capture_validator_cases": 18
+  "source": "build/reports/board_retest_20261102.json"
 }

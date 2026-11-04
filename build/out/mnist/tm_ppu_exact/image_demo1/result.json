@@ -20,10 +20,10 @@
   "firmware_itcm_sha256": "5cf55d81e780f0c796c93ff877dcb9b92b1059dbf7bde4ef523cde6e2582e353",
   "rtl_override_sha256": {
     "README.md": "3cd3f197c69ef6eee655c782523d8167451aeec5cb8746a1bece5c8daf98cb95",
-    "src\\rtl\\post_processing_unit\\ppu.v": "35caa9c0d2b484cc5de33ae12edda501102dcaff642e12db05e4222fb767d654",
-    "src\\rtl\\post_processing_unit\\ppu_control.v": "177cb98c36cf9e3bc6db933f4a42d4351693c0b7cc3092a63bcca7e99be72ae7",
-    "src\\rtl\\post_processing_unit\\top_ppu.v": "4bdb53588887e627b8055822a380c11fd4e3bd832cf971b6d5182ceae7d3a46a",
-    "src\\rtl\\tiny_npu\\register_tiny_npu.v": "e04d4ab6628f3c13fe6ac63d5def70244c3dd071c3a5bf202b5d782d53396d0e",
+    "src\\rtl\\post_processing_unit\\ppu.v": "413123a16eaa3bf4cedeca79fea688f1bc1247e25f94b998b9e4a2a44b10d523",
+    "src\\rtl\\post_processing_unit\\ppu_control.v": "d1dd0a596c5c2325dd5e75cfbdb7a455f9c706316249e08231a140f6a9299ced",
+    "src\\rtl\\post_processing_unit\\top_ppu.v": "7c498a5749845ae8d6c5b02afe50887a603ed118a67e97cc81aa4241feb3b9f5",
+    "src\\rtl\\tiny_npu\\register_tiny_npu.v": "ea45a6b76836db264322e6563f2691408878449f68411e61645336135c5474fc",
     "src\\rtl\\common_cells\\ram\\edge_bram_banked.sv": "8063651de2beb5c9eff9a982d300ff2b4127c385d8fde3bb3f268432e372f931"
   },
   "pid": 187188,

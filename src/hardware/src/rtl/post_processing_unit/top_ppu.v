@@ -4,7 +4,7 @@ created    : 2026/02/06 21:54:15
 modified   : 2026-02-08 00:01:07
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module top_ppu # (
@@ -221,7 +221,7 @@ generate
         syncfifo # (
             .DATA_WIDTH   (AXI_DATA_WIDTH        ), 
             .ADDR_WIDTH   (9                     ), 
-            .RAM_STYLE    ("block"               ), 
+            .RAM_STYLE    ((i == 7) ? "block" : "distributed"), 
             .FWFT_EN      (1                     ) 
         ) u_syncfifo_bus (
             .din    (bus_data            ), // (input ) Local signal
@@ -249,7 +249,7 @@ wire                   dma_cmd_gp1_empty;
 syncfifo # (
     .DATA_WIDTH   (DMA_CMD_LEN     ), 
     .ADDR_WIDTH   (8               ), 
-    .RAM_STYLE    ("block"   ), 
+    .RAM_STYLE    ("distributed"), 
     .FWFT_EN      (1               ) 
 ) u_dma_gp0_cmd (
     .din    (dma_cmd_gp0        ), // (input )
@@ -267,7 +267,7 @@ syncfifo # (
 syncfifo # (
     .DATA_WIDTH   (DMA_CMD_LEN     ), 
     .ADDR_WIDTH   (8               ), 
-    .RAM_STYLE    ("block"   ), 
+    .RAM_STYLE    ("distributed"), 
     .FWFT_EN      (1               ) 
 ) u_dma_gp1_cmd (
     .din    (dma_cmd_gp1        ), // (input )

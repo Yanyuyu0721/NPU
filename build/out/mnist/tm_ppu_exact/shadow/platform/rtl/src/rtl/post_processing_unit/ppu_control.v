@@ -4,7 +4,7 @@ created    : 2026/02/02 21:56:16
 modified   : 2026-02-10 21:07:57
 description: 
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 `default_nettype none
 module ppu_control # (

@@ -10,7 +10,7 @@ INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been d
 # Command line       : vivado.exe -mode batch -source D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\board\program.tcl -log D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\runs\20261030_150829_117756_deploy_kws\vivado.log -journal D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\runs\20261030_150829_117756_deploy_kws\vivado.jou -tclargs D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\firmware\kws\image\board_top.bit 127.0.0.1:3122  D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\runs\20261030_150829_117756_deploy_kws\capture.arm D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\runs\20261030_150829_117756_deploy_kws\capture.ack
 # Log file           : D:/vex_npu_amd_advanced_20261027_v2/vex_npu_amd_advanced/tools/tinymaix_live_gui/runs/20261030_150829_117756_deploy_kws/vivado.log
 # Journal file       : D:\vex_npu_amd_advanced_20261027_v2\vex_npu_amd_advanced\tools\tinymaix_live_gui\runs\20261030_150829_117756_deploy_kws\vivado.jou
-# Running On         : DESKTOP-9IH4LM7
+# Running On         : BUILD-HOST
 # Platform           : Windows 10
 # Operating System   : 19045
 # Processor Detail   : Intel(R) Core(TM) i5-14400

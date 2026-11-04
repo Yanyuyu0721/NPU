@@ -1,0 +1,373 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 10:46:30 2026
+| Host         : BUILD-HOST running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file D:/a7_build_20261102_v3/timing_synth.rpt
+| Design       : board_top
+| Device       : 7a100t-fgg484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (2)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 2 input ports with no input delay but user has a false path constraint. (MEDIUM)
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There is 1 port with no output delay but user has a false path constraint (MEDIUM)
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      9.874        0.000                      0               197547        0.035        0.000                      0               197547        8.870        0.000                       0                 51031  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+core_50mhz  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+core_50mhz          9.874        0.000                      0               197547        0.035        0.000                      0               197547        8.870        0.000                       0                 51031  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  core_50mhz
+  To Clock:  core_50mhz
+
+Setup :            0  Failing Endpoints,  Worst Slack        9.874ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.035ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        8.870ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             9.874ns  (required time - arrival time)
+  Source:                 u_system/u_riscv_cpu/axi_core_cpu/decode_to_execute_RS2_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             core_50mhz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (core_50mhz rise@20.000ns - core_50mhz rise@0.000ns)
+  Data Path Delay:        9.781ns  (logic 3.134ns (32.042%)  route 6.647ns (67.958%))
+  Logic Levels:           18  (CARRY4=6 LUT4=1 LUT5=4 LUT6=7)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.944ns = ( 21.944 - 20.000 ) 
+    Source Clock Delay      (SCD):    2.257ns
+    Clock Pessimism Removal (CPR):    0.168ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_50mhz rise edge)
+                                                      0.000     0.000 r  <hidden>
+    R4                                                0.000     0.000 r  i_clk
+                         net (fo=0)                   0.000     0.000    i_clk
+    R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.647     1.592    u_system/i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.081     1.673 r  u_system/board_clock_buffer/O
+                         net (fo=51094, unplaced)     0.584     2.257    u_system/u_riscv_cpu/axi_core_cpu/io_push_rData_inst_reg[0]
+                         FDRE                                         r  u_system/u_riscv_cpu/axi_core_cpu/decode_to_execute_RS2_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.397     2.654 f  u_system/u_riscv_cpu/axi_core_cpu/decode_to_execute_RS2_reg[0]/Q
+                         net (fo=22, unplaced)        0.719     3.373    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/execute_to_memory_SHIFT_RIGHT[15]_i_3_1[0]
+                         LUT5 (Prop_lut5_I0_O)        0.232     3.605 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/execute_to_memory_SHIFT_RIGHT[31]_i_5/O
+                         net (fo=35, unplaced)        0.420     4.025    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/decode_to_execute_RS2_reg[0]
+                         LUT6 (Prop_lut6_I4_O)        0.105     4.130 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/execute_to_memory_MEMORY_ADDRESS_LOW[1]_i_7/O
+                         net (fo=1, unplaced)         0.528     4.658    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/execute_to_memory_MEMORY_ADDRESS_LOW[1]_i_7_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.528     5.186 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/execute_to_memory_MEMORY_ADDRESS_LOW_reg[1]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.186    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c_n_15
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.286 r  u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[7]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.286    u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[7]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.386 r  u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[11]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.386    u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[11]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.486 r  u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[15]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.486    u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[15]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.100     5.586 r  u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[19]_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     5.586    u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[19]_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.277     5.863 f  u_system/u_riscv_cpu/axi_core_cpu/io_output_arw_rData_addr_2_reg[23]_i_2/O[3]
+                         net (fo=2, unplaced)         0.337     6.200    u_system/u_riscv_cpu/axi_core_cpu/_zz_execute_SrcPlugin_addSub[23]
+                         LUT5 (Prop_lut5_I0_O)        0.250     6.450 r  u_system/u_riscv_cpu/axi_core_cpu/pendingSels[2]_i_7/O
+                         net (fo=2, unplaced)         0.793     7.243    u_system/u_riscv_cpu/axi_core_cpu/pendingSels[2]_i_7_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.105     7.348 r  u_system/u_riscv_cpu/axi_core_cpu/pendingSels[3]_i_5/O
+                         net (fo=4, unplaced)         0.606     7.954    u_system/u_riscv_cpu/axi_core_cpu/decode_to_execute_SRC2_FORCE_ZERO_reg_0
+                         LUT6 (Prop_lut6_I3_O)        0.105     8.059 r  u_system/u_riscv_cpu/axi_core_cpu/pendingSels[3]_i_1/O
+                         net (fo=7, unplaced)         0.382     8.441    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/_zz_IBusSimplePlugin_injector_decodeInput_payload_rsp_inst[31]_i_8_0
+                         LUT5 (Prop_lut5_I3_O)        0.105     8.546 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/_zz_IBusSimplePlugin_injector_decodeInput_payload_rsp_inst[31]_i_16/O
+                         net (fo=1, unplaced)         0.582     9.128    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/_zz_IBusSimplePlugin_injector_decodeInput_payload_rsp_inst[31]_i_16_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.105     9.233 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/_zz_IBusSimplePlugin_injector_decodeInput_payload_rsp_inst[31]_i_8/O
+                         net (fo=1, unplaced)         0.347     9.580    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/p_8_in
+                         LUT6 (Prop_lut6_I4_O)        0.105     9.685 f  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/_zz_IBusSimplePlugin_injector_decodeInput_payload_rsp_inst[31]_i_3/O
+                         net (fo=20, unplaced)        0.407    10.092    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/_zz_IBusSimplePlugin_injector_decodeInput_valid_reg_0
+                         LUT6 (Prop_lut6_I4_O)        0.105    10.197 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/remaining[7]_i_4/O
+                         net (fo=7, unplaced)         0.382    10.579    u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/axi_core_cpu_iBus_cmd_valid
+                         LUT6 (Prop_lut6_I2_O)        0.105    10.684 r  u_system/u_riscv_cpu/axi_core_cpu/IBusSimplePlugin_rspJoin_rspBuffer_c/fifo/remaining[7]_i_5/O
+                         net (fo=7, unplaced)         0.382    11.066    u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/p_4_in
+                         LUT5 (Prop_lut5_I0_O)        0.105    11.171 r  u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining[7]_i_3/O
+                         net (fo=2, unplaced)         0.358    11.529    u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/allowCmd__5
+                         LUT4 (Prop_lut4_I0_O)        0.105    11.634 r  u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining[7]_i_1/O
+                         net (fo=8, unplaced)         0.404    12.038    u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining[7]_i_1_n_0
+                         FDRE                                         r  u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_50mhz rise edge)
+                                                     20.000    20.000 r  <hidden>
+    R4                                                0.000    20.000 r  i_clk
+                         net (fo=0)                   0.000    20.000    i_clk
+    R4                   IBUF (Prop_ibuf_I_O)         0.813    20.813 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.615    21.428    u_system/i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.077    21.505 r  u_system/board_clock_buffer/O
+                         net (fo=51094, unplaced)     0.439    21.944    u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/sendRsp_reg_1
+                         FDRE                                         r  u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining_reg[0]/C
+                         clock pessimism              0.168    22.112    <hidden>
+                         clock uncertainty           -0.035    22.077    <hidden>
+                         FDRE (Setup_fdre_C_CE)      -0.165    21.912    u_system/u_riscv_cpu/axi4ReadOnlyDecoder/errorSlave/remaining_reg[0]
+  -------------------------------------------------------------------
+                         required time                         21.912    <hidden>
+                         arrival time                         -12.038    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  9.874    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.035ns  (arrival time - required time)
+  Source:                 u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_rd_inst/m_ifaces[1].reg_inst/m_axi_araddr_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_ar_queue/ram_reg_0_3_0_5/RAMA/I
+                            (rising edge-triggered cell RAMD32 clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             core_50mhz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (core_50mhz rise@0.000ns - core_50mhz rise@0.000ns)
+  Data Path Delay:        0.274ns  (logic 0.147ns (53.659%)  route 0.127ns (46.341%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.026ns
+    Source Clock Delay      (SCD):    0.632ns
+    Clock Pessimism Removal (CPR):    0.249ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock core_50mhz rise edge)
+                                                      0.000     0.000 r  <hidden>
+    R4                                                0.000     0.000 r  i_clk
+                         net (fo=0)                   0.000     0.000    i_clk
+    R4                   IBUF (Prop_ibuf_I_O)         0.171     0.171 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.321     0.492    u_system/i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.026     0.518 r  u_system/board_clock_buffer/O
+                         net (fo=51094, unplaced)     0.114     0.632    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_rd_inst/m_ifaces[1].reg_inst/s_axi_arready_reg_reg_0
+                         FDRE                                         r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_rd_inst/m_ifaces[1].reg_inst/m_axi_araddr_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.779 r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_rd_inst/m_ifaces[1].reg_inst/m_axi_araddr_reg_reg[0]/Q
+                         net (fo=1, unplaced)         0.127     0.906    u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_ar_queue/ram_reg_0_3_0_5/DIA0
+                         RAMD32                                       r  u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_ar_queue/ram_reg_0_3_0_5/RAMA/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock core_50mhz rise edge)
+                                                      0.000     0.000 r  <hidden>
+    R4                                                0.000     0.000 r  i_clk
+                         net (fo=0)                   0.000     0.000    i_clk
+    R4                   IBUF (Prop_ibuf_I_O)         0.400     0.400 r  i_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.338     0.738    u_system/i_clk_IBUF
+                         BUFG (Prop_bufg_I_O)         0.029     0.767 r  u_system/board_clock_buffer/O
+                         net (fo=51094, unplaced)     0.259     1.026    u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_ar_queue/ram_reg_0_3_0_5/WCLK
+                         RAMD32                                       r  u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_ar_queue/ram_reg_0_3_0_5/RAMA/CLK
+                         clock pessimism             -0.249     0.777    <hidden>
+                         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.094     0.871    u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_ar_queue/ram_reg_0_3_0_5/RAMA
+  -------------------------------------------------------------------
+                         required time                         -0.871    <hidden>
+                         arrival time                           0.906    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.035    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         core_50mhz
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { i_clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     DSP48E1/CLK  n/a            3.272         20.000      16.728               u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[0].col_gen[0].u_systolic_pe/dot_prod_0_reg_reg/CLK
+Low Pulse Width   Slow    RAMD32/CLK   n/a            1.130         10.000      8.870                u_system/u_riscv_cpu/axi_core_cpu/RegFilePlugin_regFile_reg_r1_0_31_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK   n/a            1.130         10.000      8.870                u_system/u_riscv_cpu/axi_core_cpu/RegFilePlugin_regFile_reg_r1_0_31_0_5/RAMA/CLK
+
+
+

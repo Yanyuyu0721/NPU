@@ -19,16 +19,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\start.s",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\start.s",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\start.s.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\start.s.o"
       ],
       "exit": 0
     },
@@ -48,16 +48,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\main.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\main.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\main.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\main.c.o"
       ],
       "exit": 0
     },
@@ -77,16 +77,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\vex_hal.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\vex_hal.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\vex_hal.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\vex_hal.c.o"
       ],
       "exit": 0
     },
@@ -106,16 +106,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\libc.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\libc.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\libc.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\libc.c.o"
       ],
       "exit": 0
     },
@@ -135,16 +135,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\tm_layers.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\tm_layers.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tm_layers.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tm_layers.c.o"
       ],
       "exit": 0
     },
@@ -164,16 +164,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\tm_model.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\tm_model.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tm_model.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tm_model.c.o"
       ],
       "exit": 0
     },
@@ -193,16 +193,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\tiny_npu.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\tiny_npu.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tiny_npu.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tiny_npu.c.o"
       ],
       "exit": 0
     },
@@ -222,16 +222,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\npu_runtime.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\npu_runtime.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\npu_runtime.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\npu_runtime.c.o"
       ],
       "exit": 0
     },
@@ -251,16 +251,16 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
         "-DLIVE_TASK=2",
         "-DNPU_PLATFORM=1",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\npu_views.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\npu_views.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\npu_views.c.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\npu_views.c.o"
       ],
       "exit": 0
     },
@@ -280,7 +280,7 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
@@ -291,9 +291,9 @@
         "-Dtm_unload=tm_unload_cpu",
         "-Dtm_preprocess=tm_preprocess_cpu",
         "-c",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\tm_model.c",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\tm_model.c",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tm_model_cpu.o"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tm_model_cpu.o"
       ],
       "exit": 0
     },
@@ -313,7 +313,7 @@
         "-msmall-data-limit=0",
         "-fno-stack-protector",
         "-I",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source",
         "-DTM_NPU_CPU_COMPAT=1",
         "-DTM_NPU_PPU_EXACT=1",
         "-DBENCH_MODEL_ID=2",
@@ -321,22 +321,22 @@
         "-nostdlib",
         "-nostartfiles",
         "-Wl,--gc-sections,--no-relax,--build-id=none",
-        "-Wl,-Map=D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\firmware.map",
+        "-Wl,-Map=D:\\a7_finalize_20261102\\fresh_kws\\build\\firmware.map",
         "-T",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\source\\linker.ld",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\start.s.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\main.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\vex_hal.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\libc.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tm_layers.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tm_model.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tiny_npu.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\npu_runtime.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\npu_views.c.o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\tm_model_cpu.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\source\\linker.ld",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\start.s.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\main.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\vex_hal.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\libc.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tm_layers.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tm_model.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tiny_npu.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\npu_runtime.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\npu_views.c.o",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\tm_model_cpu.o",
         "-lgcc",
         "-o",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\firmware.elf"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\firmware.elf"
       ],
       "exit": 0
     },
@@ -345,8 +345,8 @@
         "D:\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-objcopy.exe",
         "-O",
         "binary",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\firmware.elf",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\firmware.bin"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\firmware.elf",
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\firmware.bin"
       ],
       "exit": 0
     },
@@ -354,7 +354,7 @@
       "command": [
         "D:\\xpack-riscv-none-elf-gcc-15.2.0-1\\bin\\riscv-none-elf-size.exe",
         "-A",
-        "D:\\vex_npu_amd_advanced_20261027_v2\\vex_npu_amd_advanced\\tools\\tinymaix_live_gui\\firmware\\kws\\build\\firmware.elf"
+        "D:\\a7_finalize_20261102\\fresh_kws\\build\\firmware.elf"
       ],
       "exit": 0
     }
@@ -394,7 +394,7 @@
     "tinymaix_model_impl.inc": "4cff153dbc71d933d7fd0ebd9f35647a4dc44f20752f2e6988255c924f333711",
     "tinymaix_stat_impl.inc": "c46932bb2ae1e2ae263ea29597744e5eba115cfae365751b9fffcc56b162965b",
     "tiny_npu.c": "993c9b3eb10a3c0f9d3527fba45775e3dc22918b6d2c6ddf3eb73f9f086eb1ca",
-    "tiny_npu.h": "0cb8770b81e4dcd92e5d7137f6488592f02a8500f65a8fc44be5ed0490dae6d2",
+    "tiny_npu.h": "c5715cf5ace6761c839b84f105bdee69af5bcf22c47e14110b8f55da5a6984ec",
     "tm_layers.c": "f4c66bcd023ae29bcf83ddd02aa53fd983e31169a06dc28a4b7c34597e2980a1",
     "tm_model.c": "5770b07d21e7c65332c913280991f9c4aff3e1bb574a972c21741dbc6016356b",
     "tm_port.h": "d1d345f6ee8d15362fc54f35416f6d03d72607595f63ab7ef9e732c5b59b3f71",

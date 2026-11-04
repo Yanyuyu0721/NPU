@@ -4,7 +4,7 @@ created    : 2025/06/13 20:00:54
 modified   : 2025-06-16 01:26:59
 description: forward pipeline
 notes      : 
-author     : yyrwkk
+author     : anonymous contributor
 -----------------------------------------*/
 module fwdpipe # (
     parameter DWIDTH = 32 

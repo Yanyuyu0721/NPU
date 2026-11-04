@@ -1,13 +1,14 @@
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Oct 30 15:53:40 2026
-| Host         : DESKTOP-9IH4LM7 running 64-bit major release  (build 9200)
-| Command      : report_timing_summary -file D:/vexriscv_tinymaix_final_20261030/build/reports/timing_50mhz.rpt
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Nov  2 10:54:39 2026
+| Host         : BUILD-HOST running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file D:/a7_build_20261102_v3/timing_50mhz.rpt
 | Design       : board_top
 | Device       : 7a100t-fgg484
-| Speed File   : -2  PRODUCTION 1.22 2018-03-21
-----------------------------------------------------------------------------------------------------------------
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Summary Report
 
@@ -23,7 +24,10 @@ Timing Summary Report
   Enable Preset / Clear Arcs                 :  No
   Disable Flight Delays                      :  No
   Ignore I/O Paths                           :  No
-  Timing Early Launch at Borrowing Latches   :  false
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
 
   Corner  Analyze    Analyze    
   Name    Max Paths  Min Paths  
@@ -32,55 +36,69 @@ Timing Summary Report
   Fast    Yes        Yes        
 
 
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule      Severity  Description                                  Violations  
+--------  --------  -------------------------------------------  ----------  
+SYNTH-6   Warning   Timing of a RAM block might be sub-optimal   96          
+SYNTH-15  Warning   Byte wide write enable not inferred          96          
+ULMTCS-1  Warning   Control Sets use limits recommend reduction  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
 
 check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock
-2. checking constant_clock
-3. checking pulse_width_clock
-4. checking unconstrained_internal_endpoints
-5. checking no_input_delay
-6. checking no_output_delay
-7. checking multiple_clock
-8. checking generated_clocks
-9. checking loops
-10. checking partial_input_delay
-11. checking partial_output_delay
-12. checking latch_loops
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (2)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
 
-1. checking no_clock
---------------------
+1. checking no_clock (0)
+------------------------
  There are 0 register/latch pins with no clock.
 
 
-2. checking constant_clock
---------------------------
+2. checking constant_clock (0)
+------------------------------
  There are 0 register/latch pins with constant_clock.
 
 
-3. checking pulse_width_clock
------------------------------
+3. checking pulse_width_clock (0)
+---------------------------------
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints
---------------------------------------------
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
  There are 0 pins that are not constrained for maximum delay.
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
-5. checking no_input_delay
---------------------------
+5. checking no_input_delay (2)
+------------------------------
  There are 0 input ports with no input delay specified.
 
  There are 2 input ports with no input delay but user has a false path constraint. (MEDIUM)
 
 
-6. checking no_output_delay
----------------------------
+6. checking no_output_delay (1)
+-------------------------------
  There are 0 ports with no output delay specified.
 
  There is 1 port with no output delay but user has a false path constraint (MEDIUM)
@@ -88,33 +106,33 @@ Table of Contents
  There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
 
 
-7. checking multiple_clock
---------------------------
+7. checking multiple_clock (0)
+------------------------------
  There are 0 register/latch pins with multiple clocks.
 
 
-8. checking generated_clocks
-----------------------------
+8. checking generated_clocks (0)
+--------------------------------
  There are 0 generated clocks that are not connected to a clock source.
 
 
-9. checking loops
------------------
+9. checking loops (0)
+---------------------
  There are 0 combinational loops in the design.
 
 
-10. checking partial_input_delay
---------------------------------
+10. checking partial_input_delay (0)
+------------------------------------
  There are 0 input ports with partial input delay specified.
 
 
-11. checking partial_output_delay
----------------------------------
+11. checking partial_output_delay (0)
+-------------------------------------
  There are 0 ports with partial output delay specified.
 
 
-12. checking latch_loops
-------------------------
+12. checking latch_loops (0)
+----------------------------
  There are 0 combinational latch loops in the design through latch input
 
 
@@ -126,7 +144,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      1.914        0.000                      0               189678        0.018        0.000                      0               189678        8.870        0.000                       0                 46834  
+      2.960        0.000                      0               197548        0.036        0.000                      0               197548        8.870        0.000                       0                 51031  
 
 
 All user specified timing constraints are met.
@@ -149,7 +167,7 @@ core_50mhz  {0.000 10.000}     20.000          50.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-core_50mhz          1.914        0.000                      0               189678        0.018        0.000                      0               189678        8.870        0.000                       0                 46834  
+core_50mhz          2.960        0.000                      0               197548        0.036        0.000                      0               197548        8.870        0.000                       0                 51031  
 
 
 ------------------------------------------------------------------------------------------------
@@ -180,27 +198,27 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  core_50mhz
   To Clock:  core_50mhz
 
-Setup :            0  Failing Endpoints,  Worst Slack        1.914ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.018ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        2.960ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.036ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        8.870ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             1.914ns  (required time - arrival time)
-  Source:                 u_system/internal_reset_n_reg_rep__1/C
+Slack (MET) :             2.960ns  (required time - arrival time)
+  Source:                 u_system/internal_reset_n_reg/C
                             (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
-  Destination:            u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[7].col_gen[0].u_systolic_pe/drain_reg_d_reg[21]/R
-                            (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[6].col_gen[3].u_systolic_pe/dot_prod_0_reg_reg/RSTA
+                            (rising edge-triggered cell DSP48E1 clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
   Path Group:             core_50mhz
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            20.000ns  (core_50mhz rise@20.000ns - core_50mhz rise@0.000ns)
-  Data Path Delay:        17.659ns  (logic 0.484ns (2.741%)  route 17.175ns (97.259%))
+  Data Path Delay:        16.637ns  (logic 0.484ns (2.909%)  route 16.153ns (97.091%))
   Logic Levels:           1  (LUT1=1)
-  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    3.927ns = ( 23.927 - 20.000 ) 
-    Source Clock Delay      (SCD):    4.198ns
+  Clock Path Skew:        0.062ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.033ns = ( 24.033 - 20.000 ) 
+    Source Clock Delay      (SCD):    4.202ns
     Clock Pessimism Removal (CPR):    0.231ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -211,39 +229,40 @@ Slack (MET) :             1.914ns  (required time - arrival time)
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock core_50mhz rise edge)
-                                                      0.000     0.000 r  
-    R4                                                0.000     0.000 r  i_clk (IN)
+                                                      0.000     0.000 r  <hidden>
+    R4                                                0.000     0.000 r  i_clk
                          net (fo=0)                   0.000     0.000    i_clk
     R4                   IBUF (Prop_ibuf_I_O)         0.945     0.945 r  i_clk_IBUF_inst/O
                          net (fo=1, routed)           1.717     2.662    u_system/i_clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     2.743 r  u_system/board_clock_buffer/O
-                         net (fo=46897, routed)       1.455     4.198    u_system/system_clk
-    SLICE_X81Y50         FDRE                                         r  u_system/internal_reset_n_reg_rep__1/C
+                         net (fo=51094, routed)       1.459     4.202    u_system/system_clk
+    SLICE_X89Y61         FDRE                                         r  u_system/internal_reset_n_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X81Y50         FDRE (Prop_fdre_C_Q)         0.379     4.577 f  u_system/internal_reset_n_reg_rep__1/Q
-                         net (fo=170, routed)         5.847    10.423    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_control/internal_reset_n_reg_rep__1
-    SLICE_X78Y176        LUT1 (Prop_lut1_I0_O)        0.105    10.528 r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_control/i___2/O
-                         net (fo=13193, routed)      11.329    21.857    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[7].col_gen[0].u_systolic_pe/internal_reset_n_reg_rep__1
-    SLICE_X32Y2          FDRE                                         r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[7].col_gen[0].u_systolic_pe/drain_reg_d_reg[21]/R
+    SLICE_X89Y61         FDRE (Prop_fdre_C_Q)         0.379     4.581 f  u_system/internal_reset_n_reg/Q
+                         net (fo=428, routed)         6.805    11.385    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_control/internal_reset_n
+    SLICE_X0Y171         LUT1 (Prop_lut1_I0_O)        0.105    11.490 r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_control/i_/O
+                         net (fo=12971, routed)       9.349    20.839    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[6].col_gen[3].u_systolic_pe/dot_prod_0_reg_reg_0
+    DSP48_X2Y9           DSP48E1                                      r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[6].col_gen[3].u_systolic_pe/dot_prod_0_reg_reg/RSTA
   -------------------------------------------------------------------    -------------------
 
                          (clock core_50mhz rise edge)
-                                                     20.000    20.000 r  
-    R4                                                0.000    20.000 r  i_clk (IN)
+                                                     20.000    20.000 r  <hidden>
+    R4                                                0.000    20.000 r  i_clk
                          net (fo=0)                   0.000    20.000    i_clk
     R4                   IBUF (Prop_ibuf_I_O)         0.813    20.813 r  i_clk_IBUF_inst/O
                          net (fo=1, routed)           1.628    22.441    u_system/i_clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    22.518 r  u_system/board_clock_buffer/O
-                         net (fo=46897, routed)       1.409    23.927    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[7].col_gen[0].u_systolic_pe/clk
-    SLICE_X32Y2          FDRE                                         r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[7].col_gen[0].u_systolic_pe/drain_reg_d_reg[21]/C
-                         clock pessimism              0.231    24.158    
-                         clock uncertainty           -0.035    24.122    
-    SLICE_X32Y2          FDRE (Setup_fdre_C_R)       -0.352    23.770    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[7].col_gen[0].u_systolic_pe/drain_reg_d_reg[21]
+                         net (fo=51094, routed)       1.515    24.033    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[6].col_gen[3].u_systolic_pe/dot_prod_reg_reg_0
+    DSP48_X2Y9           DSP48E1                                      r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[6].col_gen[3].u_systolic_pe/dot_prod_0_reg_reg/CLK
+                         clock pessimism              0.231    24.263    <hidden>
+                         clock uncertainty           -0.035    24.228    <hidden>
+    DSP48_X2Y9           DSP48E1 (Setup_dsp48e1_CLK_RSTA)
+                                                     -0.429    23.799    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[6].col_gen[3].u_systolic_pe/dot_prod_0_reg_reg
   -------------------------------------------------------------------
-                         required time                         23.770    
-                         arrival time                         -21.857    
+                         required time                         23.799    <hidden>
+                         arrival time                         -20.839    <hidden>
   -------------------------------------------------------------------
-                         slack                                  1.914    
+                         slack                                  2.960    <hidden>
 
 
 
@@ -251,54 +270,55 @@ Slack (MET) :             1.914ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.018ns  (arrival time - required time)
-  Source:                 u_system/u_top_tiny_npu_wrapper/ow_q_reg[0]/C
+Slack (MET) :             0.036ns  (arrival time - required time)
+  Source:                 u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_wr_inst/m_ifaces[1].reg_inst/m_axi_wdata_reg_reg[18]/C
                             (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
-  Destination:            u_system/u_top_tiny_npu_wrapper/u_im2col/ow_q_reg[0]/D
-                            (rising edge-triggered cell FDRE clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_w_queue/ram_reg_0_7_18_23/RAMA/I
+                            (rising edge-triggered cell RAMD32 clocked by core_50mhz  {rise@0.000ns fall@10.000ns period=20.000ns})
   Path Group:             core_50mhz
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (core_50mhz rise@0.000ns - core_50mhz rise@0.000ns)
-  Data Path Delay:        0.270ns  (logic 0.141ns (52.199%)  route 0.129ns (47.801%))
+  Data Path Delay:        0.196ns  (logic 0.141ns (71.838%)  route 0.055ns (28.162%))
   Logic Levels:           0  
-  Clock Path Skew:        0.182ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.966ns
-    Source Clock Delay      (SCD):    1.492ns
-    Clock Pessimism Removal (CPR):    0.292ns
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.405ns
+    Clock Pessimism Removal (CPR):    0.543ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock core_50mhz rise edge)
-                                                      0.000     0.000 r  
-    R4                                                0.000     0.000 r  i_clk (IN)
+                                                      0.000     0.000 r  <hidden>
+    R4                                                0.000     0.000 r  i_clk
                          net (fo=0)                   0.000     0.000    i_clk
     R4                   IBUF (Prop_ibuf_I_O)         0.171     0.171 r  i_clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.815    u_system/i_clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.841 r  u_system/board_clock_buffer/O
-                         net (fo=46897, routed)       0.651     1.492    u_system/u_top_tiny_npu_wrapper/clk
-    SLICE_X32Y150        FDRE                                         r  u_system/u_top_tiny_npu_wrapper/ow_q_reg[0]/C
+                         net (fo=51094, routed)       0.565     1.405    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_wr_inst/m_ifaces[1].reg_inst/m_axi_wlast_reg_reg_0
+    SLICE_X43Y100        FDRE                                         r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_wr_inst/m_ifaces[1].reg_inst/m_axi_wdata_reg_reg[18]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X32Y150        FDRE (Prop_fdre_C_Q)         0.141     1.633 r  u_system/u_top_tiny_npu_wrapper/ow_q_reg[0]/Q
-                         net (fo=2, routed)           0.129     1.762    u_system/u_top_tiny_npu_wrapper/u_im2col/ow_q_reg[15]_0[0]
-    SLICE_X32Y149        FDRE                                         r  u_system/u_top_tiny_npu_wrapper/u_im2col/ow_q_reg[0]/D
+    SLICE_X43Y100        FDRE (Prop_fdre_C_Q)         0.141     1.546 r  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_axi_crossbar_wrap_4x2/axi_crossbar_inst/axi_crossbar_wr_inst/m_ifaces[1].reg_inst/m_axi_wdata_reg_reg[18]/Q
+                         net (fo=1, routed)           0.055     1.602    u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_w_queue/ram_reg_0_7_18_23/DIA0
+    SLICE_X42Y100        RAMD32                                       r  u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_w_queue/ram_reg_0_7_18_23/RAMA/I
   -------------------------------------------------------------------    -------------------
 
                          (clock core_50mhz rise edge)
-                                                      0.000     0.000 r  
-    R4                                                0.000     0.000 r  i_clk (IN)
+                                                      0.000     0.000 r  <hidden>
+    R4                                                0.000     0.000 r  i_clk
                          net (fo=0)                   0.000     0.000    i_clk
     R4                   IBUF (Prop_ibuf_I_O)         0.400     0.400 r  i_clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.098    u_system/i_clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.127 r  u_system/board_clock_buffer/O
-                         net (fo=46897, routed)       0.838     1.966    u_system/u_top_tiny_npu_wrapper/u_im2col/clk
-    SLICE_X32Y149        FDRE                                         r  u_system/u_top_tiny_npu_wrapper/u_im2col/ow_q_reg[0]/C
-                         clock pessimism             -0.292     1.674    
-    SLICE_X32Y149        FDRE (Hold_fdre_C_D)         0.070     1.744    u_system/u_top_tiny_npu_wrapper/u_im2col/ow_q_reg[0]
+                         net (fo=51094, routed)       0.834     1.962    u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_w_queue/ram_reg_0_7_18_23/WCLK
+    SLICE_X42Y100        RAMD32                                       r  u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_w_queue/ram_reg_0_7_18_23/RAMA/CLK
+                         clock pessimism             -0.543     1.418    <hidden>
+    SLICE_X42Y100        RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.147     1.565    u_system/u_top_tiny_npu_wrapper/u_npu/u_axi_cdc/cdc/io_input_w_queue/ram_reg_0_7_18_23/RAMA
   -------------------------------------------------------------------
-                         required time                         -1.744    
-                         arrival time                           1.762    
+                         required time                         -1.565    <hidden>
+                         arrival time                           1.602    <hidden>
   -------------------------------------------------------------------
-                         slack                                  0.018    
+                         slack                                  0.036    <hidden>
 
 
 
@@ -311,10 +331,10 @@ Waveform(ns):       { 0.000 10.000 }
 Period(ns):         20.000
 Sources:            { i_clk }
 
-Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
-Min Period        n/a     DSP48E1/CLK  n/a            3.272         20.000      16.728     DSP48_X2Y63   u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[0].col_gen[4].u_systolic_pe/dot_prod_0_reg_reg/CLK
-Low Pulse Width   Slow    RAMD32/CLK   n/a            1.130         10.000      8.870      SLICE_X50Y75  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_ppu/ppu_item[1].u_ppu/task_fifo_reg_0_3_12_17/RAMA/CLK
-High Pulse Width  Slow    RAMD32/CLK   n/a            1.130         10.000      8.870      SLICE_X50Y75  u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_ppu/ppu_item[1].u_ppu/task_fifo_reg_0_3_12_17/RAMA/CLK
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     DSP48E1/CLK  n/a            3.272         20.000      16.728     DSP48_X0Y32    u_system/u_top_tiny_npu_wrapper/u_npu/u_top_tiny_npu/u_top_systolic_unit/u_systolic_unit/u_systolic_array/row_gen[0].col_gen[0].u_systolic_pe/dot_prod_0_reg_reg/CLK
+Low Pulse Width   Slow    RAMD32/CLK   n/a            1.130         10.000      8.870      SLICE_X46Y146  u_system/u_riscv_cpu/axi_core_cpu/RegFilePlugin_regFile_reg_r1_0_31_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK   n/a            1.130         10.000      8.870      SLICE_X46Y146  u_system/u_riscv_cpu/axi_core_cpu/RegFilePlugin_regFile_reg_r1_0_31_0_5/RAMA/CLK
 
 
 

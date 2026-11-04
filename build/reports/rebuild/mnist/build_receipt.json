@@ -397,7 +397,7 @@
     "tinymaix_model_impl.inc": "4cff153dbc71d933d7fd0ebd9f35647a4dc44f20752f2e6988255c924f333711",
     "tinymaix_stat_impl.inc": "c46932bb2ae1e2ae263ea29597744e5eba115cfae365751b9fffcc56b162965b",
     "tiny_npu.c": "8d3f10312c117f6a22f0cd0d67a7969b547afa73c7c4478de5a57b4750e60d21",
-    "tiny_npu.h": "7ddcfc91fc5579d27adaf92c21a6d39bec3f4d64f09a7f42eb11d08a8512d4c7",
+    "tiny_npu.h": "be804df7137f0b7cf5a78b4ee8efa1f967bdf1c4906235879c023bb56c3b699c",
     "tm_layers.c": "0c4b27cfd961a50bf9dfe9c7dd841874090b16a03d99abc29e68993b880908aa",
     "tm_model.c": "65d865bb600172d0ba3af0264f49153151efbc1893f0e1387bb09040fabed444",
     "tm_port.h": "d1d345f6ee8d15362fc54f35416f6d03d72607595f63ab7ef9e732c5b59b3f71",

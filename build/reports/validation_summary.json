@@ -1,254 +1,167 @@
 {
-  "date": "2026-10-30",
-  "scope": "FINAL_PACKAGE_VERIFICATION_WITH_EXPLICIT_TEST_BOUNDARIES",
-  "final_folder_board_retest": {
+  "date": "2026-11-02",
+  "scope": "XC7A100T_ONLY_ACTIVE_IMPLEMENTATION_AND_FORMAL_MATERIALS",
+  "part": "xc7a100tfgg484-2",
+  "vivado": "2026.1",
+  "clock_hz": 50000000,
+  "hardware_implementation": "build/reports/implementation_20261102.json",
+  "board_retest": {
     "passed": true,
+    "repetitions_per_task": 2,
     "tasks": 2,
-    "timed_outputs": 34,
-    "source": "data/benchmark.json",
-    "clock_hz": 50000000,
-    "cache_mode_for_headline": "hot",
-    "measurements": {
-      "mnist": {
-        "cpu_ms": 22.96778,
-        "npu_ms": 1.95034,
-        "speedup": 11.776295415158383
-      },
-      "kws": {
-        "cpu_ms": 275.87612,
-        "npu_ms": 28.06528,
-        "speedup": 9.829801092310499
-      }
+    "timed_outputs": 68,
+    "source": "build/reports/board_retest_20261102.json"
+  },
+  "measurements": {
+    "mnist": {
+      "cpu_ms": 22.96778,
+      "npu_hot_ms": 1.95034,
+      "speedup": 11.776295415158383
+    },
+    "kws": {
+      "cpu_ms": 275.87612,
+      "npu_hot_ms": 28.06528,
+      "speedup": 9.829801092310499
     }
   },
-  "saved_run_reparse": {
-    "scope": "SAVED_REAL_UART_REPARSE_NOT_NEW_BOARD_RUN",
-    "passed": true,
-    "runs": 25,
-    "samples": 425
+  "resources": {
+    "LUT": {
+      "used": 41174,
+      "available": 63400,
+      "percent": 64.94
+    },
+    "FF": {
+      "used": 38150,
+      "available": 126800,
+      "percent": 30.09
+    },
+    "BRAM": {
+      "used": 134.5,
+      "available": 135,
+      "percent": 99.63
+    },
+    "DSP": {
+      "used": 212,
+      "available": 240,
+      "percent": 88.33
+    }
   },
-  "skill_controls": {
-    "passed": true,
-    "scope": "REUSABLE_TOOL_CONTROLS_NOT_RTL",
-    "checks": [
-      "file_identity_positive",
-      "changed_source_rejected",
-      "path_traversal_rejected",
-      "windows_drive_rejected",
-      "empty_manifest_rejected",
-      "hex_binary_bit_exact_positive",
-      "zero_slack_mutation_rejected_at_word3",
-      "short_vector_rejected",
-      "sparse_memory_rejected",
-      "empty_binary_rejected",
-      "command_capture_positive",
-      "partial_pass_rejected",
-      "duplicate_pass_rejected",
-      "error_then_pass_rejected",
-      "nonzero_exit_rejected",
-      "source_changed_during_run_rejected",
-      "finite_timeout_rejected",
-      "mismatch_cli_exit_nonzero"
-    ]
+  "timing": {
+    "wns_ns": 2.96,
+    "whs_ns": 0.036
   },
-  "host_controls": {
-    "checks": [
-      "original_wav_exact_feature_hash",
-      "pcm_wav_8",
-      "pcm_wav_16",
-      "pcm_wav_24",
-      "pcm_wav_32",
-      "invalid_pcm_rejected",
-      "silence_warning",
-      "launcher_reuses_existing_service"
-    ]
+  "power": {
+    "total_w": 0.429,
+    "dynamic_w": 0.325,
+    "static_w": 0.104,
+    "method": "Vivado post-route default switching activity; no SAIF file",
+    "ambient_c": 25,
+    "airflow_lfm": 250,
+    "heat_sink": "Vivado default medium",
+    "board_thermal_model": "Vivado default medium, 12 to 15 layers",
+    "temperature_grade_model": "commercial default",
+    "confidence": "Medium"
   },
-  "hardware_source_paths": {
-    "passed": true,
-    "sources_and_include_paths": 69
+  "fresh_firmware": {
+    "mnist": {
+      "fresh_compile": true,
+      "firmware_binary_unchanged": true,
+      "firmware_bin_sha256": "17e142893c250c1b8c64d83d54f14659b058b8a6e382b4736eeefb068e7be51f",
+      "firmware_mem_sha256": "241ebcf16c80acbe56fef0fa37b2d7b3c7ccee18201c9852244238d091b4ba34",
+      "new_hardware_image_sha256": "3e179cac4203e3395b505f2e95168ebb1b27a4d0f1f6b8ade21f7952c3c19ea9",
+      "old_and_new_itcm_words_verified": 24576,
+      "board_retest_passed": true
+    },
+    "kws": {
+      "fresh_compile": true,
+      "firmware_binary_unchanged": true,
+      "firmware_bin_sha256": "0749d2974a841a62fdeda32f46d22b704043a3f9e921eb1671af30f0d2944bd8",
+      "firmware_mem_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",
+      "new_hardware_image_sha256": "78586b0f09ab579e0c1507750621d7867959e08bd39c785c6edb8b46f2100606",
+      "old_and_new_itcm_words_verified": 24576,
+      "board_retest_passed": true
+    }
   },
   "python_syntax": {
     "passed": true,
-    "files": 63
+    "files": 66
   },
-  "fresh_firmware_build": {
-    "scope": "FRESH_SOURCE_BUILD_AND_CONFIG_PAYLOAD_COMPARISON",
+  "saved_uart_reparse": {
     "passed": true,
-    "tasks": {
-      "mnist": {
-        "firmware_bin_sha256": "17e142893c250c1b8c64d83d54f14659b058b8a6e382b4736eeefb068e7be51f",
-        "firmware_mem_sha256": "241ebcf16c80acbe56fef0fa37b2d7b3c7ccee18201c9852244238d091b4ba34",
-        "firmware_byte_identical": true,
-        "configuration_payload_identical": true,
-        "bitstream_file_sha256": "7009f4f6b5c018a6d3949fb6d066eb658dff2c9e7ca40b41fbe1f18250c0bc86",
-        "note": "Bit header generation time may differ; configuration payload and complete firmware are byte-identical",
-        "words_verified": 24576
-      },
-      "kws": {
-        "firmware_bin_sha256": "0749d2974a841a62fdeda32f46d22b704043a3f9e921eb1671af30f0d2944bd8",
-        "firmware_mem_sha256": "85e6a0874a97b99cf5eddd847959de5f5478213e8f164fc03bb197bf06a76916",
-        "firmware_byte_identical": true,
-        "configuration_payload_identical": true,
-        "bitstream_file_sha256": "8564dfbbc5889297a3850fd98f0ad1fa9e1ba67513d3df6691fae3aec10cf555",
-        "note": "Bit header generation time may differ; configuration payload and complete firmware are byte-identical",
-        "words_verified": 24576
-      }
-    }
+    "runs": 59,
+    "samples": 1003
   },
-  "document_visual_review": {
+  "skill_selfcheck": {
     "passed": true,
-    "method": "Native Word/PowerPoint PDF export and all-page visual review, changed-page reinspection",
+    "checks": 18,
+    "scope": "Validator controls, not a new RTL simulation"
+  },
+  "host_preprocessing": {
+    "passed": true,
+    "checks": 8
+  },
+  "formal_materials": {
     "documents": {
-      "design_report.docx": {
-        "pages": 25,
-        "sha256": "0d2043faa03541b0a9c062e8a7d1a0af1ecb05a8cfb7733269aac9dc02b69da6"
+      "design_report": {
+        "pages": 27,
+        "sha256": "8aec44f5e6c425bc52f82ca15ca317f1fb5fd3d48c36c102c24b13a1ebf567fd",
+        "residual_han_english_boundary_spaces": 26,
+        "visual_review": "Native Word PDF, changed pages 19-27 reviewed; preceding content retained",
+        "author_changes_preserved": true,
+        "body_text_unchanged": false,
+        "toc_fields": 1,
+        "toc_hyperlinks": 33,
+        "existing_body_text_preserved_except_caption_label": true,
+        "existing_images_unchanged": true,
+        "added_photos": 1
       },
-      "technical_paper.docx": {
-        "pages": 31,
-        "sha256": "6e725abcc1c11b2bb1d2d4bf48362a88aa46cac33fa4f129a52af3057954367a"
-      },
-      "presentation.pptx": {
-        "pages": 6,
-        "sha256": "92473b3394c93174d4a562a0498798fb71fec78e0caf49bae5bd89e523674d60"
-      }
-    }
-  },
-  "original_snapshot_crc": {
-    "passed": true,
-    "scope": "ALL_SNAPSHOT_ZIP_MEMBER_CRC",
-    "zip_members": 9190
-  },
-  "limitations": [
-    "Original Zynq implementation, resource and power material is preserved from the supplied documents; the refreshed performance table is for the XC7A100T demo.",
-    "Physical pen tablet and external microphone are host-dependent; Windows Ink adapter and virtual-audio recording path were exercised.",
-    "Official poster and filmed demo video are separate deliverables."
-  ],
-  "revision": "native_window_and_original_document_restoration",
-  "native_gui": {
-    "passed": true,
-    "checks": [
-      "native_tk_window_and_pen_adapter",
-      "native_draw_pointer_to_real_preprocess",
-      "mnist_native_controls_board_inference_and_output_display",
-      "kws_native_controls_board_inference_and_output_display",
-      "native_wav_input_exact_fixture_features",
-      "native_audio_playback_start_stop",
-      "native_recording_32768_samples_virtual_input",
-      "native_recorded_audio_board_inference"
-    ],
-    "results": {
-      "mnist": {
-        "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175215_582225_mnist",
-        "cpu_ms": 22.96778,
-        "npu_ms": 1.95034,
-        "speedup": 11.776295415158383,
-        "input_sha256": "8f6a418c9a639f9e14e96feca47a97df2a35a0a68ae2875431c5c80e05536941"
-      },
-      "kws": {
-        "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175232_525014_kws",
-        "cpu_ms": 275.87612,
-        "npu_ms": 28.06528,
-        "speedup": 9.829801092310499,
-        "input_sha256": "63faecf9da6db4a2175ada6462a0f54dfd7da5b1995134b394cee18f0359ea2e"
-      },
-      "recording": {
-        "input_device": "默认麦克风",
-        "source": "D:\\vexriscv_tinymaix_final_20261030\\tools\\tinymaix_live_gui\\runs\\20261030_175238_730364_kws",
-        "speedup": 9.818173148231182
+      "technical_paper": {
+        "pages": 30,
+        "sha256": "76b957c1fd2285e62c668cffe5130fdc25a45660099abe89254e5ba7a0726cce",
+        "residual_han_english_boundary_spaces": 0,
+        "visual_review": "Native Word PDF exported and page images reviewed; TOC verified against actual pagination",
+        "author_changes_preserved": true,
+        "body_text_unchanged": true,
+        "all_images_unchanged": true,
+        "toc_fields": 1,
+        "toc_hyperlinks": 27
       }
     },
-    "board_images_unchanged": true,
-    "scope": "Native Tk controls, preprocessing and actual board inference; virtual audio device available on this host"
-  },
-  "native_launchers": {
-    "mnist": {
-      "passed": true,
-      "title": "MNIST 手写数字 · TinyMaix FPGA 推理演示 · XC7A100T",
-      "no_browser_launcher": true
+    "deck_slides": 6,
+    "editable_pptx_tables": true,
+    "native_powerpoint_visual_review": true,
+    "design_report_pdf": {
+      "pages": 27,
+      "sha256": "1fe78c882b416f4169254f1c7f852c61ceb08da531e5b1cab1c3b6c0d3597e1b",
+      "text_matches_current_docx_native_export": true
     },
-    "kws": {
-      "passed": true,
-      "title": "KWS 关键词 · TinyMaix FPGA 推理演示 · XC7A100T",
-      "no_browser_launcher": true
-    }
-  },
-  "protected_assets_unchanged": {
-    "passed": true,
-    "files": 311,
-    "scope": "Existing model, source firmware and benchmark data hashes compared with previous release"
-  },
-  "document_local_edit_check": {
-    "design_report.docx": {
-      "all_retained_original_media_bytes_preserved": true,
-      "retained_original_media_count": 25,
-      "arm_figure_parts_excluded": []
+    "toc_update": {
+      "date": "2026-11-03",
+      "design_report": "Added one-page clickable automatic TOC with 33 entries",
+      "technical_paper": "Updated existing automatic TOC with 27 entries; no duplicate TOC",
+      "body_text_and_images_unchanged": true,
+      "renderer": "Native Microsoft Word PDF export and Poppler PNG review; bundled render_docx.py unavailable because LibreOffice is not installed"
     },
-    "technical_paper.docx": {
-      "all_retained_original_media_bytes_preserved": true,
-      "retained_original_media_count": 25,
-      "arm_figure_parts_excluded": [
-        "word/media/image24.png",
-        "word/media/image26.png"
-      ]
-    }
-  },
-  "spacing_cleanup": {
-    "scope": "HAN_ENGLISH_BOUNDARY_SPACING_ONLY",
-    "passed": true,
-    "changes": {
-      "design_report.docx": {
-        "word/document.xml": {
-          "boundary_space_groups_removed": 353,
-          "mixed_paragraphs": 70
-        },
-        "word/styles.xml": {
-          "boundary_space_groups_removed": 0,
-          "mixed_paragraphs": 0
-        }
-      },
-      "technical_paper.docx": {
-        "word/document.xml": {
-          "boundary_space_groups_removed": 399,
-          "mixed_paragraphs": 89
-        },
-        "word/header1.xml": {
-          "boundary_space_groups_removed": 2,
-          "mixed_paragraphs": 1
-        },
-        "word/styles.xml": {
-          "boundary_space_groups_removed": 0,
-          "mixed_paragraphs": 0
-        }
-      }
+    "photo_update": {
+      "date": "2026-11-03",
+      "section": "3.1",
+      "photo_sha256": "c46954215a41e4149dd8d4c2e08c5821ae33a4a4af0a1c810df798456bc5c321",
+      "added_photos": 1,
+      "existing_text_preserved_except_caption_label": true,
+      "existing_images_unchanged": true,
+      "photo_result_scope": "One handwritten MNIST input; benchmark results remain the fixed-fixture measurements",
+      "render_review": "Native Word PDF, changed pages 19-27 reviewed; preceding content retained",
+      "one_camera_view_only": true
     },
-    "documents": {
-      "design_report.docx": {
-        "non_space_characters_identical": true,
-        "all_images_identical": true,
-        "xml_parts_compared": 11,
-        "residual_boundary_spaces": 0,
-        "pages": 25,
-        "sha256": "54f88866f2deeadc801ba1d6e2eb5d11be000885ee04d135e84972e662e28ff8",
-        "visual_review": "All pages inspected after native Word export and PNG rendering"
-      },
-      "technical_paper.docx": {
-        "non_space_characters_identical": true,
-        "all_images_identical": true,
-        "xml_parts_compared": 12,
-        "residual_boundary_spaces": 0,
-        "pages": 31,
-        "sha256": "6e725abcc1c11b2bb1d2d4bf48362a88aa46cac33fa4f129a52af3057954367a",
-        "visual_review": "All pages inspected after native Word export and PNG rendering"
-      }
-    }
+    "presentation_sha256": "1b9a848f433124dd594d3a2c60c8cc6a323fada493132a9044cc7d1d17faa1db",
+    "anonymous_submission": true
   },
   "packaging": {
-    "verified_date": "2026-10-31",
-    "guideline_section": "3.3.5.2 / 3.3.5.4",
     "report_files": [
       "collaboration_notes.md",
       "collaboration_record.json",
       "design_report.docx",
+      "design_report.pdf",
       "presentation.pptx",
       "technical_paper.docx"
     ],
@@ -256,8 +169,34 @@
       "README.md",
       "skill/README.md"
     ],
-    "guideline_pdf_in_package": false,
-    "formal_document_part_contents_unchanged": true,
-    "models_firmware_measurements_unchanged": true
+    "guideline_pdf_in_package": false
+  },
+  "drc": {
+    "errors": 0,
+    "retained_warnings": [
+      "DPIP-1",
+      "DPOP-1",
+      "DPOP-2"
+    ]
+  },
+  "package_audit": {
+    "date": "2026-11-02",
+    "guide_scope": "Advanced self-selected track sections 3.3.3-3.3.5",
+    "optimization_comparison": "report/collaboration_notes.md",
+    "raw_before_fifo_reports": [
+      "build/reports/fifo_mapping_before_utilization.rpt",
+      "build/reports/fifo_mapping_before_place.log"
+    ],
+    "current_author_documents_preserved": true,
+    "new_hardware_build_or_board_run_in_this_audit": false,
+    "hardware_validation": "Retained prior fresh Vivado 2026.1 build and board retest; checked source, checkpoint, bitstream and report hashes",
+    "tested_dependencies": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pillow": "12.3.0",
+      "pyserial": "3.5",
+      "sounddevice": "0.5.6",
+      "soundfile": "0.14.0"
+    }
   }
 }
